@@ -2,6 +2,7 @@
   margin: 0px;
   border: 0px;
   font-family: 'Poppins', sans-serif;
+  background-color: #f8f4f4;
 }
 html {
   margin: 0;
@@ -41,9 +42,7 @@ html {
 
 .menu {
   color: #000;
-  font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   background: rgba(245, 245, 245, 0.99);
   backdrop-filter: blur(5px);
@@ -76,7 +75,6 @@ html {
 .landing {
   width: 100vw;
   height: 100vh;
-  /* background-color: blue; */
   background-image: url('images/dayak-landing-page-12.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,11 +83,8 @@ html {
 @media only screen and (min-width: 700px) {
   .landing {
     background-position: center;
+    min-height: 600px;
   }
-}
-
-.profil {
-  height: 10000px;
 }
 
 .nav-link {
@@ -210,54 +205,103 @@ html {
 }
 
 /* _____________________________________________Landing Page_________________________________________________________ */
-.landing-page {
-}
-
-.inner-landing {
-}
 
 .rectangle2 {
-  width: 150px;
-  height: 44px;
+  width: 100px;
+  height: 43px;
   background: rgba(230.56, 206.55, 206.55, 0);
   border-radius: 34px;
   border: 2px white solid;
   backdrop-filter: blur(2px);
+  margin-top: 60vh;
 }
+
 .Welcome {
   color: white;
-  font-size: 16px;
-  font-family: Poppins;
+  font-size: 13px;
   font-weight: 500;
-  margin-top: 9px;
+  margin-top: 10px;
   display: block;
   text-align: center;
 }
 
 .SukuDayak {
-  color: white;
-  font-size: 128px;
-  font-family: Poppins;
   font-weight: 500;
   line-height: 80%;
   margin-top: 20px;
+
+  color: #fff;
+  font-size: 36px;
+
+  font-weight: 500;
 }
 
 .Warisan {
   color: white;
-  font-size: 20px;
-  font-family: Poppins;
+  font-size: 15px;
   font-weight: 400;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .line-bottom {
   margin: auto 20px;
   width: 40vw;
-  height: 1px;
+  height: 0.1px;
   border: #fff;
   border-radius: 7px;
   border-style: solid;
+}
+
+.lingkaran1 {
+  width: 60px;
+  height: 60px;
+}
+@media only screen and (min-width: 900px) {
+  .rectangle2 {
+    width: 150px;
+    height: 44px;
+    background: rgba(230.56, 206.55, 206.55, 0);
+    border-radius: 34px;
+    border: 2px white solid;
+    backdrop-filter: blur(2px);
+    margin-top: 37vh;
+  }
+  .Welcome {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 9px;
+    display: block;
+    text-align: center;
+  }
+
+  .SukuDayak {
+    color: white;
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 80%;
+    margin-top: 20px;
+  }
+
+  .Warisan {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+  }
+
+  .line-bottom {
+    margin: auto 20px;
+    width: 40vw;
+    height: 1px;
+    border: #fff;
+    border-radius: 7px;
+    border-style: solid;
+  }
+  .lingkaran1 {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 @-webkit-keyframes bounce {
@@ -292,3 +336,311 @@ html {
 }
 
 /* _____________________________________________Landing Page End_________________________________________________________ */
+
+/*______________________________________________ Profil__________________________________________________________________ */
+
+.profil-img {
+  width: 400px;
+  z-index: -1;
+  position: static;
+}
+
+.rectangle3 {
+  margin: 10px 0px;
+  width: 77px;
+  height: 30px;
+
+  background: #920d0d;
+  border-radius: 34px;
+  border: 2px white solid;
+  backdrop-filter: blur(2px);
+}
+.profil-judul {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: white;
+  margin-top: 4px;
+  display: block;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.profil-subjudul {
+  font-size: 20px;
+  font-weight: 600;
+}
+.profil-isi {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px; /* 150% */
+  margin-bottom: 30px;
+}
+
+.profil-tulisan {
+  margin: 0px 0px;
+}
+
+@media only screen and (min-width: 900px) {
+  .profil-img {
+    width: 500px;
+  }
+
+  .rectangle3 {
+    width: 150px;
+    height: 44px;
+    background: #920d0d;
+    border-radius: 34px;
+    border: 2px white solid;
+    backdrop-filter: blur(2px);
+  }
+  .profil-judul {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 9px;
+    display: block;
+    text-align: center;
+  }
+
+  .profil-subjudul {
+    color: #000;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 80px; /* 114.286% */
+  }
+  .profil-isi {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .profil-img {
+    position: absolute;
+    top: -100px;
+    left: -14vw;
+    width: 900px;
+  }
+
+  .profil-tulisan {
+    margin: 110px 0px;
+  }
+}
+/*______________________________________________ Profil end__________________________________________________________________ */
+/*______________________________________________ Adat__________________________________________________________________ */
+.adat {
+  height: 500px;
+  background-image: url('images/adat.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+.rectangle4 {
+  width: 97px;
+  height: 28px;
+  background: whitesmoke;
+  border-radius: 34px;
+  margin-top: 100px;
+}
+.adat-judul {
+  color: #920d0d;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  margin: 8px 0px;
+}
+.adat-subjudul {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.adat-isi {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.adat-isi span {
+  color: #920d0d;
+  font-weight: 700;
+}
+
+.isi-adat {
+  max-width: 700px;
+}
+
+@media only screen and (min-width: 900px) {
+  .adat {
+    height: 500px;
+    background-image: url('images/adat.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .rectangle4 {
+    width: 150px;
+    height: 44px;
+    background: whitesmoke;
+    border-radius: 34px;
+    margin-top: 30px;
+  }
+  .adat-judul {
+    color: #920d0d;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .adat-subjudul {
+    color: #fff;
+    text-align: center;
+
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px; /* 114.286% */
+  }
+
+  .adat-isi {
+    color: #fff;
+    text-align: center;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+  }
+
+  .adat-isi span {
+    color: #920d0d;
+    font-weight: 700;
+  }
+}
+
+/*______________________________________________ Adat end__________________________________________________________________ */
+
+.upacara {
+  /* height: 10000px; */
+  margin: 50px;
+}
+
+#upacara {
+  margin-top: 100px;
+}
+
+.upacara1-img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.rectangle5 {
+  width: 150px;
+  height: 44px;
+  background: #920d0d;
+  border-radius: 34px;
+  border: 2px white solid;
+  backdrop-filter: blur(2px);
+}
+.rectangle5-manajah {
+  width: 250px;
+  height: 44px;
+  background: #920d0d;
+  border-radius: 34px;
+  border: 2px white solid;
+  backdrop-filter: blur(2px);
+}
+
+.upacara-judul {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 9px;
+  display: block;
+  text-align: center;
+}
+
+.upacara-subjudul {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.upacara-isi {
+  color: #000;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.upacara-isi span {
+  color: #920d0d;
+  font-weight: 700;
+}
+
+#parent {
+  display: flex;
+}
+#a {
+  order: 2;
+}
+#b {
+  order: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  #parent {
+    display: flex;
+  }
+  #a {
+    order: 1;
+  }
+  #b {
+    order: 2;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .upacara1-img {
+    width: 445px;
+    height: 462px;
+    object-fit: contain;
+    object-position: center;
+  }
+  .upacara-subjudul {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .upacara-isi {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .upacara-isi span {
+    color: #920d0d;
+    font-weight: 700;
+  }
+}
