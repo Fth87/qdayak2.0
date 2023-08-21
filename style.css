@@ -75,6 +75,7 @@ html {
 .landing {
   width: 100vw;
   height: 100vh;
+  min-height: 750px;
   background-image: url('images/dayak-landing-page-12.jpg');
   background-repeat: no-repeat;
   background-size: cover;
