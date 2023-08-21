@@ -10,8 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <title>Dayak</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
   </head>
   <body class="body">
     <nav class="navbar navbar-expand-lg fixed-top" style="padding: 0px; height: 67px">
@@ -33,25 +39,25 @@
             <li class="nav-item nav-hover-1">
               <a style="padding: 0px" class="nav-link" aria-current="page" href="#home"><p class="nav-color-1">Home</p></a>
             </li>
+            <li class="nav-item nav-hover-7">
+              <a style="padding: 0px" class="nav-link text-black" href="#profil"><p class="nav-color-7">profil</p></a>
+            </li>
             <li class="nav-item nav-hover-2">
               <a style="padding: 0px" class="nav-link" href="#adat"><p class="nav-color-2">Adat</p></a>
             </li>
-
             <li class="nav-item nav-hover-3">
               <a style="padding: 0px" class="nav-link text-black" href="#legenda"><p class="nav-color-3">legenda</p></a>
             </li>
 
-            <li class="nav-item nav-hover-4">
-              <a style="padding: 0px" class="nav-link text-black" href="#rumah"><p class="nav-color-4">Rumah</p></a>
-            </li>
             <li class="nav-item nav-hover-5">
               <a style="padding: 0px" class="nav-link text-black" href="#makanan"><p class="nav-color-5">Makanan</p></a>
             </li>
+            <li class="nav-item nav-hover-4">
+              <a style="padding: 0px" class="nav-link text-black" href="#rumah"><p class="nav-color-4">Rumah</p></a>
+            </li>
+
             <li class="nav-item nav-hover-6">
               <a style="padding: 0px" class="nav-link text-black" href="#senjata"><p class="nav-color-6">Senjata</p></a>
-            </li>
-            <li class="nav-item nav-hover-7">
-              <a style="padding: 0px" class="nav-link text-black" href="#profil"><p class="nav-color-7">profil</p></a>
             </li>
           </ul>
         </div>
@@ -61,7 +67,7 @@
     </nav>
 
     <div class="overflow-hidden" id="home">
-      <div class="landing">
+      <div class="landing" id="landing">
         <div class="container">
           <div class="row inner-landing mx-5">
             <div class="col-lg-6 align-content-center">
@@ -135,7 +141,7 @@
       </div>
     </div>
 
-    <div class="adat overflow-hidden">
+    <div class="adat overflow-hidden" id="adat">
       <div class="container h-100">
         <div class="d-flex justify-content-center">
           <div class="isi-adat">
@@ -173,8 +179,42 @@
                 </h1>
                 <p class="upacara-isi">
                   Upacara Tiwah merupakan sebuah perhelatan adat yang sangat berarti bagi Suku Dayak. Upacara ini memiliki tujuan utama untuk mengantar dan memberi penghormatan terakhir kepada roh orang yang telah berpulang.
-                  <span>Read More</span>
+                  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#tiwah"><span>Read More</span></button>
                 </p>
+
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="tiwah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <button type="button" class="tombol-modal" data-bs-dismiss="modal" aria-label="Close">
+                          <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 16">
+                              <path id="Line 4" d="M8.2135 7.01685L37 38.0612" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                              <path id="Line 5" d="M35.7865 7L6.99996 38.0443" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                            </g>
+                          </svg>
+                        </button>
+                        <div class="mx-md-5 mx-2 mt-md-5 mt-1">
+                          <h1 class="judul-modal">
+                            Upacara Tiwah <br />
+                            Suku Dayak
+                          </h1>
+                          <p class="isi-modal">
+                            Upacara Tiwah merupakan sebuah perhelatan adat yang sangat berarti bagi Suku Dayak. Upacara ini memiliki tujuan utama untuk mengantar dan memberi penghormatan terakhir kepada roh orang yang telah berpulang.
+                            Melalui serangkaian ritual dan pementasan, upacara Tiwah menciptakan suasana yang penuh makna dan semangat bagi komunitas Dayak. Dalam prosesi upacara Tiwah, berbagai ritus, tarian, dan irama alat musik
+                            tradisional Suku Dayak menjadi bagian tak terpisahkan. Ritual ini adalah cara mereka menyampaikan doa dan harapan agar roh orang yang telah meninggal dijaga oleh roh para leluhur. Oleh karena itu, kesakralan
+                            upacara Tiwah sebanding dengan dua upacara yang telah dijelaskan sebelumnya. Setelah doa dan harapan telah diungkapkan kepada roh para leluhur, barulah tulang-belulang orang yang telah meninggal akan ditempatkan
+                            dengan penuh kehormatan. Tempat ini dikenal sebagai "Sandung," sebuah rumah kecil yang khusus dibangun sebagai tempat persemayaman. Selama upacara berlangsung, irama alat musik tradisional terus mengalun,
+                            menciptakan suasana yang khusyuk dan berfokus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,8 +234,43 @@
                 </h1>
                 <p class="upacara-isi">
                   Upacara Manajah Antang memiliki peran yang signifikan dalam menghadapi situasi perang bagi Suku Dayak. Dalam konteks ini, upacara ini menjadi suatu langkah strategis untuk mendapatkan petunjuk yang penting terkait dengan
-                  keberadaan musuh yang sulit terdeteksi. <span> Read More </span>
+                  keberadaan musuh yang sulit terdeteksi. <button type="button" class="" data-bs-toggle="modal" data-bs-target="#manajah"><span>Read More</span></button>
                 </p>
+
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="manajah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <button type="button" class="tombol-modal" data-bs-dismiss="modal" aria-label="Close">
+                          <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 16">
+                              <path id="Line 4" d="M8.2135 7.01685L37 38.0612" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                              <path id="Line 5" d="M35.7865 7L6.99996 38.0443" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                            </g>
+                          </svg>
+                        </button>
+                        <div class="mx-md-5 mx-2 mt-md-5 mt-1">
+                          <h1 class="judul-modal">
+                            Upacara Manajah Anatang <br />
+                            Suku Dayak
+                          </h1>
+                          <p class="isi-modal">
+                            Upacara Tariu adalah salah satu upacara adat yang dilakukan oleh Suku Dayak di Kalimantan. Tariu merupakan ritual atau perayaan yang diadakan oleh Suku Dayak untuk menghormati roh-roh leluhur dan alam. Upacara
+                            Tariu biasanya diadakan pada waktu yang telah ditentukan dalam tradisi Suku Dayak, dan tujuannya adalah untuk meminta berkah, keselamatan, dan hasil panen yang melimpah. Dalam upacara Tariu, Suku Dayak biasanya
+                            mengenakan pakaian adat dan menghiasi diri dengan ornamen tradisional. Mereka melakukan tarian khas yang disertai dengan nyanyian dan musik tradisional. Tarian ini memiliki makna spiritual yang dalam dan
+                            melibatkan keselarasan dengan alam dan roh-roh leluhur. Selama upacara Tariu, juga dilakukan berbagai ritual dan pengorbanan sebagai wujud penghormatan kepada roh-roh leluhur dan alam. Orang-orang Suku Dayak
+                            percaya bahwa dengan melakukan upacara ini dengan sungguh-sungguh, mereka akan mendapatkan berkah dan perlindungan dari roh-roh leluhur serta keselamatan bagi komunitas mereka. Upacara Tariu tidak hanya merupakan
+                            perayaan keagamaan, tetapi juga menjadi sarana mempertahankan identitas budaya dan mengenang warisan leluhur. Melalui tarian, nyanyian, dan ritual, Suku Dayak menjaga tradisi dan nilai-nilai leluhur tetap hidup
+                            dalam kehidupan modern.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div id="b" class="col-lg-6 d-flex justify-content-center align-content-center">
@@ -221,8 +296,152 @@
                 </h1>
                 <p class="upacara-isi">
                   Upacara Tariu adalah salah satu upacara adat yang dilakukan oleh Suku Dayak di Kalimantan. Tariu merupakan ritual atau perayaan yang diadakan oleh Suku Dayak untuk menghormati roh-roh leluhur dan alam. Upacara Tariu
-                  biasanya diadakan pada waktu yang telah ditentukan dalam tradisi Suku Dayak, dan tujuannya adalah untuk meminta berkah, keselamatan, dan hasil panen yang melimpah. <span> Read More </span>
+                  biasanya diadakan pada waktu yang telah ditentukan dalam tradisi Suku Dayak, dan tujuannya adalah untuk meminta berkah, keselamatan, dan hasil panen yang melimpah.
+                  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#tariu"><span>Read More</span></button>
                 </p>
+
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="tariu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <button type="button" class="tombol-modal" data-bs-dismiss="modal" aria-label="Close">
+                          <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 16">
+                              <path id="Line 4" d="M8.2135 7.01685L37 38.0612" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                              <path id="Line 5" d="M35.7865 7L6.99996 38.0443" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                            </g>
+                          </svg>
+                        </button>
+                        <div class="mx-md-5 mx-2 mt-md-5 mt-1">
+                          <h1 class="judul-modal">
+                            Upacara Tariu <br />
+                            Suku Dayak
+                          </h1>
+                          <p class="isi-modal">
+                            Upacara Tariu adalah salah satu upacara adat yang dilakukan oleh Suku Dayak di Kalimantan. Tariu merupakan ritual atau perayaan yang diadakan oleh Suku Dayak untuk menghormati roh-roh leluhur dan alam. Upacara
+                            Tariu biasanya diadakan pada waktu yang telah ditentukan dalam tradisi Suku Dayak, dan tujuannya adalah untuk meminta berkah, keselamatan, dan hasil panen yang melimpah. Dalam upacara Tariu, Suku Dayak biasanya
+                            mengenakan pakaian adat dan menghiasi diri dengan ornamen tradisional. Mereka melakukan tarian khas yang disertai dengan nyanyian dan musik tradisional. Tarian ini memiliki makna spiritual yang dalam dan
+                            melibatkan keselarasan dengan alam dan roh-roh leluhur. Selama upacara Tariu, juga dilakukan berbagai ritual dan pengorbanan sebagai wujud penghormatan kepada roh-roh leluhur dan alam. Orang-orang Suku Dayak
+                            percaya bahwa dengan melakukan upacara ini dengan sungguh-sungguh, mereka akan mendapatkan berkah dan perlindungan dari roh-roh leluhur serta keselamatan bagi komunitas mereka. Upacara Tariu tidak hanya merupakan
+                            perayaan keagamaan, tetapi juga menjadi sarana mempertahankan identitas budaya dan mengenang warisan leluhur. Melalui tarian, nyanyian, dan ritual, Suku Dayak menjaga tradisi dan nilai-nilai leluhur tetap hidup
+                            dalam kehidupan modern.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" id="legenda">
+      <div class="legenda-bg d-flex">
+        <div class="owl-carousel owl-theme">
+          <div class="pembuka-legenda">
+            <div class="rectangle4 d-flex align-content-center justify-content-center">
+              <p class="adat-judul">Legenda</p>
+            </div>
+            <h1>
+              Legenda Suku <br />
+              Dayak
+            </h1>
+            <p>ini adalah beberapa adat legenda yang populer dan unik yang ada di suku dayak</p>
+          </div>
+
+          <div class="item">
+            <div class="merahmerah d-flex flex-column position-relative">
+              <h1 class="judul-legenda mt-4 mx-auto">
+                Asal Muasal <br />
+                Sungai Landak
+              </h1>
+              <img class="gambar-legenda" src="images/sungailandak.png" alt="" />
+              <p class="isi-legenda mx-4 mt-4">
+                Di sebuah desa, tinggallah sepasang suami istri. Setiap hari mereka bekerja sebagai petani palawija. Walaupun hidup sangat sederhana, mereka selalu bersedia membantu para tetangga sebisa mereka
+                <button type="button" class="text-danger mt-lg-5" data-bs-toggle="modal" data-bs-target="#landak"><span>Read More</span></button>
+              </p>
+
+              <!-- Button trigger modal -->
+            </div>
+          </div>
+          <div class="item">
+            <div class="merahmerah d-flex flex-column position-relative">
+              <h1 class="judul-legenda mt-4 mx-auto">
+                Asal Muasal <br />
+                Sungai Landak
+              </h1>
+              <img class="gambar-legenda" src="images/sungailandak.png" alt="" />
+              <p class="isi-legenda mx-4 mt-4">
+                Di sebuah desa, tinggallah sepasang suami istri. Setiap hari mereka bekerja sebagai petani palawija. Walaupun hidup sangat sederhana, mereka selalu bersedia membantu para tetangga sebisa mereka
+                <button type="button" class="text-danger mt-lg-5" data-bs-toggle="modal" data-bs-target="#landak"><span>Read More</span></button>
+              </p>
+
+              <!-- Button trigger modal -->
+            </div>
+          </div>
+          <div class="item">
+            <div class="merahmerah d-flex flex-column position-relative">
+              <h1 class="judul-legenda mt-4 mx-auto">
+                Asal Muasal <br />
+                Sungai Landak
+              </h1>
+              <img class="gambar-legenda" src="images/sungailandak.png" alt="" />
+              <p class="isi-legenda mx-4 mt-4">
+                Di sebuah desa, tinggallah sepasang suami istri. Setiap hari mereka bekerja sebagai petani palawija. Walaupun hidup sangat sederhana, mereka selalu bersedia membantu para tetangga sebisa mereka
+                <button type="button" class="text-danger mt-lg-5" data-bs-toggle="modal" data-bs-target="#landak"><span>Read More</span></button>
+              </p>
+
+              <!-- Button trigger modal -->
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="landak" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="tombol-modal" data-bs-dismiss="modal" aria-label="Close">
+                  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group 16">
+                      <path id="Line 4" d="M8.2135 7.01685L37 38.0612" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                      <path id="Line 5" d="M35.7865 7L6.99996 38.0443" stroke="#920D0D" stroke-width="13" stroke-linecap="round" />
+                    </g>
+                  </svg>
+                </button>
+                <div class="mx-md-5 mx-2 mt-md-5 mt-1">
+                  <h1 class="judul-modal">
+                    Asak Muasal<br />
+                    Sungai Landak
+                  </h1>
+                  <p class="isi-modal">
+                    Di sebuah desa, tinggallah sepasang suami istri. Setiap hari mereka bekerja sebagai petani palawija. Walaupun hidup sangat sederhana, mereka selalu bersedia membantu para tetangga sebisa mereka. Suatu malam, sang suami
+                    tidak bisa tidur karena hatinya sangat gelisah. Ketika ia menoleh kepada istrinya yang sedang tertidur pulas, ia sangat terkejut. Seekor lipan yang tubuhnya bersinar putih keluar dari kepala istrinya. Lipan itu merayap
+                    turun dan keluar dari rumah. Merasa penasaran, sang suami mengikuti ke mana lipan itu pergi. Lipan masuk ke sebuah lubang kecil di dekat rumahnya dan tidak keluar-keluar lagi. Keesokan paginya, sang suami menceritakan
+                    kejadian aneh itu kepada istrinya. Cerita Dongeng Rakyat Dari Kalimantan Barat “Ibu pun semalam bermimpi aneh Pak. Ibu seperti berada di dekat sebuah danau. Tiba-tiba, ibu melihat sekor landak raksasa di tengah danau.
+                    Landak itu berbulu kuning keemasan. Apakah mimpiku ini ada hubungannya dengan yang Bapak lihat semalam? Mungkin itu suatu pertanda baik, Pak. Bagaimana kalau kita tengok saja lubang tempat lipan itu bersembunyi?” usul
+                    istrinya. “Benar juga, marl kita dekati lubang itu,” ujar suaminya. Suami istri ini pun mendekati lubang tempat lipan itu menghilang. Sang suami merogohkan tangannya ke dalam lubang. la merasakan tangannya menyentuh
+                    sesuatu, ditariknya benda tersebut. Suami istri ini terkejut bukan main, benda yang didapat dari lubang tersebut adalah sebuah patung landak yang terbuat dari emas. “Kita bawa pulang saja patung landak ini, Pak. Siapa
+                    tahu membawa kebaikan untuk kita,” kata sang istri. Patung landak itu pun mereka simpan dengan baik. “Jika kita jual patung landak itu, pasti kehidupan kita jauh lebih baik, Pak” ujar sang istri “Sabar Bu, kita simpan
+                    saja dulu. Siapa tahu ada petunjuk tentang patung landak itu,” kata sang swami dengan tenang. Malamnya, petani itu bermimpi didatangi oleh seekor landak emas raksasa. “Tuan, biarkanlah aku tinggal bersamamu. Aku berjanji
+                    akan mengabulkan segala permintaanmu,” kata landak itu. “Bagaimana caranya?” tanya sang swami. “Tuan cukup mengelus kepala patung landak itu dan meminta sesuatu, kemudian akhiri dengan mengelusnya lagi. Aku akan
+                    mengajarkan mantranya;” kata landak raksasa. Landak raksasa itu mengucapkan mantra. Sang suami menghafalkannya dalam hati. Paginya, ia terbangun dan menceritakan hal tersebut kepada istrinya. Kemudian, petani itu
+                    mengusap kepala patung landak dan mengucapkan mantra. “Berikanlah aku beras yang banyak,” kata petani itu yang kemudian menutupnya lagi dengan mantra. Ajaib, butiran beras mengalir deras dari mulut patung landak
+                    tersebut. Kemudian petani tersebut mengulangi membaca mantra, kemudian meminta perhiasan dan kebutuhan pokok. Patung landak tersebut memenuhi segala permintaannya. Suami istri tersebut menjadi kaya raya. Mereka berbagi
+                    kepada semua tetangganya, sehingga kehidupan kampung itu menjadi lebih balk. Kekayaan si petani memancing seorang perampok untuk datang mengintai. Akhirnya, perampok itu mengetahui dari mana datangnya kekayaan tersebut.
+                    Ia berhasil mengintip si petani mengelus patung landak emas itu dan membaca mantra. Malam harinya, ia berhasil mencuri patung landak tersebut dan membawa ke desanya yang bernama Desa Ngabang. Desa tersebut sedang dilanda
+                    kekeringan. Bahkan, untuk kebutuhan air yang pokok saja sudah tidak ada. Perampok tadi dengan bangganya mengumpulkan warga, “Tenang Saudara-Saudara. Aku akan menolong kallan dari kekeringan ini,” ujar sang perampok.
+                    Lalu, ia mengusap patung landak itu dan membaca mantra seperti yang ia dengar di rumah petani. Seketika saja, air deras menyembur dari mulut landak. Warga bersuka cita. Namun, air tersebut terus saja mengalir deras
+                    membuat semua orang kewalahan. Lama kelamaan air menggenangi desa. Perampok tersebut tidak bisa menghentikannya, karena ia tidak tahu mantra untuk menghentikan permintaannya kepada patung landak tersebut. Patung landak
+                    tersebut terus saja mengeluarkan air. Akhirnya, Desa Ngabang tenggelam dan tidak bisa lagi menampung air, sehingga mengalirlah air keluar desa yang kemudian menjadi sebuah sungai besar. Oleh masyarakat setempat, sungai
+                    tersebut dinamai Sungai Landak. Sungai Landak mengalir di tengah-tengah Kota Ngabang, Kabupaten Landak, Kalimantan Barat.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -234,7 +453,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex justify-content-center align-content-center">
-            <img class="upacara1-img" src="images/makanan.png" alt="makanan" />
+            <img class="upacara1-img" src="images/makanan.png" alt="makanan" style="margin: auto" />
           </div>
           <div class="col-lg-6">
             <div class="upacara1-tulisan">
@@ -250,7 +469,7 @@
               <br />
               <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
-                  <div class="card h-100 w-100">
+                  <div class="card shadow h-100 w-100">
                     <img src="images/bubur.jpg" class="card-img-top" alt="bubur" />
                     <div class="card-body">
                       <h5 class="card-title">Bubur Pedas</h5>
@@ -259,7 +478,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 w-100">
+                  <div class="card shadow h-100 w-100">
                     <img src="images/tempoyak.jpg" class="card-img-top" alt="tempoyak" />
                     <div class="card-body">
                       <h5 class="card-title">Tempoyak</h5>
@@ -271,6 +490,35 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rumah">
+      <div class="container">
+        <div class="bg-rumah d-flex flex-column align-content-center justify-content-center">
+          <div class="d-flex flex-column mx-auto konten-rumah">
+            <div class="my-lg-4 my-3 rectangle7 d-flex mx-auto align-content-center justify-content-center">
+              <p class="rumah-judul">Rumah adat</p>
+            </div>
+
+            <h1 class="judul-rumah">Rumah Adat Betang Suku Dayak</h1>
+            <p class="isi-rumah">
+              Rumah betang adalah rumah adat khas Kalimantan yang terdapat diberbagai penjuru Kalimantan dan dihuni oleh masyarakat Dayak terutama di daerah hulu sungai yang biasanya menjadi pusat permukiman suku Dayak. Di Kalimantan Barat,
+              rumah betang biasa disebut rumah panjang, rumah radakng, atau rumah panjai.
+            </p>
+          </div>
+          <div class="d-flex mx-auto my-3">
+            <div id="rumah1">
+              <img class="rumah-1" src="images/rumah-adat1.jpg" alt="rumah" />
+            </div>
+            <div id="rumah2">
+              <img class="rumah-2" src="images/rumah-adat2.jpg" alt="rumah" />
+            </div>
+            <div id="rumah3">
+              <img class="rumah-3" src="images/rumah-adat3.jpg" alt="rumah" />
             </div>
           </div>
         </div>
@@ -302,29 +550,51 @@
       </div>
     </div>
 
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-2 mb-0 text-muted">© 2023 Doline</p>
+    <footer class="">
+      <div class="container mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-3 py-5 mt-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <div class="Qdayak d-block">
+              <span style="color: #f4f4f4; font-size: 32px; font-family: Poppins; font-weight: 700">QD</span><span style="color: black; font-size: 32px; font-family: Poppins; font-weight: 700">ayak</span
+              ><span style="color: #ffffff; font-size: 32px; font-family: Poppins; font-weight: 700">.</span>
+            </div>
+          </a>
+          <!-- <p class="text-muted">© 2022</p> -->
+        </div>
 
-        <a href="/" class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          Logo
-        </a>
+        <div class="col mb-3 text-white">
+          <h5 class="text-start nav-item mb-2">Qdayak</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Adat Istiadat</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Rumah</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Legenda</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Makanan</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Senjata</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Profil</a></li>
+          </ul>
+        </div>
 
-        <ul class="nav col-md-8 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Adat</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Legenda</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Rumah</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Makanan</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Senjata</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Profil</a></li>
-        </ul>
-      </footer>
-    </div>
-
+        <div class="col mb-3 text-white">
+          <h5 class="text-start nav-item mb-2 ms-md-5">Quick Content</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Upacara Tiwah</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Upacara Manajah Anatang</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Bujan Beji</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Sungai Landak</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Pasukan Hantu</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Bubur Pedas</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Tempoyak</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Rumah Bentang</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start text-white">Mandau</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script defer src="	https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>

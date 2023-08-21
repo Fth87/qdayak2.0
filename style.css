@@ -644,3 +644,349 @@ html {
     font-weight: 700;
   }
 }
+
+/* __________________________________________________Rumah__________________________________________________________________ */
+.rectangle7 {
+  width: 100px;
+  height: 38px;
+  background-color: whitesmoke;
+  border-radius: 34px;
+  /* margin-top: 100px; */
+}
+
+.rumah-judul {
+  color: #920d0d;
+  font-size: 13px;
+  font-weight: 6 00;
+  text-align: center;
+  margin: 8px 0px;
+}
+
+.rumah-1 {
+  width: 110px;
+}
+.rumah-2 {
+  width: 110px;
+}
+.rumah-3 {
+  width: 110px;
+}
+
+.bg-rumah {
+  height: 95vh;
+  min-height: 800px;
+  max-height: 1500px;
+  background-image: url('images/rumah-adat1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.konten-rumah {
+  width: 60vw;
+  max-width: 1020px;
+}
+
+.judul-rumah {
+  color: #fff;
+  text-align: center;
+
+  font-size: 24px;
+
+  font-weight: 500;
+}
+
+.isi-rumah {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .rumah-1 {
+    width: 160px;
+  }
+  .rumah-2 {
+    width: 160px;
+  }
+  .rumah-3 {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .rectangle7 {
+    width: 150px;
+    height: 38px;
+    background-color: whitesmoke;
+    border-radius: 34px;
+    /* margin-top: 100px; */
+  }
+
+  .rumah-judul {
+    color: #920d0d;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 8px 0px;
+  }
+  .rumah-1 {
+    width: 240px;
+  }
+  .rumah-2 {
+    width: 240px;
+  }
+  .rumah-3 {
+    width: 240px;
+  }
+  .konten-rumah {
+    width: 60vw;
+    max-width: 1020px;
+  }
+
+  .judul-rumah {
+    color: #fff;
+    text-align: center;
+
+    font-size: 70px;
+
+    font-weight: 500;
+  }
+
+  .isi-rumah {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+/* __________________________________________________Rumah End__________________________________________________________________ */
+
+.judul-modal {
+  color: #920d0d;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.isi-modal {
+  color: #000;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tombol-modal {
+  position: fixed;
+}
+.tombol-modal svg {
+  width: 12px;
+  height: 12px;
+}
+
+@media only screen and (min-width: 993px) {
+  .judul-modal {
+    color: #920d0d;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 112.5% */
+  }
+
+  .isi-modal {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .tombol-modal svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+button {
+  border: none;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+/* _________________________________________Legenda____________________________________________________________ */
+#legenda {
+  width: 100%;
+  height: 600px;
+}
+
+.legenda-bg {
+  height: 500px;
+  background-image: url('images/legenda.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.owl-theme {
+  margin-top: 10vh;
+}
+.pembuka-legenda {
+  width: 50vw;
+  height: 600px;
+  margin-left: 10vw;
+}
+
+.pembuka-legenda > h1 {
+  margin: 30px 0px;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pembuka-legenda > p {
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+}
+.item {
+  width: 180px;
+  height: 320px;
+  background-color: rgba(121, 119.24, 119.24, 0.12);
+  border-radius: 20px;
+  backdrop-filter: blur(17px);
+}
+
+.merahmerah {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #920d0d;
+  width: 100%;
+  height: 19vh;
+}
+
+.judul-legenda {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.gambar-legenda {
+  margin-top: 8px;
+}
+
+.isi-legenda {
+  color: #fff;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 900px) {
+  #legenda {
+    width: 100%;
+    height: 779px;
+  }
+
+  .legenda-bg {
+    height: 780px;
+    background-image: url('images/legenda.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .pembuka-legenda {
+    width: 40vw;
+    height: 600px;
+    margin-left: 10vw;
+  }
+
+  .pembuka-legenda > h1 {
+    margin: 30px 0px;
+    color: #fff;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .pembuka-legenda > p {
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .item {
+    width: 350px;
+    height: 600px;
+    background-color: rgba(121, 119.24, 119.24, 0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(17px);
+  }
+
+  .merahmerah {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #920d0d;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .judul-legenda {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .gambar-legenda {
+    margin-top: 10px;
+  }
+
+  .isi-legenda {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+/* _________________________________________Legenda end____________________________________________________________ */
+
+footer {
+  background-color: #920d0d;
+}
