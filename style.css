@@ -668,12 +668,18 @@ html {
 
 .rumah-1 {
   width: 110px;
+  height: 110px;
+  object-fit: cover;
 }
 .rumah-2 {
   width: 110px;
+  height: 110px;
+  object-fit: cover;
 }
 .rumah-3 {
   width: 110px;
+  height: 110px;
+  object-fit: cover;
 }
 
 .bg-rumah {
@@ -715,12 +721,18 @@ html {
 @media only screen and (min-width: 768px) {
   .rumah-1 {
     width: 160px;
+    height: 160px;
+    object-fit: cover;
   }
   .rumah-2 {
     width: 160px;
+    height: 160px;
+    object-fit: cover;
   }
   .rumah-3 {
     width: 160px;
+    height: 160px;
+    object-fit: cover;
   }
 }
 
@@ -742,12 +754,18 @@ html {
   }
   .rumah-1 {
     width: 240px;
+    height: 240px;
+    object-fit: cover;
   }
   .rumah-2 {
     width: 240px;
+    height: 240px;
+    object-fit: cover;
   }
   .rumah-3 {
     width: 240px;
+    height: 240px;
+    object-fit: cover;
   }
   .konten-rumah {
     width: 60vw;

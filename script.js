@@ -27,7 +27,7 @@ const rumah3 = document.getElementById('rumah3');
 
 const bg = document.querySelector('.bg-rumah');
 
-const backgroundImages = ['rumah-adat1.jpg', 'rumah-adat2.jpg', 'rumah-adat3.jpg'];
+const backgroundImages = ['rumah-adat1.jpg', 'rumah-adat2.jpeg', 'rumah-adat3.jpeg'];
 let urutan = 0;
 
 rumah1.addEventListener('click', function () {
@@ -49,6 +49,6 @@ function changeBackgroundImage() {
   }
   bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
   urutan += 1;
-}   
+}
 changeBackgroundImage();
 setInterval(changeBackgroundImage, 3000);
