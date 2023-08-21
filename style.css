@@ -76,6 +76,7 @@ html {
   width: 100vw;
   height: 100vh;
   min-height: 750px;
+  /* max-height: 800px; */
   background-image: url('images/dayak-landing-page-12.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,6 +86,7 @@ html {
   .landing {
     background-position: center;
     min-height: 750px;
+    max-height: 900px;
   }
 }
 
@@ -257,6 +259,7 @@ html {
   width: 60px;
   height: 60px;
 }
+
 @media only screen and (min-width: 900px) {
   .rectangle2 {
     width: 150px;
@@ -265,7 +268,7 @@ html {
     border-radius: 34px;
     border: 2px white solid;
     backdrop-filter: blur(2px);
-    margin-top: 250px;
+    margin-top: 37vh;
   }
   .Welcome {
     color: white;
