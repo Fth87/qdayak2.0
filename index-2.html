@@ -1,27 +1,26 @@
-$(document).ready(function () {
-  const owl = $('.owl-carousel');
-  owl.owlCarousel({
-    dots: true,
-    loop: false,
-    margin: 50,
-    nav: true,
-    autoWidth: true,
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  });
-  // ######################################################## fitur bahasa #########################################################
-  $('#inggris').hover(function () {
-    $('#bodyku').html(`  <body class="body" id="bodyku">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link rel="icon" href="" />
+    <title>Dayak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css" />
+  </head>
+  <body class="body" id="bodyku">
     <nav class="navbar navbar-expand-lg fixed-top" style="padding: 0px; height: 67px">
       <div class="container inner-navbar d-flex justify-content-between">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -837,69 +836,5 @@ $(document).ready(function () {
     <script defer src="	https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>`)
-  });
-});
-
-const rumah1 = document.getElementById('rumah1');
-const rumah2 = document.getElementById('rumah2');
-const rumah3 = document.getElementById('rumah3');
-
-const bg = document.querySelector('.bg-rumah');
-
-const backgroundImages = ['rumah-adat1.jpg', 'rumah-adat2.jpeg', 'rumah-adat3.jpeg'];
-let urutan = 0;
-
-rumah1.addEventListener('click', function () {
-  urutan = 0;
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-});
-rumah2.addEventListener('click', function () {
-  urutan = 1;
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-});
-rumah3.addEventListener('click', function () {
-  urutan = 2;
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-});
-
-function changeBackgroundImage() {
-  if (urutan > 2) {
-    urutan = 0;
-  }
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-  urutan += 1;
-}
-changeBackgroundImage();
-setInterval(changeBackgroundImage, 3000);
-
-// _____________________________________________________Dark Mode____________________________________________
-
-const darkModeToggle = document.querySelector('#checkbox');
-const body = document.body;
-const checkbox = document.getElementById('checkbox');
-
-// Cek apakah mode gelap telah diaktifkan sebelumnya
-const isDarkMode = localStorage.getItem('dark-mode') === 'true';
-
-// Fungsi untuk mengaktifkan/menonaktifkan mode gelap
-function toggleDarkMode() {
-  // Tambahkan atau hapus kelas "dark-mode" dari elemen <body>
-  body.classList.toggle('dark-mode');
-
-  // Simpan preferensi pengguna di localStorage
-
-  const darkModeEnabled = body.classList.contains('dark-mode');
-  localStorage.setItem('dark-mode', darkModeEnabled);
-}
-
-// Setel mode gelap berdasarkan preferensi pengguna
-if (isDarkMode) {
-  body.classList.add('dark-mode');
-  checkbox.checked = true;
-}
-
-// Tambahkan event listener untuk tombol toggle
-darkModeToggle.addEventListener('click', toggleDarkMode);
-
-// ----------------------------------------------------------- fitur bahasa -----------------------------------------------
+  </body>
+</html>
