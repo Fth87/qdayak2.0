@@ -55,11 +55,12 @@ body.dark-mode .makanan .card {
 }
 
 .bi-moon {
-  color: #f1c40f;
+  color: #ffffff;
 }
 
 .bi-sun {
-  color: #f39c12;
+  margin-top: 2px;
+  color: #ffffff;
 }
 
 .checkbox-label .ball {
