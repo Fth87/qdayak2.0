@@ -81,3 +81,5 @@ if (isDarkMode) {
 
 // Tambahkan event listener untuk tombol toggle
 darkModeToggle.addEventListener('click', toggleDarkMode);
+
+// ----------------------------------------------------------- fitur bahasa -----------------------------------------------
