@@ -4,6 +4,79 @@
   font-family: 'Poppins', sans-serif;
   background-color: #f8f4f4;
 }
+
+.modal-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+body.dark-mode .modal-content {
+  background-color: #292929; /* Warna latar belakang hitam atau abu-abu gelap */
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode .isi-modal {
+  color: #ffffff; /* Warna teks putih */
+}
+
+@media only screen and (min-width: 992px) {
+  .modal-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+}
+
+/* Stil dasar untuk mode gelap */
+body.dark-mode {
+  background-color: #171616; /* Warna latar belakang hitam atau abu-abu gelap */
+  color: #ffffff; /* Warna teks putih */
+}
+body.dark-mode .makanan .card {
+  background-color: #2e2e2e; /* Warna latar belakang hitam atau abu-abu gelap */
+  color: #ffffff; /* Warna teks putih */
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-moon {
+  color: #f1c40f;
+}
+
+.bi-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 html {
   margin: 0;
   border: 0;
@@ -356,7 +429,7 @@ html {
 
   background: #920d0d;
   border-radius: 34px;
-  border: 2px white solid;
+
   backdrop-filter: blur(2px);
 }
 .profil-judul {
@@ -375,12 +448,19 @@ html {
   font-size: 20px;
   font-weight: 600;
 }
+
+body.dark-mode .profil-subjudul {
+  color: #fff; /* Warna teks putih */
+}
 .profil-isi {
   color: #000;
   font-size: 12px;
   font-weight: 500;
   line-height: 13px; /* 150% */
   margin-bottom: 30px;
+}
+body.dark-mode .profil-isi {
+  color: #fff; /* Warna teks putih */
 }
 
 .profil-tulisan {
@@ -397,7 +477,7 @@ html {
     height: 44px;
     background: #920d0d;
     border-radius: 34px;
-    border: 2px white solid;
+
     backdrop-filter: blur(2px);
   }
   .profil-judul {
@@ -426,7 +506,7 @@ html {
 @media only screen and (min-width: 992px) {
   .profil-img {
     position: absolute;
-    top: -100px;
+    top: -30px;
     left: -14vw;
     width: 900px;
   }
@@ -562,7 +642,7 @@ html {
   height: 44px;
   background: #920d0d;
   border-radius: 34px;
-  border: 2px white solid;
+
   backdrop-filter: blur(2px);
 }
 .rectangle5-manajah {
@@ -570,7 +650,7 @@ html {
   height: 44px;
   background: #920d0d;
   border-radius: 34px;
-  border: 2px white solid;
+  margin-top: 10px;
   backdrop-filter: blur(2px);
 }
 
@@ -590,6 +670,10 @@ html {
   font-weight: 500;
 }
 
+body.dark-mode .upacara-subjudul {
+  color: #fff; /* Warna teks putih */
+}
+
 .upacara-isi {
   color: #000;
 
@@ -597,6 +681,11 @@ html {
   font-style: normal;
   font-weight: 500;
 }
+
+body.dark-mode .upacara-isi {
+  color: #fff; /* Warna teks putih */
+}
+
 .upacara-isi span {
   color: #920d0d;
   font-weight: 700;

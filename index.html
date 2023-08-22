@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <title>Dayak</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
   </head>
   <body class="body">
     <nav class="navbar navbar-expand-lg fixed-top" style="padding: 0px; height: 67px">
@@ -59,10 +59,20 @@
             <li class="nav-item nav-hover-6">
               <a style="padding: 0px" class="nav-link text-black" href="#senjata"><p class="nav-color-6">Senjata</p></a>
             </li>
+
+            <li class="nav-item d-flex align-content-center my-lg-0 my-2">
+              <!-- <button style="padding: 0px" id="dark-mode-toggle">Mode Gelap</button> -->
+              <div class="m-auto">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="checkbox-label">
+                  <i class="bi bi-sun"></i>
+                  <i class="bi bi-moon"></i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+            </li>
           </ul>
         </div>
-
-        <div></div>
       </div>
     </nav>
 
@@ -120,7 +130,7 @@
           </div>
           <div class="col-lg-7">
             <div class="mx-5 profil-tulisan">
-              <div class="rectangle3">
+              <div class="rectangle3 d-flex align-content-center justify-content-center">
                 <p class="profil-judul">profil</p>
               </div>
               <h1 class="profil-subjudul">
@@ -167,7 +177,7 @@
             </div>
             <div class="col-lg-6">
               <div class="upacara1-tulisan">
-                <div class="rectangle5 mt-5 mb-4">
+                <div class="rectangle5 mt-5 mb-4 d-flex align-content-center justify-content-center">
                   <p class="upacara-judul">Upacara Tiwah</p>
                 </div>
                 <h1 class="upacara-subjudul mb-3">
@@ -202,10 +212,11 @@
                           <p class="isi-modal">
                             Upacara Tiwah merupakan sebuah perhelatan adat yang sangat berarti bagi Suku Dayak. Upacara ini memiliki tujuan utama untuk mengantar dan memberi penghormatan terakhir kepada roh orang yang telah berpulang.
                             Melalui serangkaian ritual dan pementasan, upacara Tiwah menciptakan suasana yang penuh makna dan semangat bagi komunitas Dayak. Dalam prosesi upacara Tiwah, berbagai ritus, tarian, dan irama alat musik
-                            tradisional Suku Dayak menjadi bagian tak terpisahkan. Ritual ini adalah cara mereka menyampaikan doa dan harapan agar roh orang yang telah meninggal dijaga oleh roh para leluhur. Oleh karena itu, kesakralan
-                            upacara Tiwah sebanding dengan dua upacara yang telah dijelaskan sebelumnya. Setelah doa dan harapan telah diungkapkan kepada roh para leluhur, barulah tulang-belulang orang yang telah meninggal akan ditempatkan
-                            dengan penuh kehormatan. Tempat ini dikenal sebagai "Sandung," sebuah rumah kecil yang khusus dibangun sebagai tempat persemayaman. Selama upacara berlangsung, irama alat musik tradisional terus mengalun,
-                            menciptakan suasana yang khusyuk dan berfokus.
+                            tradisional Suku Dayak menjadi bagian tak terpisahkan.
+                            <img src="images/modal-tiwah.jpg" alt="tiwah" class="modal-img my-2" />
+                            Ritual ini adalah cara mereka menyampaikan doa dan harapan agar roh orang yang telah meninggal dijaga oleh roh para leluhur. Oleh karena itu, kesakralan upacara Tiwah sebanding dengan dua upacara yang telah
+                            dijelaskan sebelumnya. Setelah doa dan harapan telah diungkapkan kepada roh para leluhur, barulah tulang-belulang orang yang telah meninggal akan ditempatkan dengan penuh kehormatan. Tempat ini dikenal sebagai
+                            "Sandung," sebuah rumah kecil yang khusus dibangun sebagai tempat persemayaman. Selama upacara berlangsung, irama alat musik tradisional terus mengalun, menciptakan suasana yang khusyuk dan berfokus.
                           </p>
                         </div>
                       </div>
@@ -222,7 +233,7 @@
           <div id="parent" class="row">
             <div id="a" class="col-lg-6">
               <div class="upacara1-tulisan">
-                <div class="rectangle5-manajah mt-5 mb-4">
+                <div class="rectangle5-manajah mt-5 mb-4 d-flex align-content-center justify-content-center">
                   <p class="upacara-judul">Upacara Manajah Anatang</p>
                 </div>
                 <h1 class="upacara-subjudul mb-3">
@@ -257,7 +268,8 @@
                           <p class="isi-modal">
                             Upacara Manajah Antang memiliki peran yang signifikan dalam menghadapi situasi perang bagi Suku Dayak. Dalam konteks ini, upacara ini menjadi suatu langkah strategis untuk mendapatkan petunjuk yang penting
                             terkait dengan keberadaan musuh yang sulit terdeteksi. Melalui rangkaian upacara ini, Suku Dayak berharap dapat mengungkap keberadaan musuh yang selama ini disembunyikan. Salah satu aspek kunci dari upacara
-                            Manajah Antang adalah panggilan kepada roh-roh leluhur melalui burung Antang. Burung ini dianggap memiliki kemampuan untuk memberikan petunjuk berharga kepada komunitas, dan dalam upacara ini, mereka diharapkan
+                            Manajah Antang adalah panggilan kepada roh-roh leluhur melalui burung Antang.
+                            <img src="images/modal-manajah.jpg" alt="tiwah" class="modal-img my-2" /> Burung ini dianggap memiliki kemampuan untuk memberikan petunjuk berharga kepada komunitas, dan dalam upacara ini, mereka diharapkan
                             memberi tahu di mana musuh berada. Selain menjadi alat strategis dalam konteks perang, upacara Manajah Antang juga memiliki dimensi spiritual yang dalam, memperkuat hubungan antara manusia dengan roh-roh leluhur
                             serta alam sekitar.
                           </p>
@@ -282,7 +294,7 @@
             </div>
             <div class="col-lg-6">
               <div class="upacara1-tulisan">
-                <div class="rectangle5 mt-5 mb-4">
+                <div class="rectangle5 mt-5 mb-4 d-flex align-content-center justify-content-center">
                   <p class="upacara-judul">Upacara Tariu</p>
                 </div>
                 <h1 class="upacara-subjudul mb-3">
@@ -318,11 +330,11 @@
                           <p class="isi-modal">
                             Upacara Tariu adalah salah satu upacara adat yang dilakukan oleh Suku Dayak di Kalimantan. Tariu merupakan ritual atau perayaan yang diadakan oleh Suku Dayak untuk menghormati roh-roh leluhur dan alam. Upacara
                             Tariu biasanya diadakan pada waktu yang telah ditentukan dalam tradisi Suku Dayak, dan tujuannya adalah untuk meminta berkah, keselamatan, dan hasil panen yang melimpah. Dalam upacara Tariu, Suku Dayak biasanya
-                            mengenakan pakaian adat dan menghiasi diri dengan ornamen tradisional. Mereka melakukan tarian khas yang disertai dengan nyanyian dan musik tradisional. Tarian ini memiliki makna spiritual yang dalam dan
-                            melibatkan keselarasan dengan alam dan roh-roh leluhur. Selama upacara Tariu, juga dilakukan berbagai ritual dan pengorbanan sebagai wujud penghormatan kepada roh-roh leluhur dan alam. Orang-orang Suku Dayak
-                            percaya bahwa dengan melakukan upacara ini dengan sungguh-sungguh, mereka akan mendapatkan berkah dan perlindungan dari roh-roh leluhur serta keselamatan bagi komunitas mereka. Upacara Tariu tidak hanya merupakan
-                            perayaan keagamaan, tetapi juga menjadi sarana mempertahankan identitas budaya dan mengenang warisan leluhur. Melalui tarian, nyanyian, dan ritual, Suku Dayak menjaga tradisi dan nilai-nilai leluhur tetap hidup
-                            dalam kehidupan modern.
+                            mengenakan pakaian adat dan menghiasi diri dengan ornamen tradisional. <img src="images/modal-tariu.jpg" alt="tariu" class="modal-img my-2" /> Mereka melakukan tarian khas yang disertai dengan nyanyian dan musik
+                            tradisional. Tarian ini memiliki makna spiritual yang dalam dan melibatkan keselarasan dengan alam dan roh-roh leluhur. Selama upacara Tariu, juga dilakukan berbagai ritual dan pengorbanan sebagai wujud
+                            penghormatan kepada roh-roh leluhur dan alam. Orang-orang Suku Dayak percaya bahwa dengan melakukan upacara ini dengan sungguh-sungguh, mereka akan mendapatkan berkah dan perlindungan dari roh-roh leluhur serta
+                            keselamatan bagi komunitas mereka. Upacara Tariu tidak hanya merupakan perayaan keagamaan, tetapi juga menjadi sarana mempertahankan identitas budaya dan mengenang warisan leluhur. Melalui tarian, nyanyian, dan
+                            ritual, Suku Dayak menjaga tradisi dan nilai-nilai leluhur tetap hidup dalam kehidupan modern.
                           </p>
                         </div>
                       </div>
@@ -437,22 +449,24 @@
                     tidak bisa tidur karena hatinya sangat gelisah. Ketika ia menoleh kepada istrinya yang sedang tertidur pulas, ia sangat terkejut. Seekor lipan yang tubuhnya bersinar putih keluar dari kepala istrinya. Lipan itu merayap
                     turun dan keluar dari rumah. Merasa penasaran, sang suami mengikuti ke mana lipan itu pergi. Lipan masuk ke sebuah lubang kecil di dekat rumahnya dan tidak keluar-keluar lagi. Keesokan paginya, sang suami menceritakan
                     kejadian aneh itu kepada istrinya. Cerita Dongeng Rakyat Dari Kalimantan Barat “Ibu pun semalam bermimpi aneh Pak. Ibu seperti berada di dekat sebuah danau. Tiba-tiba, ibu melihat sekor landak raksasa di tengah danau.
-                    Landak itu berbulu kuning keemasan. Apakah mimpiku ini ada hubungannya dengan yang Bapak lihat semalam? Mungkin itu suatu pertanda baik, Pak. Bagaimana kalau kita tengok saja lubang tempat lipan itu bersembunyi?” usul
-                    istrinya. “Benar juga, marl kita dekati lubang itu,” ujar suaminya. Suami istri ini pun mendekati lubang tempat lipan itu menghilang. Sang suami merogohkan tangannya ke dalam lubang. la merasakan tangannya menyentuh
-                    sesuatu, ditariknya benda tersebut. Suami istri ini terkejut bukan main, benda yang didapat dari lubang tersebut adalah sebuah patung landak yang terbuat dari emas. “Kita bawa pulang saja patung landak ini, Pak. Siapa
-                    tahu membawa kebaikan untuk kita,” kata sang istri. Patung landak itu pun mereka simpan dengan baik. “Jika kita jual patung landak itu, pasti kehidupan kita jauh lebih baik, Pak” ujar sang istri “Sabar Bu, kita simpan
-                    saja dulu. Siapa tahu ada petunjuk tentang patung landak itu,” kata sang swami dengan tenang. Malamnya, petani itu bermimpi didatangi oleh seekor landak emas raksasa. “Tuan, biarkanlah aku tinggal bersamamu. Aku berjanji
-                    akan mengabulkan segala permintaanmu,” kata landak itu. “Bagaimana caranya?” tanya sang swami. “Tuan cukup mengelus kepala patung landak itu dan meminta sesuatu, kemudian akhiri dengan mengelusnya lagi. Aku akan
-                    mengajarkan mantranya;” kata landak raksasa. Landak raksasa itu mengucapkan mantra. Sang suami menghafalkannya dalam hati. Paginya, ia terbangun dan menceritakan hal tersebut kepada istrinya. Kemudian, petani itu
-                    mengusap kepala patung landak dan mengucapkan mantra. “Berikanlah aku beras yang banyak,” kata petani itu yang kemudian menutupnya lagi dengan mantra. Ajaib, butiran beras mengalir deras dari mulut patung landak
-                    tersebut. Kemudian petani tersebut mengulangi membaca mantra, kemudian meminta perhiasan dan kebutuhan pokok. Patung landak tersebut memenuhi segala permintaannya. Suami istri tersebut menjadi kaya raya. Mereka berbagi
-                    kepada semua tetangganya, sehingga kehidupan kampung itu menjadi lebih balk. Kekayaan si petani memancing seorang perampok untuk datang mengintai. Akhirnya, perampok itu mengetahui dari mana datangnya kekayaan tersebut.
-                    Ia berhasil mengintip si petani mengelus patung landak emas itu dan membaca mantra. Malam harinya, ia berhasil mencuri patung landak tersebut dan membawa ke desanya yang bernama Desa Ngabang. Desa tersebut sedang dilanda
-                    kekeringan. Bahkan, untuk kebutuhan air yang pokok saja sudah tidak ada. Perampok tadi dengan bangganya mengumpulkan warga, “Tenang Saudara-Saudara. Aku akan menolong kallan dari kekeringan ini,” ujar sang perampok.
-                    Lalu, ia mengusap patung landak itu dan membaca mantra seperti yang ia dengar di rumah petani. Seketika saja, air deras menyembur dari mulut landak. Warga bersuka cita. Namun, air tersebut terus saja mengalir deras
-                    membuat semua orang kewalahan. Lama kelamaan air menggenangi desa. Perampok tersebut tidak bisa menghentikannya, karena ia tidak tahu mantra untuk menghentikan permintaannya kepada patung landak tersebut. Patung landak
-                    tersebut terus saja mengeluarkan air. Akhirnya, Desa Ngabang tenggelam dan tidak bisa lagi menampung air, sehingga mengalirlah air keluar desa yang kemudian menjadi sebuah sungai besar. Oleh masyarakat setempat, sungai
-                    tersebut dinamai Sungai Landak. Sungai Landak mengalir di tengah-tengah Kota Ngabang, Kabupaten Landak, Kalimantan Barat.
+                    Landak itu berbulu kuning keemasan.
+                    <img src="images/modal-landak.jpg" alt="modal-landak.jpg" class="modal-img my-2" />
+                    Apakah mimpiku ini ada hubungannya dengan yang Bapak lihat semalam? Mungkin itu suatu pertanda baik, Pak. Bagaimana kalau kita tengok saja lubang tempat lipan itu bersembunyi?” usul istrinya. “Benar juga, marl kita
+                    dekati lubang itu,” ujar suaminya. Suami istri ini pun mendekati lubang tempat lipan itu menghilang. Sang suami merogohkan tangannya ke dalam lubang. la merasakan tangannya menyentuh sesuatu, ditariknya benda tersebut.
+                    Suami istri ini terkejut bukan main, benda yang didapat dari lubang tersebut adalah sebuah patung landak yang terbuat dari emas. “Kita bawa pulang saja patung landak ini, Pak. Siapa tahu membawa kebaikan untuk kita,”
+                    kata sang istri. Patung landak itu pun mereka simpan dengan baik. “Jika kita jual patung landak itu, pasti kehidupan kita jauh lebih baik, Pak” ujar sang istri “Sabar Bu, kita simpan saja dulu. Siapa tahu ada petunjuk
+                    tentang patung landak itu,” kata sang swami dengan tenang. Malamnya, petani itu bermimpi didatangi oleh seekor landak emas raksasa. “Tuan, biarkanlah aku tinggal bersamamu. Aku berjanji akan mengabulkan segala
+                    permintaanmu,” kata landak itu. “Bagaimana caranya?” tanya sang swami. “Tuan cukup mengelus kepala patung landak itu dan meminta sesuatu, kemudian akhiri dengan mengelusnya lagi. Aku akan mengajarkan mantranya;” kata
+                    landak raksasa. Landak raksasa itu mengucapkan mantra. Sang suami menghafalkannya dalam hati. Paginya, ia terbangun dan menceritakan hal tersebut kepada istrinya. Kemudian, petani itu mengusap kepala patung landak dan
+                    mengucapkan mantra. “Berikanlah aku beras yang banyak,” kata petani itu yang kemudian menutupnya lagi dengan mantra. Ajaib, butiran beras mengalir deras dari mulut patung landak tersebut. Kemudian petani tersebut
+                    mengulangi membaca mantra, kemudian meminta perhiasan dan kebutuhan pokok. Patung landak tersebut memenuhi segala permintaannya. Suami istri tersebut menjadi kaya raya. Mereka berbagi kepada semua tetangganya, sehingga
+                    kehidupan kampung itu menjadi lebih balk. Kekayaan si petani memancing seorang perampok untuk datang mengintai. Akhirnya, perampok itu mengetahui dari mana datangnya kekayaan tersebut. Ia berhasil mengintip si petani
+                    mengelus patung landak emas itu dan membaca mantra. Malam harinya, ia berhasil mencuri patung landak tersebut dan membawa ke desanya yang bernama Desa Ngabang. Desa tersebut sedang dilanda kekeringan. Bahkan, untuk
+                    kebutuhan air yang pokok saja sudah tidak ada. Perampok tadi dengan bangganya mengumpulkan warga, “Tenang Saudara-Saudara. Aku akan menolong kallan dari kekeringan ini,” ujar sang perampok. Lalu, ia mengusap patung
+                    landak itu dan membaca mantra seperti yang ia dengar di rumah petani. Seketika saja, air deras menyembur dari mulut landak. Warga bersuka cita. Namun, air tersebut terus saja mengalir deras membuat semua orang kewalahan.
+                    Lama kelamaan air menggenangi desa. Perampok tersebut tidak bisa menghentikannya, karena ia tidak tahu mantra untuk menghentikan permintaannya kepada patung landak tersebut. Patung landak tersebut terus saja mengeluarkan
+                    air. Akhirnya, Desa Ngabang tenggelam dan tidak bisa lagi menampung air, sehingga mengalirlah air keluar desa yang kemudian menjadi sebuah sungai besar. Oleh masyarakat setempat, sungai tersebut dinamai Sungai Landak.
+                    Sungai Landak mengalir di tengah-tengah Kota Ngabang, Kabupaten Landak, Kalimantan Barat.
                   </p>
                 </div>
               </div>
@@ -480,19 +494,20 @@
                   <p class="isi-modal">
                     Dalam sejarah, sejauh ini senjata populer yang dipakai oleh pasukan Indonesia ketika melawan pasukan Belanda adalah bambu runcing. Romantisme terhadap bambu runcing sangat kuat sehingga melupakan senjata lain yang tidak
                     kalah menarik untuk dibahas. Tepatnya di Pulau Kalimantan. Pulau terluas di Indonesia ini menyimpan kekayaan yang sampai sekarang masih dilestarikan oleh Suku Dayak. Pada masa Belanda, Suku Dayak melakukan perlawanan
-                    dengan senjata khasnya, sehingga disebut sebagai pasukan hantu. Kisah senjata mematikan dan pasukan hantu di Suku Dayak inilah yang menarik untuk ditelisik lebih jauh. Berikut adalah ulasan lengkapnya. Pada masa
-                    penjajahan, pasukan Belanda sangat superior ketimbang pasukan tanah air, khususnya Suku Dayak. Hal ini karena Belanda mempunyai senjata yang memadai untuk melakukan peperangan dan intimidasi. Namun, berbeda ceritanya
-                    ketika Belanda masuk ke pedalaman Kalimantan. Di sana terdapat Suku Dayak yang jauh lebih ganas ketimbang pasukan Belanda. Pasukan Dayak Kalimantan memiliki senjata ampuh yang sangat mematikan. Senjata ini sampai
-                    sekarang melegenda dan menjadi salah satu senjata yang ditakuti oleh pasukan Belanda. Senjata yang melegenda dan bisa memukul mundur pasukan Belanda tersebut adalah sumpit atau yang juga disebut sebagai damek. Suku Dayak
-                    mempunyai senjata yang dikenal sebagai sumpit sebagai alat untuk berburu. Sumpit itu bukan sumpit biasa. Sumpit yang digunakan oleh pasukan Dayak sebagai senjata adalah sumpit beracun. Pasukan Dayak akan mengolesi mata
-                    anak sumpit dengan getah pohon ipuh atau pohon iren yang beracun. Sumpit terbuat dari pohon kayu yang memiliki bentuk bulat dengan panjang yang mencapai 2 meter. Diameter batangnya 2 cm, dan diameter lubang 1 cm.
-                    Sedangkan peluru sumpit (yang diolesi racun) terbuat dari bambu atau sejenis pohon palm tua. Senjata sumpit beracun milik Suku Dayak tidak hanya mematikan dengan racun. Akan tetapi juga membuat orang yang terkena menjadi
-                    kejang-kejang dengan cara yang mengerikan. Orang yang terkena anak sumpit biasanya akan tewas dalam hitungan menit. Mereka akan kejang-kejang sambil mengeluarkan kotoran atau air kencing sebelum kemudian tewas. Biasanya
-                    anak sumpit ini akan diarahkan ke leher target. Dengan begitu maka lawan akan tewas dengan cepat dan sadis. Pasukan yang disebut sebagai pasukan hantu di sini adalah Suku Dayak. Ada dua alasan mengapa pasukan Suku Dayak
-                    ini sangat menakutkan dan mematikan sehingga disebut sebagai pasukan hantu. Pertama, Suku Dayak memiliki pemahaman tentang hutan yang sangat baik. Mereka adalah penduduk asli Kalimantan, sehingga pasukan Dayak sangat
-                    lihai dalam menguasai medan peperangan. Kedua, pasukan Suku Dayak tentu saja memiliki senjata yang mematikan yaitu sumpit. Berkat kesenyapan dan kemampuan Suku Dayak dalam mematikan lawan, maka pasukan tersebut cukup
-                    pantas jika dinamakan pasukan hantu. Berkat keganasan dan kengerian senjata yang dimiliki oleh Suku Dayak, maka masyarakat pedalaman Kalimantan bisa hidup dengan nyaman tanpa intervensi dari orang asing. Kemampuan Suku
-                    Dayak dalam menyerang musuh dapat membuat pasukan Belanda tidak menyerang pedalaman Kalimantan. Mereka hanya ada untuk menguasai kota-kota besar.
+                    dengan senjata khasnya, sehingga disebut sebagai pasukan hantu. Kisah senjata mematikan dan pasukan hantu di Suku Dayak inilah yang menarik untuk ditelisik lebih jauh. Berikut adalah ulasan lengkapnya.
+                    <img src="images/modal-hantu.jpg" alt="modal-hantu.jpg" class="modal-img my-2" />
+                    Pada masa penjajahan, pasukan Belanda sangat superior ketimbang pasukan tanah air, khususnya Suku Dayak. Hal ini karena Belanda mempunyai senjata yang memadai untuk melakukan peperangan dan intimidasi. Namun, berbeda
+                    ceritanya ketika Belanda masuk ke pedalaman Kalimantan. Di sana terdapat Suku Dayak yang jauh lebih ganas ketimbang pasukan Belanda. Pasukan Dayak Kalimantan memiliki senjata ampuh yang sangat mematikan. Senjata ini
+                    sampai sekarang melegenda dan menjadi salah satu senjata yang ditakuti oleh pasukan Belanda. Senjata yang melegenda dan bisa memukul mundur pasukan Belanda tersebut adalah sumpit atau yang juga disebut sebagai damek.
+                    Suku Dayak mempunyai senjata yang dikenal sebagai sumpit sebagai alat untuk berburu. Sumpit itu bukan sumpit biasa. Sumpit yang digunakan oleh pasukan Dayak sebagai senjata adalah sumpit beracun. Pasukan Dayak akan
+                    mengolesi mata anak sumpit dengan getah pohon ipuh atau pohon iren yang beracun. Sumpit terbuat dari pohon kayu yang memiliki bentuk bulat dengan panjang yang mencapai 2 meter. Diameter batangnya 2 cm, dan diameter
+                    lubang 1 cm. Sedangkan peluru sumpit (yang diolesi racun) terbuat dari bambu atau sejenis pohon palm tua. Senjata sumpit beracun milik Suku Dayak tidak hanya mematikan dengan racun. Akan tetapi juga membuat orang yang
+                    terkena menjadi kejang-kejang dengan cara yang mengerikan. Orang yang terkena anak sumpit biasanya akan tewas dalam hitungan menit. Mereka akan kejang-kejang sambil mengeluarkan kotoran atau air kencing sebelum kemudian
+                    tewas. Biasanya anak sumpit ini akan diarahkan ke leher target. Dengan begitu maka lawan akan tewas dengan cepat dan sadis. Pasukan yang disebut sebagai pasukan hantu di sini adalah Suku Dayak. Ada dua alasan mengapa
+                    pasukan Suku Dayak ini sangat menakutkan dan mematikan sehingga disebut sebagai pasukan hantu. Pertama, Suku Dayak memiliki pemahaman tentang hutan yang sangat baik. Mereka adalah penduduk asli Kalimantan, sehingga
+                    pasukan Dayak sangat lihai dalam menguasai medan peperangan. Kedua, pasukan Suku Dayak tentu saja memiliki senjata yang mematikan yaitu sumpit. Berkat kesenyapan dan kemampuan Suku Dayak dalam mematikan lawan, maka
+                    pasukan tersebut cukup pantas jika dinamakan pasukan hantu. Berkat keganasan dan kengerian senjata yang dimiliki oleh Suku Dayak, maka masyarakat pedalaman Kalimantan bisa hidup dengan nyaman tanpa intervensi dari orang
+                    asing. Kemampuan Suku Dayak dalam menyerang musuh dapat membuat pasukan Belanda tidak menyerang pedalaman Kalimantan. Mereka hanya ada untuk menguasai kota-kota besar.
                   </p>
                 </div>
               </div>
@@ -522,28 +537,32 @@
                     Sementara itu, Bujang Beji adalah orang yang sakti, tetapi serakah dan sombong. Keduanya mempunyai mata pencaharian sebagai pencari ikan dan mempunyai wilayah sendiri-sendiri. Tumenggung Marubai dan pengikutnya mencari
                     ikan di Sungai Simpang Melawi, sedangkan Bujang beji di Sungal Simpang Kapuas. Dongeng Rakyat Kalimantan Barat Kisah Bujang Beji Wilayah Sungai Simpang Melawi mempunyai banyak sekali jenis ikan, lebih banyak daripada
                     ikan-ikan di Sungal Simpang Kapuas. ltulah sebabnya, basil tangkapan Tumenggung Marubai selalu lebih banyak daripada Bujang Beji. Tumenggung Melawi menggunakan bubu atau sejenis perangkap besar untuk menangkap ikan.
-                    Setelah terkumpul dalam perangkap, ia hanya memilih ikan-ikan yang besar, sementara ikan-ikan kecil dilepaskan kembali sehingga ikan-ikan di Sungal Simpang Melawi selalu berkembang biak dan tidak pernah habis. Melihat
-                    hasil tangkapan Tumenggung Marubai, Bujang Beji merasa iri. la pun mencari cara mengalahkan Tumenggung Melawi. Lalu, ia menempuh cara yang kurang baik. la mulai menangkap ikan dengan cara menuba, yaitu meracun ikan-ikan
-                    tersebut dengan tuba, yaitu sejenis racun ikan dari akar tumbuh-tumbuhan hutan yang sangat memabukkan. Pada awalnya, ia mendapatkan ikan yang sangat banyak. Lebih banyak dari hasil tangkapan Tumenggung Marubai. Namun,
-                    karena cara yang digunakan adalah membunuh ikan-ikan dengan racun, lama-kelamaan ikan-ikan di sungai Simpang Kapuas menjadi sangat berkurang. Sementara itu, Tumenggung Marubai tetap mendapatkan banyak hasil tangkapan.
-                    Ini membuat Bujang Beji menjadi semakin iri. “lni tidak bisa dibiarkan!” pikir Bujang Beji, “Harus ada cara supaya Tumenggung Marubai tidak mendapatkan banyak ikan.” Kemudian, Bujang Beji mulai berpikir keras. la
-                    menemukan cara yang menurutnya terbaik. “Aku harus menutup aliran Sungai Melawi dengan sebuah batu besar di hulu sungai, dengan demikian ikan-ikan akan menetap di sana,” pikir Bujang Beji.
+                    Setelah terkumpul dalam perangkap, ia hanya memilih ikan-ikan yang besar, sementara ikan-ikan kecil dilepaskan kembali sehingga ikan-ikan di Sungal Simpang Melawi selalu berkembang biak dan tidak pernah habis.
+
+                    <img src="images/modal-bujang1.jpg" alt="modal-bujang1.jpg" class="modal-img my-2" />
+                    Melihat hasil tangkapan Tumenggung Marubai, Bujang Beji merasa iri. la pun mencari cara mengalahkan Tumenggung Melawi. Lalu, ia menempuh cara yang kurang baik. la mulai menangkap ikan dengan cara menuba, yaitu meracun
+                    ikan-ikan tersebut dengan tuba, yaitu sejenis racun ikan dari akar tumbuh-tumbuhan hutan yang sangat memabukkan. Pada awalnya, ia mendapatkan ikan yang sangat banyak. Lebih banyak dari hasil tangkapan Tumenggung Marubai.
+                    Namun, karena cara yang digunakan adalah membunuh ikan-ikan dengan racun, lama-kelamaan ikan-ikan di sungai Simpang Kapuas menjadi sangat berkurang. Sementara itu, Tumenggung Marubai tetap mendapatkan banyak hasil
+                    tangkapan. Ini membuat Bujang Beji menjadi semakin iri. “lni tidak bisa dibiarkan!” pikir Bujang Beji, “Harus ada cara supaya Tumenggung Marubai tidak mendapatkan banyak ikan.” Kemudian, Bujang Beji mulai berpikir keras.
+                    la menemukan cara yang menurutnya terbaik. “Aku harus menutup aliran Sungai Melawi dengan sebuah batu besar di hulu sungai, dengan demikian ikan-ikan akan menetap di sana,” pikir Bujang Beji.
                     <br />
 
                     Bujang Beji bermaksud menggunakan puncak Bukit Batu di Nanga Silat, Kapuas Hulu untuk menyumbat Sungai Melawi. Dengan kesaktiannya, ia memotong puncak Bukit Batu tersebut dan membawanya menggunakan tujuh lembar daun
                     ilalang. Ketika sedang membawa bukit batu tersebut, tiba-tiba terdengar suara gadis-gadis sedang menertawakannya. Mereka adalah dewi-dewi di negeri khayangan. Ketika sampai di persimpangan antara Kapuas dan Malawi,
                     Bujang Beji melongok ke atas untuk melihat siapa yang menertawakannya. Tanpa sengaja, kakinya menginjak duri beracun hingga la melompat dan menjerit kesakitan. Akibatnya, tujuh lembar daun ilalang yang dipakainya
-                    terputus. Puncak bukit batu tersebut pun terjatuh di sebuah aliran sungai yang disebut dengan jetak. Bujang Beji sangat marah kepada dewi-dewi khayangan yang menertawakannya. “Aku akan membalas kalian!” teriaknya sambil
-                    menghentakkan kakinya yang tertusuk duri beracun di salah satu bukit di dekatnya. Kemudian, Bujang Beji berusaha mengangkat Bukit Batu yang sudah terendam di jetak dengan cara mencongkelnya menggunakan sebuah bukit
-                    memanjang. Namun, karena bukit batu tersebut sudah melekat di jetak, usahanya tidak berhasil. Bukit memanjang itu pun patah. Patahannya kini dinamakan Bukit Liut. Dengan demikian, gagallah usaha Bujang Beji menutup
-                    Sungai Melawi. Semua karena dewi-dewi khayangan. Aku akan membalas dendam,” kata Bujang Benji. Bujang Benji merencanakan untuk menggapai negeri khayangan dengan menggunakan pohon kumpang mambu, yaitu sejenis pohon kayu
-                    raksasa yang ujungnya menjulang ke langit. la mulai menanam pohon kumpang mambu. Dalam beberapa hari saja pohon tersebut sudah tumbuh tinggi sekali, sampai puncaknya tidak terlihat mata. Sebelum memanjat kumpang mambu,
-                    Bujang Beji melakukan ritual adat, yaitu memberi sesaji kepada roh-roh halus dan binatang-binatang di sekitarnya agar tidak mengganggu usahanya untuk mencapai negeri khayangan. Namun, ada dua jenis hewan yang lupa diberi
-                    sesaji oleh Bujang Beji, mereka adalah kelompok rayap dan beruang. Rayap dan Beruang merasa marah, karena tidak diberi sesaji. Mereka pun berunding untuk menggagalkan usaha Bujang Beji. “Kita gerogoti saja pohon kumpang
-                    mambu itu hingga terputus!” usul beruang. Kelompok Rayap pun setuju. Ketika Bujang Beji mulai memanjat pohon kumpang mambu, segerombolan rayap dan beruang datang menyerbu dan menggerogoti pohon tersebut di bagian bawah
-                    hingga pohon tersebut terputus. Pada saat itu, Bujang Beji sudah hampir mencapai negeri khayangan. la pun terhempas jatuh ke tanah dan tewas seketika. Dengan demikian, usaha Bujang Beji mencelakai dewi-dewi khayangan pun
-                    gagal. Tumenggung Marubai pun terhindar dari niat jahat Bujang Beji. Sementara itu, puncak Bukit Nanga Silat yang terlepas dari pukulan Bujang Beji menjelma menjadi Bukit Kelam. Kini Bukit Kelam menjadi salah satu objek
-                    wisata di daerah Sintang, Kalimantan Barat, dan menjadi kawasan hutan wisata dengan pemandangan yang sangat indah.
+                    terputus. Puncak bukit batu tersebut pun terjatuh di sebuah aliran sungai yang disebut dengan jetak.
+                    <img src="images/modal-bujang2.jpg" alt="modal-bujang2.jpg" class="modal-img my-2" />
+                    Bujang Beji sangat marah kepada dewi-dewi khayangan yang menertawakannya. “Aku akan membalas kalian!” teriaknya sambil menghentakkan kakinya yang tertusuk duri beracun di salah satu bukit di dekatnya. Kemudian, Bujang
+                    Beji berusaha mengangkat Bukit Batu yang sudah terendam di jetak dengan cara mencongkelnya menggunakan sebuah bukit memanjang. Namun, karena bukit batu tersebut sudah melekat di jetak, usahanya tidak berhasil. Bukit
+                    memanjang itu pun patah. Patahannya kini dinamakan Bukit Liut. Dengan demikian, gagallah usaha Bujang Beji menutup Sungai Melawi. Semua karena dewi-dewi khayangan. Aku akan membalas dendam,” kata Bujang Benji. Bujang
+                    Benji merencanakan untuk menggapai negeri khayangan dengan menggunakan pohon kumpang mambu, yaitu sejenis pohon kayu raksasa yang ujungnya menjulang ke langit. la mulai menanam pohon kumpang mambu. Dalam beberapa hari
+                    saja pohon tersebut sudah tumbuh tinggi sekali, sampai puncaknya tidak terlihat mata. Sebelum memanjat kumpang mambu, Bujang Beji melakukan ritual adat, yaitu memberi sesaji kepada roh-roh halus dan binatang-binatang di
+                    sekitarnya agar tidak mengganggu usahanya untuk mencapai negeri khayangan. Namun, ada dua jenis hewan yang lupa diberi sesaji oleh Bujang Beji, mereka adalah kelompok rayap dan beruang. Rayap dan Beruang merasa marah,
+                    karena tidak diberi sesaji. Mereka pun berunding untuk menggagalkan usaha Bujang Beji. “Kita gerogoti saja pohon kumpang mambu itu hingga terputus!” usul beruang. Kelompok Rayap pun setuju. Ketika Bujang Beji mulai
+                    memanjat pohon kumpang mambu, segerombolan rayap dan beruang datang menyerbu dan menggerogoti pohon tersebut di bagian bawah hingga pohon tersebut terputus. Pada saat itu, Bujang Beji sudah hampir mencapai negeri
+                    khayangan. la pun terhempas jatuh ke tanah dan tewas seketika. Dengan demikian, usaha Bujang Beji mencelakai dewi-dewi khayangan pun gagal. Tumenggung Marubai pun terhindar dari niat jahat Bujang Beji. Sementara itu,
+                    puncak Bukit Nanga Silat yang terlepas dari pukulan Bujang Beji menjelma menjadi Bukit Kelam. Kini Bukit Kelam menjadi salah satu objek wisata di daerah Sintang, Kalimantan Barat, dan menjadi kawasan hutan wisata dengan
+                    pemandangan yang sangat indah.
                   </p>
                 </div>
               </div>
@@ -569,20 +588,21 @@
                   </h1>
                   <p class="isi-modal">
                     Asal-usul Pulau Nusa Alkisah, dahulu kala ada seseorang bernama Nusa yang tinggal di sebuah desa, di tepi Sungai Kahayan. Di desa itu, Nusa hidup bersama istri dan adik iparnya. Nusa dan adik iparnya bekerja bercocok
-                    tanam di sebuah ladang kecil di dekat rumahnya. Mereka bekerja keras hingga hasil panennya pun melimpah. Namun, suatu hari desa tempat tinggal Nusa dan keluarganya dilanda kekeringan. Akhirnya, Nusa dan adik iparnya
-                    pergi berburu di Sungai Ruhan, sebuah sungai kecil di aliran Sungai Kahayan. Di perjalanan, mereka terhalang pohon yang tumbang ke arah sungai. Mereka pun menepi dan mencoba menebang pohon itu. Karena hari semakin sore,
-                    akhirnya mereka membagi tugas, adik ipar Nusa meneruskan menebang pohon, sementara Nusa masuk ke hutan untuk berburu. Dalam hutan, Nusa menemukan sebuah telur yang besar kemudian dibawanya telur raksasa itu pulang ke
-                    rumah. Istri Nusa sempat khawatir karena telur yang dibawa Nusa sangat besar, apalagi telur itu tidak diketahui berasal dari hewan apa. Menurutnya, mereka sebaiknya tidak memakan telur itu. Tapi Nusa berpendapat lain dan
-                    tetap ingin memakan telur raksasa itu. Nusa pun merebus telur itu dan memakannya sampai habis. Namun suatu hal terjadi, tubuh Nusa dipenuhi bercak merah yang terasa sakit dan gatal. Saat digaruk, bercak itu berubah
-                    menjadi sisik. Tubuh Nusa membesar dan terasa panas. Ia meminta dimasukkan ke dalam sungai. Dengan bantuan warga sekitar, adik ipar Nusa membawa Nusa ke Sungai Kahayan yang sedang mengering. Di dalam air, tubuh Nusa
-                    berubah menjadi Naga yang besar. Nusa kemudian berpesan pada istrinya untuk mengajak adiknya dan warga desa untuk mengungsi, karena malam itu akan turun hujan badai. Begitu lebatnya hujan badai di malam harinya, sampai
-                    tubuh Nusa yang sudah menjadi naga besar terbawa arus sungai, hingga akhirnya terdampar dekat muara sungai. Kedatangan Nusa membuat ikan-ikan di muara menjadi cemas karena mereka menjadi mangsa. Hingga suatu hari, ikan
-                    jelawat dan ikan saluang mencari cara untuk menyelamatkan para ikan agar tak dimangsa Nusa si naga. Para ikan pun menjalankan rencana untuk mengusir Nusa. Salah seekor ikan saluang memberi tahu Nusa bahwa ada naga lain
-                    yang menantangnya, padahal itu hanya akal-akalan para ikan. Keesokan harinya, Nusa bersiap menunggu naga yang menantangnya. Tapi anehnya, hari itu tidak ada ikan-ikan sungai yang lewat. Karena naga yang ditunggu Nusa
-                    tidak kunjung tiba, ia tertidur. Ikan saluang yang sudah mengamati dari kejauhan pun menghampirinya dan membangunkan Nusa, ia mengatakan bahwa musuhnya sudah datang. Nusa pun panik dan langsung mencari di mana musuhnya,
-                    saat melihat ekor, ia langsung menggigitnya. Tapi ternyata Nusa menggigit ekornya sendiri sampai putus! Melihat hal itu, ikan saluang segera memberi tahu ribuan ikan di sungai itu untuk menyerang bagian ekor naga Nusa
-                    yang terluka di tubuhnya. Naga Nusa pun berusaha kabur dari kejaran ribuan ikan itu hingga kelelahan dan akhirnya ia mati. Para ikan memakan naga itu sampai tinggal kerangkanya. Kerangka naga Nusa lama-kelamaan ditumbuhi
-                    semak belukar dan menjadi sebuah pulau. Pulau itu akhirnya dikenal dengan nama Pulau Nusa.
+                    tanam di sebuah ladang kecil di dekat rumahnya. Mereka bekerja keras hingga hasil panennya pun melimpah. Namun, suatu hari desa tempat tinggal Nusa dan keluarganya dilanda kekeringan.
+                    <img src="images/modal-nusa.jpg" alt="modal-nusa.jpg" class="modal-img my-2" />
+                    Akhirnya, Nusa dan adik iparnya pergi berburu di Sungai Ruhan, sebuah sungai kecil di aliran Sungai Kahayan. Di perjalanan, mereka terhalang pohon yang tumbang ke arah sungai. Mereka pun menepi dan mencoba menebang pohon
+                    itu. Karena hari semakin sore, akhirnya mereka membagi tugas, adik ipar Nusa meneruskan menebang pohon, sementara Nusa masuk ke hutan untuk berburu. Dalam hutan, Nusa menemukan sebuah telur yang besar kemudian dibawanya
+                    telur raksasa itu pulang ke rumah. Istri Nusa sempat khawatir karena telur yang dibawa Nusa sangat besar, apalagi telur itu tidak diketahui berasal dari hewan apa. Menurutnya, mereka sebaiknya tidak memakan telur itu.
+                    Tapi Nusa berpendapat lain dan tetap ingin memakan telur raksasa itu. Nusa pun merebus telur itu dan memakannya sampai habis. Namun suatu hal terjadi, tubuh Nusa dipenuhi bercak merah yang terasa sakit dan gatal. Saat
+                    digaruk, bercak itu berubah menjadi sisik. Tubuh Nusa membesar dan terasa panas. Ia meminta dimasukkan ke dalam sungai. Dengan bantuan warga sekitar, adik ipar Nusa membawa Nusa ke Sungai Kahayan yang sedang mengering.
+                    Di dalam air, tubuh Nusa berubah menjadi Naga yang besar. Nusa kemudian berpesan pada istrinya untuk mengajak adiknya dan warga desa untuk mengungsi, karena malam itu akan turun hujan badai. Begitu lebatnya hujan badai
+                    di malam harinya, sampai tubuh Nusa yang sudah menjadi naga besar terbawa arus sungai, hingga akhirnya terdampar dekat muara sungai. Kedatangan Nusa membuat ikan-ikan di muara menjadi cemas karena mereka menjadi mangsa.
+                    Hingga suatu hari, ikan jelawat dan ikan saluang mencari cara untuk menyelamatkan para ikan agar tak dimangsa Nusa si naga. Para ikan pun menjalankan rencana untuk mengusir Nusa. Salah seekor ikan saluang memberi tahu
+                    Nusa bahwa ada naga lain yang menantangnya, padahal itu hanya akal-akalan para ikan. Keesokan harinya, Nusa bersiap menunggu naga yang menantangnya. Tapi anehnya, hari itu tidak ada ikan-ikan sungai yang lewat. Karena
+                    naga yang ditunggu Nusa tidak kunjung tiba, ia tertidur. Ikan saluang yang sudah mengamati dari kejauhan pun menghampirinya dan membangunkan Nusa, ia mengatakan bahwa musuhnya sudah datang. Nusa pun panik dan langsung
+                    mencari di mana musuhnya, saat melihat ekor, ia langsung menggigitnya. Tapi ternyata Nusa menggigit ekornya sendiri sampai putus! Melihat hal itu, ikan saluang segera memberi tahu ribuan ikan di sungai itu untuk
+                    menyerang bagian ekor naga Nusa yang terluka di tubuhnya. Naga Nusa pun berusaha kabur dari kejaran ribuan ikan itu hingga kelelahan dan akhirnya ia mati. Para ikan memakan naga itu sampai tinggal kerangkanya. Kerangka
+                    naga Nusa lama-kelamaan ditumbuhi semak belukar dan menjadi sebuah pulau. Pulau itu akhirnya dikenal dengan nama Pulau Nusa.
                   </p>
                 </div>
               </div>
@@ -600,7 +620,7 @@
           </div>
           <div class="col-lg-6">
             <div class="upacara1-tulisan">
-              <div class="rectangle5 mt-5 mb-4">
+              <div class="rectangle5 mt-5 mb-4 d-flex align-content-center justify-content-center">
                 <p class="upacara-judul">Makanan</p>
               </div>
               <h1 class="upacara-subjudul mb-3">
@@ -610,7 +630,7 @@
               <p class="upacara-isi">Berikut ini adalah makanan khas suku dayak yang menarik dan unik</p>
 
               <br />
-              <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="makanan row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                   <div class="card shadow h-100 w-100">
                     <img src="images/bubur.jpg" class="card-img-top" alt="bubur" />
@@ -656,6 +676,7 @@
               <div class="mx-md-5 mx-2 mt-md-5 mt-1">
                 <h1 class="judul-modal">Bubur Pedas</h1>
                 <p class="isi-modal">
+                  <img src="images/bubur.jpg" alt="" class="modal-img my-2" />
                   Di Kalimantan Barat, bubur pedas biasanya terbuat dari bubur nasi yang dicampur dengan ikan teri, kacang, daun bawang, dan rempah-rempah. Jenis bubur ini berasal dari masyarakat Melayu di Sambas, Kalimantan Barat, dan
                   kemudian diadopsi sebagai hidangan oleh masyarakat Melayu di Sarawak. Bubur pedas umumnya disajikan dengan saus dan kecap untuk menambah citarasa, sering juga ditambahkan perasan jeruk limau. Di Sambas, hidangan ini
                   menjadi populer di kalangan masyarakat. Di Pontianak, bubur pedas biasanya dijual dengan gerobak.
@@ -682,6 +703,7 @@
               <div class="mx-md-5 mx-2 mt-md-5 mt-1">
                 <h1 class="judul-modal">Tempoyak</h1>
                 <p class="isi-modal">
+                  <img src="images/bubur.jpg" alt="tempoyak" class="modal-img my-2" />
                   Tempoyak adalah hidangan khas Indonesia yang menjadi favorit bagi pencinta kuliner yang menggemari cita rasa unik dan berani. Hidangan ini terbuat dari fermentasi daging durian matang, memberikan aroma kuat dan
                   karakteristik yang khas. Setelah daging durian matang diambil, dicampur dengan garam, dan proses fermentasi dilakukan selama beberapa hari atau bahkan minggu. Hal ini memberikan tempoyak cita rasa yang sangat istimewa.
                 </p>
@@ -726,7 +748,7 @@
         <div id="parent" class="row">
           <div id="a" class="col-lg-6">
             <div class="upacara1-tulisan">
-              <div class="rectangle5-manajah mt-5 mb-4">
+              <div class="rectangle5-manajah mt-5 mb-4 d-flex align-content-center justify-content-center">
                 <p class="upacara-judul">Senjata</p>
               </div>
               <h1 class="upacara-subjudul mb-3">
@@ -812,6 +834,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script defer src="	https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

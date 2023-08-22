@@ -52,3 +52,32 @@ function changeBackgroundImage() {
 }
 changeBackgroundImage();
 setInterval(changeBackgroundImage, 3000);
+
+// _____________________________________________________Dark Mode____________________________________________
+
+const darkModeToggle = document.querySelector('#checkbox');
+const body = document.body;
+const checkbox = document.getElementById('checkbox');
+
+// Cek apakah mode gelap telah diaktifkan sebelumnya
+const isDarkMode = localStorage.getItem('dark-mode') === 'true';
+
+// Fungsi untuk mengaktifkan/menonaktifkan mode gelap
+function toggleDarkMode() {
+  // Tambahkan atau hapus kelas "dark-mode" dari elemen <body>
+  body.classList.toggle('dark-mode');
+
+  // Simpan preferensi pengguna di localStorage
+
+  const darkModeEnabled = body.classList.contains('dark-mode');
+  localStorage.setItem('dark-mode', darkModeEnabled);
+}
+
+// Setel mode gelap berdasarkan preferensi pengguna
+if (isDarkMode) {
+  body.classList.add('dark-mode');
+  checkbox.checked = true;
+}
+
+// Tambahkan event listener untuk tombol toggle
+darkModeToggle.addEventListener('click', toggleDarkMode);
