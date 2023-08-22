@@ -754,21 +754,39 @@ body.dark-mode .upacara-isi {
   text-align: center;
   margin: 8px 0px;
 }
+.rumah-1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.rumah-2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.rumah-3:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 
 .rumah-1 {
   width: 110px;
   height: 110px;
   object-fit: cover;
+  transition: transform 0.2s;
+  z-index: 10;
 }
 .rumah-2 {
   width: 110px;
   height: 110px;
   object-fit: cover;
+  transition: transform 0.2s;
+  z-index: 10;
 }
 .rumah-3 {
   width: 110px;
   height: 110px;
   object-fit: cover;
+  transition: transform 0.2s;
+  z-index: 10;
 }
 
 .bg-rumah {
