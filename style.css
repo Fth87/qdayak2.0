@@ -251,7 +251,7 @@ html {
 
 /* _____________________________________________Landing Page_________________________________________________________ */
 .rectangle2 {
-  width: 150px;
+  width: 83px;
   height: 12px;
   background: rgba(230.56, 206.55, 206.55, 0);
   border-radius: 34px;
@@ -266,6 +266,9 @@ html {
   background: #870000;
   border: 3px solid #870000;
   backdrop-filter: blur(2px);
+  font-weight: 700;
+  font-size: 10px;
+
   /* margin-top: 37vh; */
 }
 .Welcome {
@@ -277,22 +280,29 @@ html {
   display: block;
   text-align: center;
 }
+.Welcome1 {
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 0;
+  display: block;
+  text-align: center;
+}
 
 .SukuDayak {
   color: white;
   font-size: 24px;
+
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
-  /* margin-top: 20px; */
+  line-height: 34px;
 }
 .SukuDayak span {
   color: white;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  /* line-height: 80%; */
-  /* margin-top: 20px; */
 }
 
 .Warisan {
@@ -316,9 +326,38 @@ html {
   height: 60px;
 }
 
+.icon-ig {
+  margin-top: 25vh;
+}
+
+.arrow div {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  height: 0;
+  width: auto;
+  /* margin: 0; */
+  /* line-height: 105.75%;  */
+  letter-spacing: 1.4px;
+  transform: rotate(-90deg);
+}
+
+.ket-landing {
+  color: #fff;
+  font-size: 8px;
+  font-weight: 300;
+}
+
 @media only screen and (min-width: 900px) {
+  .ket-landing {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+  }
   .rectangle2 {
-    width: 150px;
+    width: 83px;
     height: 12px;
     background: rgba(230.56, 206.55, 206.55, 0);
     border-radius: 34px;
@@ -333,6 +372,9 @@ html {
     background: #870000;
     border: 3px solid #870000;
     backdrop-filter: blur(2px);
+    font-weight: 700;
+    font-size: 15px;
+
     /* margin-top: 37vh; */
   }
   .Welcome {
@@ -344,22 +386,28 @@ html {
     display: block;
     text-align: center;
   }
+  .Welcome1 {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 9px;
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+  }
 
   .SukuDayak {
     color: white;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
-    line-height: 60px;
-    /* margin-top: 20px; */
+    line-height: 65px;
   }
   .SukuDayak span {
     color: white;
     font-size: 64px;
     font-style: normal;
     font-weight: 600;
-    /* line-height: 80%; */
-    /* margin-top: 20px; */
   }
 
   .Warisan {
@@ -436,19 +484,19 @@ html {
 }
 .profil-judul {
   font-size: 14px;
-  font-weight: 400;
-
-  color: white;
-  margin-top: 4px;
+  color: #2e2d2d;
+  font-weight: 500;
+  margin-top: 9px;
   display: block;
   text-align: center;
-
-  margin-bottom: 10px;
+  letter-spacing: 2.24px;
 }
 
 .profil-subjudul {
   font-size: 20px;
-  font-weight: 600;
+  color: #000;
+  font-weight: 500;
+  line-height: 20px; /* 114.286% */
 }
 
 body.dark-mode .profil-subjudul {
@@ -483,25 +531,26 @@ body.dark-mode .profil-isi {
     backdrop-filter: blur(2px);
   }
   .profil-judul {
-    color: white;
+    color: #2e2d2d;
     font-size: 16px;
     font-weight: 500;
     margin-top: 9px;
     display: block;
     text-align: center;
+    letter-spacing: 2.24px;
   }
 
   .profil-subjudul {
     color: #000;
-    font-size: 70px;
+    font-size: 36px;
     font-weight: 500;
-    line-height: 80px; /* 114.286% */
+    line-height: 35px; /* 114.286% */
   }
   .profil-isi {
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 30px; /* 150% */
+    line-height: 25px; /* 150% */
   }
 }
 
@@ -1117,6 +1166,53 @@ button:focus {
 }
 
 /* _________________________________________Legenda end____________________________________________________________ */
+
+/* ___________Chat bot______________ */
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 1em;
+  background-color: #ddd;
+  outline: 1px solid slategrey;
+  border-radius: 1rem;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.messages-box,
+.chat-box {
+  height: 510px;
+  overflow-y: scroll;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* ___________Chat bot end____________ */
 
 footer {
   background-color: #920d0d;
