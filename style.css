@@ -95,16 +95,25 @@ html {
   margin: 0px 17px;
 }
 
+.navbar-nav {
+  background: rgba(0, 0, 0, 0.842);
+}
+
 .navbar {
-  transition-timing-function: ease-in-out;
-  transition: 0.2s;
-  backdrop-filter: blur(5px);
+  transition: all 0.2s linear;
+  /* backdrop-filter: blur(5px); */
   padding: 0px;
   margin: 0px;
-  background: rgba(245, 245, 245, 0.75);
+  background: rgba(245, 245, 245, 0);
   /* box-shadow: black ; */
   /* position: absolute */
 }
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.842);
+  backdrop-filter: blur(5px);
+}
+
 .logo {
   font-family: 'Jua', sans-serif;
   color: white;
@@ -123,6 +132,9 @@ html {
 }
 
 @media only screen and (min-width: 992px) {
+  .navbar-nav {
+    background: rgba(0, 0, 0, 0);
+  }
   .menu {
     background: none;
 
@@ -169,12 +181,13 @@ html {
 }
 
 .nav-color-1 {
-  color: #920d0d;
+  color: #fff;
+  font-size: 16px;
   border-bottom: rgba(245, 245, 245, 0.01);
   border-width: 0px 0px 2px 0px;
   border-style: solid;
   margin: 0px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .nav-color-1:hover {
   color: #920d0d;
@@ -185,7 +198,8 @@ html {
   transition-timing-function: ease-in-out;
 }
 .nav-color-2 {
-  color: #1b1b1b;
+  color: #fff;
+  font-size: 16px;
   border-bottom: rgba(245, 245, 245, 0.01);
   border-width: 0px 0px 2px 0px;
   border-style: solid;
@@ -201,11 +215,12 @@ html {
   transition-timing-function: ease-in-out;
 }
 .nav-color-3 {
-  color: #1b1b1b;
+  color: #fff;
+  font-size: 16px;
   border-bottom: rgba(245, 245, 245, 0.01);
   border-width: 0px 0px 2px 0px;
   border-style: solid;
-  margin: 0px;
+  /* margin: 0px; */
   font-weight: 400;
 }
 .nav-color-3:hover {
@@ -217,11 +232,12 @@ html {
   transition-timing-function: ease-in-out;
 }
 .nav-color-4 {
-  color: #1b1b1b;
+  color: #fff;
+  font-size: 16px;
   border-bottom: rgba(245, 245, 245, 0.01);
   border-width: 0px 0px 2px 0px;
   border-style: solid;
-  margin: 0px;
+  /* margin: 0px; */
   font-weight: 400;
 }
 .nav-color-4:hover {
@@ -232,85 +248,51 @@ html {
   transition: all 0.2s;
   transition-timing-function: ease-in-out;
 }
-.nav-color-5 {
-  color: #1b1b1b;
-  border-bottom: rgba(245, 245, 245, 0.01);
-  border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  margin: 0px;
-  font-weight: 400;
-}
-.nav-color-5:hover {
-  color: #920d0d;
-  border-bottom: #920d0d;
-  border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out;
-}
-.nav-color-6 {
-  color: #1b1b1b;
-  border-bottom: rgba(245, 245, 245, 0.01);
-  border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  margin: 0px;
-  font-weight: 400;
-}
-.nav-color-6:hover {
-  color: #920d0d;
-  border-bottom: #920d0d;
-  border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out;
-}
-.nav-color-7 {
-  color: #1b1b1b;
-  border-bottom: rgba(245, 245, 245, 0.01);
-  border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  margin: 0px;
-  font-weight: 400;
-}
-.nav-color-7:hover {
-  color: #920d0d;
-  border-bottom: #920d0d;
-  border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out;
-}
 
 /* _____________________________________________Landing Page_________________________________________________________ */
-
 .rectangle2 {
-  width: 100px;
-  height: 43px;
+  width: 150px;
+  height: 12px;
   background: rgba(230.56, 206.55, 206.55, 0);
   border-radius: 34px;
-  border: 2px white solid;
+  /* border: 2px white solid; */
   backdrop-filter: blur(2px);
-  margin-top: 60vh;
+  margin-top: 37vh;
 }
-
+.rectangle3 {
+  width: 150px;
+  height: 44px;
+  border-radius: 40px;
+  background: #870000;
+  border: 3px solid #870000;
+  backdrop-filter: blur(2px);
+  /* margin-top: 37vh; */
+}
 .Welcome {
   color: white;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 9px;
+  margin-bottom: 0;
   display: block;
   text-align: center;
 }
 
 .SukuDayak {
-  font-weight: 500;
-  line-height: 80%;
-  margin-top: 20px;
-
-  color: #fff;
+  color: white;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  /* margin-top: 20px; */
+}
+.SukuDayak span {
+  color: white;
   font-size: 36px;
-
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 80%; */
+  /* margin-top: 20px; */
 }
 
 .Warisan {
@@ -337,28 +319,47 @@ html {
 @media only screen and (min-width: 900px) {
   .rectangle2 {
     width: 150px;
-    height: 44px;
+    height: 12px;
     background: rgba(230.56, 206.55, 206.55, 0);
     border-radius: 34px;
-    border: 2px white solid;
+    /* border: 2px white solid; */
     backdrop-filter: blur(2px);
     margin-top: 37vh;
   }
+  .rectangle3 {
+    width: 150px;
+    height: 44px;
+    border-radius: 40px;
+    background: #870000;
+    border: 3px solid #870000;
+    backdrop-filter: blur(2px);
+    /* margin-top: 37vh; */
+  }
   .Welcome {
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 500;
     margin-top: 9px;
+    margin-bottom: 0;
     display: block;
     text-align: center;
   }
 
   .SukuDayak {
     color: white;
-    font-size: 128px;
-    font-weight: 500;
-    line-height: 80%;
-    margin-top: 20px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    /* margin-top: 20px; */
+  }
+  .SukuDayak span {
+    color: white;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 80%; */
+    /* margin-top: 20px; */
   }
 
   .Warisan {
