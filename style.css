@@ -2,7 +2,7 @@
   margin: 0px;
   border: 0px;
   font-family: 'Poppins', sans-serif;
-  background-color: #f8f4f4;
+  background: #fbfbfb;
 }
 
 .modal-img {
@@ -568,45 +568,55 @@ body.dark-mode .profil-isi {
 }
 /*______________________________________________ Profil end__________________________________________________________________ */
 /*______________________________________________ Adat__________________________________________________________________ */
+.adat-text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
 .adat {
-  height: 500px;
-  background-image: url('images/adat.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background: #f5f5f5;
   width: 100%;
   position: relative;
 }
 
 .rectangle4 {
-  width: 97px;
-  height: 28px;
-  background: whitesmoke;
+  /* width: 150px; */
+  height: 44px;
+  /* background: whitesmoke; */
   border-radius: 34px;
-  margin-top: 100px;
+  /* margin-top: 30px; */
 }
 .adat-judul {
-  color: #920d0d;
-  font-size: 11px;
-  font-weight: 400;
-  text-align: center;
-  margin: 8px 0px;
+  color: #2e2d2d;
+  font-size: 12 px;
+  font-weight: 500;
+  text-align: start;
+  margin: 10px 0px;
+  letter-spacing: 2.24px;
 }
 .adat-subjudul {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
+  color: #000;
+  text-align: start;
+  font-size: 26px;
   font-style: normal;
   font-weight: 500;
+  line-height: 32px; /* 114.286% */
+}
+
+.adat-subjudul span {
+  color: #920d0d;
 }
 
 .adat-isi {
   color: #fff;
   text-align: center;
+
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
+  line-height: 30px; /* 150% */
 }
 
 .adat-isi span {
@@ -619,39 +629,47 @@ body.dark-mode .profil-isi {
 }
 
 @media only screen and (min-width: 900px) {
+  .adat-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
   .adat {
-    height: 500px;
-    background-image: url('images/adat.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    /* height: 500px; */
+    background: #f5f5f5;
     width: 100%;
     position: relative;
   }
 
   .rectangle4 {
-    width: 150px;
+    /* width: 150px; */
     height: 44px;
-    background: whitesmoke;
+    /* background: whitesmoke; */
     border-radius: 34px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
   .adat-judul {
-    color: #920d0d;
+    color: #2e2d2d;
     font-size: 16px;
     font-weight: 500;
-    text-align: center;
+    text-align: start;
     margin: 10px 0px;
+    letter-spacing: 2.24px;
   }
   .adat-subjudul {
-    color: #fff;
-    text-align: center;
+    color: #000;
+    text-align: start;
 
-    font-size: 70px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 80px; /* 114.286% */
+    line-height: 45px; /* 114.286% */
+  }
+
+  .adat-subjudul span {
+    color: #920d0d;
   }
 
   .adat-isi {
@@ -667,6 +685,100 @@ body.dark-mode .profil-isi {
   .adat-isi span {
     color: #920d0d;
     font-weight: 700;
+  }
+}
+
+.card-upacara {
+  /* height: 100%; */
+  border-radius: 10px;
+  border: 3px solid #e3e3e3;
+  background: #fff;
+}
+
+.card-upacara img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 138px;
+  border-top: 10px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.card-upacara h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+.card-upacara p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.card-upacara .text {
+  padding: 20px;
+}
+
+.card-upacara .tombolbawah {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 40px;
+  background: #870000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+.card-upacara:hover .tombolbawah {
+  background: white;
+  color: #870000;
+}
+
+.card-upacara:hover {
+  background: #920d0d;
+}
+.card-upacara:hover h1 {
+  color: white;
+}
+.card-upacara:hover p {
+  color: white;
+}
+
+@media only screen and (min-width: 900px) {
+  .card-upacara {
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid #e3e3e3;
+    background: #fff;
+    /* width: 360px; */
+    /* height: 138px; */
+  }
+
+  .card-upacara img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 138px;
+    border-top: 10px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+
+  .card-upacara h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .card-upacara p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
   }
 }
 
@@ -693,9 +805,9 @@ body.dark-mode .profil-isi {
   height: 44px;
   background: #920d0d;
   border-radius: 34px;
-
   backdrop-filter: blur(2px);
 }
+
 .rectangle5-manajah {
   width: 250px;
   height: 44px;
@@ -788,6 +900,115 @@ body.dark-mode .upacara-isi {
     font-weight: 700;
   }
 }
+
+/* ________ Makanan ____________________ */
+
+.makanan-img {
+  width: 80%;
+}
+
+.rectangle3 {
+  margin: 10px 0px;
+  width: 77px;
+  height: 30px;
+
+  background: #920d0d;
+  border-radius: 34px;
+
+  backdrop-filter: blur(2px);
+}
+.makanan-judul {
+  font-size: 14px;
+  color: #2e2d2d;
+  font-weight: 500;
+  margin-top: 9px;
+  display: block;
+  text-align: center;
+  letter-spacing: 2.24px;
+}
+
+.makanan-subjudul {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  line-height: 20px; /* 114.286% */
+}
+
+body.dark-mode .makanan-subjudul {
+  color: #fff; /* Warna teks putih */
+}
+.makanan-isi {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px; /* 150% */
+  margin-bottom: 30px;
+}
+body.dark-mode .makanan-isi {
+  color: #fff; /* Warna teks putih */
+}
+
+.makanan-tulisan {
+  margin: 0px 0px;
+}
+
+.makanan .tombolbawah2 {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 40px;
+  background: #870000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 900px) {
+  .makanan-img {
+    width: 80%;
+  }
+
+  .rectangle3 {
+    width: 150px;
+    height: 44px;
+    background: #920d0d;
+    border-radius: 34px;
+
+    backdrop-filter: blur(2px);
+  }
+  .makanan-judul {
+    color: #2e2d2d;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 9px;
+    display: block;
+    text-align: center;
+    letter-spacing: 2.24px;
+  }
+
+  .makanan-subjudul {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45px; /* 114.286% */
+  }
+
+  .makanan-subjudul span {
+    color: #920d0d;
+  }
+  .makanan-isi {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px; /* 150% */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .makanan-tulisan {
+    margin: 110px 0px;
+  }
+}
+/* ________Makanan End___________________ */
 
 /* __________________________________________________Rumah__________________________________________________________________ */
 .rectangle7 {
