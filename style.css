@@ -1,7 +1,7 @@
 .body {
   margin: 0px;
   border: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #fbfbfb;
 }
 
@@ -81,7 +81,7 @@ body.dark-mode .makanan .card {
 html {
   margin: 0;
   border: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Navbar */
@@ -115,7 +115,7 @@ html {
 }
 
 .logo {
-  font-family: 'Jua', sans-serif;
+  font-family: "Jua", sans-serif;
   color: white;
 }
 
@@ -163,7 +163,7 @@ html {
   height: 100vh;
   min-height: 750px;
   /* max-height: 800px; */
-  background-image: url('images/dayak-landing-page-1.jpg');
+  background-image: url("images/dayak-landing-page-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -200px;
@@ -1069,7 +1069,7 @@ body.dark-mode .makanan-isi {
   height: 95vh;
   min-height: 800px;
   max-height: 1500px;
-  background-image: url('images/rumah-adat1.jpg');
+  background-image: url("images/rumah-adat1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -1225,8 +1225,8 @@ body.dark-mode .makanan-isi {
 }
 
 button,
-input[type='submit'],
-input[type='reset'] {
+input[type="submit"],
+input[type="reset"] {
   background: none;
   color: inherit;
   border: none;
@@ -1256,7 +1256,7 @@ button:focus {
 
 .legenda-bg {
   height: 500px;
-  background-image: url('images/legenda.jpg');
+  background-image: url("images/legenda.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -1328,7 +1328,7 @@ button:focus {
 
   .legenda-bg {
     height: 780px;
-    background-image: url('images/legenda.jpg');
+    background-image: url("images/legenda.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -1485,6 +1485,104 @@ input::placeholder {
   font-size: 0.9rem;
   color: #999;
 }
+@media only screen and (min-width: 993px) {
+  
+  .merah-muda {
+    background-color: #fbcbcb;
+  }
+  .red-maron {
+    background-color: #920d0d;
+    .fixed {
+      position: fixed;
+    }
+  }
+  .chat-bot {
+    border: 2px solid #870000;
+  }
+  .hr{
+    /* background-color: #870000; */
+    border: 1px solid #870000;
+  }
+  .text-muted-2 {
+    color: #494949;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 128.5%; /* 14.135px */
+    letter-spacing: -0.44px;
+  }
+  .bawah{
+    padding-bottom: 0px;
+  }
+  .text-small-1{
+    font-size: 13px;
+    
+  }
+  .rounded-lg-2{
+    border-radius: 30px;
+  }
+  .p-kanan{
+    /* padding-left: 43px; */
+    margin-left: 23px;
+  }
+  /* .p-kiri{
+    margin-right: 10px;
+  } */
+}
+.merah-muda {
+  background-color: #fbcbcb;
+}
+.red-maron {
+  background-color: #920d0d;
+  .fixed {
+    position: fixed;
+  }
+}
+.red-red{
+  background-color: #b10d0d;
+}
+.chat-bot {
+  border: 2px solid #870000;
+}
+.hr{
+  /* background-color: #870000; */
+  border: 1px solid #870000;
+}
+.text-muted-2 {
+  color: #494949;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 128.5%; /* 14.135px */
+  letter-spacing: -0.44px;
+}
+.bawah{
+  padding-bottom: 0px;
+}
+.text-small-1{
+  font-size: 13px;
+  
+}
+.rounded-lg-2{
+  border-radius: 30px;
+}
+.none{
+  /* display: ; */
+}
+.ml-100{
+  margin-left: 100px ;
+}
+.mw-auto{
+  margin: auto;
+}
+.text-mini{
+  font-size: 12px !important;
+}
+
 
 /* ___________Chat bot end____________ */
 

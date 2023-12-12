@@ -69,7 +69,6 @@ for (var i = 0; i < contents.length; i++) {
       </div>
     </div>
   `;
-
 }
 // ________Content end __________________________
 
