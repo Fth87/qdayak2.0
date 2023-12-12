@@ -39,7 +39,7 @@ const contents = new content();
 // Membuat sebuah loop yang berjalan sebanyak tiga kali
 for (var i = 0; i < contents.length; i++) {
   // Membuat elemen <div> baru
-  var modaltes = document.querySelector('.modalContent');
+  var modaltes = document.createElement('div');
 
   // Memberikan konten HTML pada elemen <div>
   modaltes.innerHTML = `
@@ -70,6 +70,14 @@ for (var i = 0; i < contents.length; i++) {
     </div>
   `;
 
+  // Menambahkan atribut id pada elemen <div> dengan nomor urut
+  modaltes.id = 'myModal' + i;
+
+  // Menambahkan atribut class pada elemen <div>
+  modaltes.classList.add('modal', 'p-0');
+
+  // Menambahkan elemen <div> ke dalam elemen <body>
+  document.body.appendChild(modaltes);
 }
 // ________Content end __________________________
 
