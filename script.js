@@ -1,3 +1,86 @@
+import content from './content.js';
+
+// Get the modal
+const btn = [];
+const modal = [];
+const span = [];
+let tekanan;
+for (var i = 0; i <= 1; i++) {
+  modal[i] = document.getElementById(`myModal${i}`);
+  btn[i] = document.getElementById(`myBtn${i}`);
+  span[i] = document.getElementById(`close${i}`);
+}
+
+// When the user clicks the button, open the modal
+// btn.onclick = function () {
+//   modal.style.display = 'block';
+// };
+
+btn.forEach((tombol, i) => {
+  tombol.onclick = () => {
+    modal[i].style.display = 'block';
+    tekanan = i;
+  };
+  span[i].onclick = () => {
+    modal[i].style.display = 'none';
+    console.log(span[i]);
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal[tekanan]) {
+      modal[tekanan].style.display = 'none';
+    }
+  };
+});
+
+// _____Content________________________________
+
+const contents = new content();
+// Membuat sebuah loop yang berjalan sebanyak tiga kali
+for (var i = 0; i < contents.length; i++) {
+  // Membuat elemen <div> baru
+  var modaltes = document.createElement('div');
+
+  // Memberikan konten HTML pada elemen <div>
+  modaltes.innerHTML = `
+  <div id="myModal${i}" class="modal p-0">
+    <!-- Modal content -->
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen" style="height: 0; margin: 55px auto; position: absolute">
+      <div class="modal-content" style="position: absolute">
+        <div style="border: none" class="modal-header d-flex justify-content-center">
+          <span id="close${i}" class="d-flex align-items-center">
+            <h2>CLOSE</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="11" viewBox="0 0 25 11" fill="none">
+              <path d="M1 1.44678L12.5635 9.06002L24 1.44678" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </div>
+        <div class="modal-body modal-isi" style="overflow-x: hidden">
+          <div class="px-5">
+            <img src="images/${contents[i].gambar}" alt="" class="my-3" />
+
+            <h1>${contents[i].judul}</h1>
+            <p>
+           ${contents[i].isi}
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer" style="border: none"></div>
+      </div>
+    </div>
+  `;
+
+  // Menambahkan atribut id pada elemen <div> dengan nomor urut
+  modaltes.id = 'myModal' + i;
+
+  // Menambahkan atribut class pada elemen <div>
+  modaltes.classList.add('modal', 'p-0');
+
+  // Menambahkan elemen <div> ke dalam elemen <body>
+  document.body.appendChild(modaltes);
+}
+// ________Content end __________________________
+
 // Mendapatkan elemen navbar
 var navbar = document.querySelector('.navbar');
 var navbarnav = document.querySelector('.navbar-nav');
