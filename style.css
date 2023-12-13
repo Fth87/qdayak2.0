@@ -271,6 +271,11 @@ html {
 
   /* margin-top: 37vh; */
 }
+.rectangle3:hover {
+  cursor: pointer;
+  background: #c80000;
+  border: 3px solid #c80000;
+}
 .Welcome {
   color: white;
   font-size: 10px;
@@ -377,6 +382,12 @@ html {
 
     /* margin-top: 37vh; */
   }
+
+  .rectangle3:hover {
+    cursor: pointer;
+    background: #c80000;
+    border: 3px solid #c80000;
+  }
   .Welcome {
     color: white;
     font-size: 10px;
@@ -482,6 +493,10 @@ html {
 
   backdrop-filter: blur(2px);
 }
+.rectangle3:hover {
+  cursor: pointer;
+  background: #c80000;
+}
 .profil-judul {
   font-size: 14px;
   color: #2e2d2d;
@@ -529,6 +544,11 @@ body.dark-mode .profil-isi {
     border-radius: 34px;
 
     backdrop-filter: blur(2px);
+  }
+  .rectangle3:hover {
+    cursor: pointer;
+    background: #c80000;
+    border: 3px solid #c80000;
   }
   .profil-judul {
     color: #2e2d2d;
@@ -917,6 +937,11 @@ body.dark-mode .upacara-isi {
 
   backdrop-filter: blur(2px);
 }
+.rectangle3:hover {
+  cursor: pointer;
+  background: #c80000;
+  border: 3px solid #c80000;
+}
 .makanan-judul {
   font-size: 14px;
   color: #2e2d2d;
@@ -962,6 +987,11 @@ body.dark-mode .makanan-isi {
   font-weight: 700;
 }
 
+.tombolbawah2:hover {
+  cursor: pointer;
+  background: #bd0000;
+}
+
 .makanan-subjudul span {
   color: #920d0d;
 }
@@ -978,6 +1008,11 @@ body.dark-mode .makanan-isi {
     border-radius: 34px;
 
     backdrop-filter: blur(2px);
+  }
+  .rectangle3:hover {
+    cursor: pointer;
+    background: #c80000;
+    border: 3px solid #c80000;
   }
   .makanan-judul {
     color: #2e2d2d;
