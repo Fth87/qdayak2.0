@@ -1,5 +1,127 @@
 import content from './content.js';
 
+// ___________________________________Navbar_____________________________________________
+
+// Mendapatkan elemen navbar
+var navbar = document.querySelector('.navbar');
+var navbarnav = document.querySelector('.navbar-nav');
+
+// Mendapatkan posisi awal navbar
+var sticky = navbar.offsetTop;
+
+// Membuat fungsi untuk mengganti kelas navbar saat di scroll
+function scrollFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add('scrolled'); // Menambahkan kelas scrolled
+    // navbarnav.classList.add('scrolled'); // Menambahkan kelas scrolled
+  } else {
+    navbar.classList.remove('scrolled'); // Menghapus kelas scrolled
+    // navbarnav.classList.remove('scrolled'); // Menghapus kelas scrolled
+  }
+}
+
+// Menambahkan event listener untuk menjalankan fungsi saat di scroll
+window.onscroll = function () {
+  scrollFunction();
+};
+// ___________________________________Navbar End_____________________________________________
+
+// Carousel____________________________________
+
+const wrapper = document.querySelector('.wrapper');
+const carousel = document.querySelector('.carousel');
+const firstCardWidth = carousel.querySelector('.card').offsetWidth;
+const arrowBtns = document.querySelectorAll('.wrapper i');
+const carouselChildrens = [...carousel.children];
+
+let isDragging = false,
+  isAutoPlay = true,
+  startX,
+  startScrollLeft,
+  timeoutId;
+
+// Get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrens
+  .slice(-cardPerView)
+  .reverse()
+  .forEach((card) => {
+    carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
+  });
+
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach((card) => {
+  carousel.insertAdjacentHTML('beforeend', card.outerHTML);
+});
+
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add('no-transition');
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove('no-transition');
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    carousel.scrollLeft += btn.id == 'left' ? -firstCardWidth : firstCardWidth;
+  });
+});
+
+const dragStart = (e) => {
+  isDragging = true;
+  carousel.classList.add('dragging');
+  // Records the initial cursor and scroll position of the carousel
+  startX = e.pageX;
+  startScrollLeft = carousel.scrollLeft;
+};
+
+const dragging = (e) => {
+  if (!isDragging) return; // if isDragging is false return from here
+  // Updates the scroll position of the carousel based on the cursor movement
+  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+};
+
+const dragStop = () => {
+  isDragging = false;
+  carousel.classList.remove('dragging');
+};
+
+const infiniteScroll = () => {
+  // If the carousel is at the beginning, scroll to the end
+  if (carousel.scrollLeft === 0) {
+    carousel.classList.add('no-transition');
+    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+    carousel.classList.remove('no-transition');
+  }
+  // If the carousel is at the end, scroll to the beginning
+  else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+    carousel.classList.add('no-transition');
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove('no-transition');
+  }
+
+  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+  clearTimeout(timeoutId);
+  if (!wrapper.matches(':hover')) autoPlay();
+};
+
+const autoPlay = () => {
+  if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+  // Autoplay the carousel after every 2500 ms
+  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+};
+autoPlay();
+
+carousel.addEventListener('mousedown', dragStart);
+carousel.addEventListener('mousemove', dragging);
+document.addEventListener('mouseup', dragStop);
+carousel.addEventListener('scroll', infiniteScroll);
+wrapper.addEventListener('mouseenter', () => clearTimeout(timeoutId));
+wrapper.addEventListener('mouseleave', autoPlay);
+
+// ________________________________________end
+
 // Get the modal
 const btn = [];
 const modal = [];
@@ -70,7 +192,6 @@ for (var i = 0; i < contents.length; i++) {
     </div>
   `;
 
-
   // Menambahkan atribut id pada elemen <div> dengan nomor urut
   modaltes.id = 'myModal' + i;
 
@@ -79,87 +200,8 @@ for (var i = 0; i < contents.length; i++) {
 
   // Menambahkan elemen <div> ke dalam elemen <body>
   document.body.appendChild(modaltes);
-
 }
 // ________Content end __________________________
-
-// Mendapatkan elemen navbar
-var navbar = document.querySelector('.navbar');
-var navbarnav = document.querySelector('.navbar-nav');
-
-// Mendapatkan posisi awal navbar
-var sticky = navbar.offsetTop;
-
-// Membuat fungsi untuk mengganti kelas navbar saat di scroll
-function scrollFunction() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add('scrolled'); // Menambahkan kelas scrolled
-    // navbarnav.classList.add('scrolled'); // Menambahkan kelas scrolled
-  } else {
-    navbar.classList.remove('scrolled'); // Menghapus kelas scrolled
-    // navbarnav.classList.remove('scrolled'); // Menghapus kelas scrolled
-  }
-}
-
-// Menambahkan event listener untuk menjalankan fungsi saat di scroll
-window.onscroll = function () {
-  scrollFunction();
-};
-
-$(document).ready(function () {
-  const owl = $('.owl-carousel');
-  owl.owlCarousel({
-    dots: true,
-    loop: false,
-    margin: 50,
-    nav: true,
-    autoWidth: true,
-
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  });
-});
-
-const rumah1 = document.getElementById('rumah1');
-const rumah2 = document.getElementById('rumah2');
-const rumah3 = document.getElementById('rumah3');
-
-const bg = document.querySelector('.bg-rumah');
-
-const backgroundImages = ['rumah-adat1.jpg', 'rumah-adat2.jpeg', 'rumah-adat3.jpeg'];
-let urutan = 0;
-
-rumah1.addEventListener('click', function () {
-  urutan = 0;
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-});
-rumah2.addEventListener('click', function () {
-  urutan = 1;
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-});
-rumah3.addEventListener('click', function () {
-  urutan = 2;
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-});
-
-function changeBackgroundImage() {
-  if (urutan > 2) {
-    urutan = 0;
-  }
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-  urutan += 1;
-}
-changeBackgroundImage();
-setInterval(changeBackgroundImage, 3000);
 
 // _____________________________________________________Dark Mode____________________________________________
 
