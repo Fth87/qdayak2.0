@@ -35,7 +35,7 @@ fetch('data/data.json')
               </span>
             </div>
             <div class="modal-body modal-isi" style="overflow-x: hidden">
-              <div class="px-5">
+              <div class="px">
                 <img src="images/${data[i].gambar}" alt="" class="my-3" />
     
                 <h1>${data[i].judul}</h1>
@@ -78,6 +78,7 @@ fetch('data/data.json')
       tombol.onclick = () => {
         modal[i].style.display = 'block';
         tekanan = i;
+        console.log(btn);
       };
       span[i].onclick = () => {
         modal[i].style.display = 'none';
@@ -118,8 +119,6 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-
-
 // ___________________________________Navbar End_____________________________________________
 
 // Carousel____________________________________
@@ -144,12 +143,12 @@ carouselChildrens
   .slice(-cardPerView)
   .reverse()
   .forEach((card) => {
-    carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
+    // carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
   });
 
 // Insert copies of the first few cards to end of carousel for infinite scrolling
 carouselChildrens.slice(0, cardPerView).forEach((card) => {
-  carousel.insertAdjacentHTML('beforeend', card.outerHTML);
+  // carousel.insertAdjacentHTML('beforeend', card.outerHTML);
 });
 
 // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
@@ -227,7 +226,7 @@ const arrowBtns1 = document.querySelectorAll('.wrapper1 i');
 const carouselChildrens1 = [...carousel1.children];
 
 let isDragging1 = false,
-  isAutoPlay1 = true,
+  isAutoPlay1 = false,
   startX1,
   startScrollLeft1,
   timeoutId1;
@@ -239,9 +238,9 @@ let cardPerView1 = Math.round(carousel1.offsetWidth / firstCardWidth1);
 carouselChildrens1
   .slice(-cardPerView1)
   .reverse()
-  .forEach((card) => {
-    carousel1.insertAdjacentHTML('afterbegin', card.outerHTML);
-  });
+  // .forEach((card) => {
+  //   carousel1.insertAdjacentHTML('afterbegin', card.outerHTML);
+  // });
 
 // Insert copies of the first few cards to end of carousel1 for infinite scrolling
 carouselChildrens1.slice(0, cardPerView1).forEach((card) => {
@@ -410,49 +409,6 @@ wrapper2.addEventListener('mouseleave', autoPlay2);
 
 // ________________________________________end
 
-// Get the modal
-const btn = [];
-const modal = [];
-const span = [];
-let tekanan;
-for (var i = 0; i <= 1; i++) {
-  modal[i] = document.getElementById(`myModal${i}`);
-  btn[i] = document.getElementById(`myBtn${i}`);
-  span[i] = document.getElementById(`close${i}`);
-}
-
-// When the user clicks the button, open the modal
-// btn.onclick = function () {
-//   modal.style.display = 'block';
-// };
-
-btn.forEach((tombol, i) => {
-  tombol.onclick = () => {
-    modal[i].style.display = 'block';
-    tekanan = i;
-  };
-  span[i].onclick = () => {
-    modal[i].style.display = 'none';
-    console.log(span[i]);
-  };
-
-  window.onclick = function (event) {
-    if (event.target == modal[tekanan]) {
-      modal[tekanan].style.display = 'none';
-    }
-  };
-});
-
-function changeBackgroundImage() {
-  if (urutan > 2) {
-    urutan = 0;
-  }
-  bg.style.backgroundImage = `url('images/${backgroundImages[urutan]}')`;
-  urutan += 1;
-}
-changeBackgroundImage();
-setInterval(changeBackgroundImage, 3000);
-
 // _____________________________________________________Dark Mode____________________________________________
 
 const darkModeToggle = document.querySelector('#checkbox');
@@ -474,12 +430,12 @@ function toggleDarkMode() {
 }
 
 // Setel mode gelap berdasarkan preferensi pengguna
-if (isDarkMode) {
-  body.classList.add('dark-mode');
-  checkbox.checked = true;
-}
+// if (isDarkMode) {
+//   body.classList.add('dark-mode');
+//   checkbox.checked = true;
+// }
 
 // Tambahkan event listener untuk tombol toggle
-darkModeToggle.addEventListener('click', toggleDarkMode);
+// darkModeToggle.addEventListener('click', toggleDarkMode);
 
 // ----------------------------------------------------------- fitur bahasa -----------------------------------------------
