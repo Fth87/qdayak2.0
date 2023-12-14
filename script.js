@@ -1,6 +1,6 @@
 //function test
 function log(params) {
-  console.log(params);
+  // console.log(params);
 }
 // Fetch data from data.json file
 fetch('data/data.json')
@@ -73,7 +73,7 @@ fetch('data/data.json')
     //   modal.style.display = 'block';
     // };
 
-    log(modal);
+    // log(modal);
     btn.forEach((tombol, i) => {
       tombol.onclick = () => {
         modal[i].style.display = 'block';
@@ -81,7 +81,7 @@ fetch('data/data.json')
       };
       span[i].onclick = () => {
         modal[i].style.display = 'none';
-        console.log(span[i]);
+        // console.log(span[i]);
       };
 
       window.onclick = function (event) {
