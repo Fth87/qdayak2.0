@@ -118,28 +118,9 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-$(document).ready(function () {
-  const owl = $('.owl-carousel');
-  owl.owlCarousel({
-    dots: true,
-    loop: false,
-    margin: 50,
-    nav: true,
-    autoWidth: true,
 
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  });
-});
+
+// ___________________________________Navbar End_____________________________________________
 
 // Carousel____________________________________
 
