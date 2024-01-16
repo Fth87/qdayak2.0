@@ -284,6 +284,7 @@ function toggleAudio() {
     audio.pause();
     playerButton.innerHTML = playIcon;
   }
+  console.log('click');
 }
 
 playerButton.addEventListener('click', toggleAudio);
@@ -312,6 +313,7 @@ playerButton.addEventListener('click', toggleAudio);
 function toggleSound() {
   audio.muted = !audio.muted;
   soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
+  console.log('click');
 }
 
 soundButton.addEventListener('click', toggleSound);
