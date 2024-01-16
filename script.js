@@ -35,12 +35,12 @@ fetch('data/data.json')
               </span>
             </div>
             <div class="modal-body modal-isi" style="overflow-x: hidden">
-              <div class="px">
-                <img src="images/${data[i].gambar}" alt="" class="my-3" />
+              <div class="px-lg-5 ">
+                <img src="images/${data[i].gambar}" alt="" style="border-radius:20px" class="my-3 " />
     
-                <h1>${data[i].judul}</h1>
+                <h1 style="width: 90vw;">${data[i].judul}</h1>
                 <p>
-               ${data[i].isi}
+                ${data[i].isi}
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ fetch('data/data.json')
       tombol.onclick = () => {
         modal[i].style.display = 'block';
         tekanan = i;
-        console.log(btn);
+        console.log(tombol);
       };
       span[i].onclick = () => {
         modal[i].style.display = 'none';
@@ -123,205 +123,13 @@ window.onscroll = function () {
 
 // Carousel____________________________________
 
-const wrapper = document.querySelector('.wrapper');
-const carousel = document.querySelector('.carousel');
-const firstCardWidth = carousel.querySelector('.card').offsetWidth;
-const arrowBtns = document.querySelectorAll('.wrapper i');
-const carouselChildrens = [...carousel.children];
-
-let isDragging = false,
-  isAutoPlay = true,
-  startX,
-  startScrollLeft,
-  timeoutId;
-
-// Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
-carouselChildrens
-  .slice(-cardPerView)
-  .reverse()
-  .forEach((card) => {
-    // carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
-  });
-
-// Insert copies of the first few cards to end of carousel for infinite scrolling
-carouselChildrens.slice(0, cardPerView).forEach((card) => {
-  // carousel.insertAdjacentHTML('beforeend', card.outerHTML);
-});
-
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
-carousel.classList.add('no-transition');
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove('no-transition');
-
-// Add event listeners for the arrow buttons to scroll the carousel left and right
-arrowBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    carousel.scrollLeft += btn.id == 'left' ? -firstCardWidth : firstCardWidth;
-  });
-});
-
-const dragStart = (e) => {
-  isDragging = true;
-  carousel.classList.add('dragging');
-  // Records the initial cursor and scroll position of the carousel
-  startX = e.pageX;
-  startScrollLeft = carousel.scrollLeft;
-};
-
-const dragging = (e) => {
-  if (!isDragging) return; // if isDragging is false return from here
-  // Updates the scroll position of the carousel based on the cursor movement
-  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-};
-
-const dragStop = () => {
-  isDragging = false;
-  carousel.classList.remove('dragging');
-};
-
-const infiniteScroll = () => {
-  // If the carousel is at the beginning, scroll to the end
-  if (carousel.scrollLeft === 0) {
-    carousel.classList.add('no-transition');
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-    carousel.classList.remove('no-transition');
-  }
-  // If the carousel is at the end, scroll to the beginning
-  else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-    carousel.classList.add('no-transition');
-    carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove('no-transition');
-  }
-
-  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
-  clearTimeout(timeoutId);
-  if (!wrapper.matches(':hover')) autoPlay();
-};
-
-const autoPlay = () => {
-  if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-  // Autoplay the carousel after every 2500 ms
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
-};
-autoPlay();
-
-carousel.addEventListener('mousedown', dragStart);
-carousel.addEventListener('mousemove', dragging);
-document.addEventListener('mouseup', dragStop);
-carousel.addEventListener('scroll', infiniteScroll);
-wrapper.addEventListener('mouseenter', () => clearTimeout(timeoutId));
-wrapper.addEventListener('mouseleave', autoPlay);
-
-// ________________________________________end
-
-// Carousel____________________________________
-
-const wrapper1 = document.querySelector('.wrapper1');
-const carousel1 = document.querySelector('.carousel1');
-const firstCardWidth1 = carousel1.querySelector('.card1').offsetWidth;
-const arrowBtns1 = document.querySelectorAll('.wrapper1 i');
-const carouselChildrens1 = [...carousel1.children];
-
-let isDragging1 = false,
-  isAutoPlay1 = false,
-  startX1,
-  startScrollLeft1,
-  timeoutId1;
-
-// Get the number of cards that can fit in the carousel1 at once
-let cardPerView1 = Math.round(carousel1.offsetWidth / firstCardWidth1);
-
-// Insert copies of the last few cards to beginning of carousel1 for infinite scrolling
-carouselChildrens1
-  .slice(-cardPerView1)
-  .reverse()
-  // .forEach((card) => {
-  //   carousel1.insertAdjacentHTML('afterbegin', card.outerHTML);
-  // });
-
-// Insert copies of the first few cards to end of carousel1 for infinite scrolling
-carouselChildrens1.slice(0, cardPerView1).forEach((card) => {
-  carousel1.insertAdjacentHTML('beforeend', card.outerHTML);
-});
-
-// Scroll the carousel1 at appropriate postition to hide first few duplicate cards on Firefox
-carousel1.classList.add('no-transition');
-carousel1.scrollLeft = carousel1.offsetWidth;
-carousel1.classList.remove('no-transition');
-
-// Add event listeners for the arrow buttons to scroll the carousel1 left and right
-arrowBtns1.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    carousel1.scrollLeft += btn.id == 'left' ? -firstCardWidth1 : firstCardWidth1;
-  });
-});
-
-const dragStart1 = (e) => {
-  isDragging1 = true;
-  carousel1.classList.add('dragging1');
-  // Records the initial cursor and scroll position of the carousel1
-  startX1 = e.pageX;
-  startScrollLeft1 = carousel1.scrollLeft;
-};
-
-const dragging1 = (e) => {
-  if (!isDragging1) return; // if isDragging1 is false return from here
-  // Updates the scroll position of the carousel1 based on the cursor movement
-  carousel1.scrollLeft = startScrollLeft1 - (e.pageX - startX1);
-};
-
-const dragStop1 = () => {
-  isDragging1 = false;
-  carousel1.classList.remove('dragging1');
-};
-
-const infiniteScroll1 = () => {
-  // If the carousel1 is at the beginning, scroll to the end
-  if (carousel1.scrollLeft === 0) {
-    carousel1.classList.add('no-transition');
-    carousel1.scrollLeft = carousel1.scrollWidth - 2 * carousel1.offsetWidth;
-    carousel1.classList.remove('no-transition');
-  }
-  // If the carousel1 is at the end, scroll to the beginning
-  else if (Math.ceil(carousel1.scrollLeft) === carousel1.scrollWidth - carousel1.offsetWidth) {
-    carousel1.classList.add('no-transition');
-    carousel1.scrollLeft = carousel1.offsetWidth;
-    carousel1.classList.remove('no-transition');
-  }
-
-  // Clear existing timeout & start autoplay if mouse is not hovering over carousel1
-  clearTimeout(timeoutId1);
-  if (!wrapper1.matches(':hover')) autoPlay1();
-};
-
-const autoPlay1 = () => {
-  if (window.innerWidth < 800 || !isAutoPlay1) return; // Return if window is smaller than 800 or isAutoPlay1 is false
-  // Autoplay the carousel1 after every 2500 ms
-  timeoutId1 = setTimeout(() => (carousel1.scrollLeft += firstCardWidth1), 2500);
-};
-autoPlay1();
-
-carousel1.addEventListener('mousedown', dragStart1);
-carousel1.addEventListener('mousemove', dragging1);
-document.addEventListener('mouseup', dragStop1);
-carousel1.addEventListener('scroll', infiniteScroll1);
-wrapper1.addEventListener('mouseenter', () => clearTimeout(timeoutId1));
-wrapper1.addEventListener('mouseleave', autoPlay1);
-
-// ________________________________________end
-
-// Carousel____________________________________
-
 const wrapper2 = document.querySelector('.wrapper2');
 const carousel2 = document.querySelector('.carousel2');
 const firstCardWidth2 = carousel2.querySelector('.card2').offsetWidth;
 const arrowBtns2 = document.querySelectorAll('.wrapper2 i');
 const carouselChildrens2 = [...carousel2.children];
 
-let isDragging2 = false,
+let isDragging2 = true,
   isAutoPlay2 = true,
   startX2,
   startScrollLeft2,
@@ -439,3 +247,71 @@ function toggleDarkMode() {
 // darkModeToggle.addEventListener('click', toggleDarkMode);
 
 // ----------------------------------------------------------- fitur bahasa -----------------------------------------------
+
+const playerButton = document.querySelector('.player-button'),
+  audio = document.querySelector('audio'),
+  timeline = document.querySelector('.timeline'),
+  soundButton = document.querySelector('.sound-button'),
+  playIcon = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="white">
+  <path d="M6.36842 22C9.8856 22 12.7368 19.5376 12.7368 16.5C12.7368 13.4624 9.8856 11 6.36842 11C2.85124 11 0 13.4624 0 16.5C0 19.5376 2.85124 22 6.36842 22Z" fill="white"/>
+  <rect x="9.26318" y="3" width="3.47368" height="13" fill="white"/>
+  <rect x="9.26318" width="12.7368" height="6" rx="2" fill="white"/>
+  </svg>
+      `,
+  pauseIcon = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="white">
+  <path d="M7.36842 22C10.8856 22 13.7368 19.5376 13.7368 16.5C13.7368 13.4624 10.8856 11 7.36842 11C3.85124 11 1 13.4624 1 16.5C1 19.5376 3.85124 22 7.36842 22Z" fill="white"/>
+  <rect x="10.2632" y="3" width="3.47368" height="13" fill="white"/>
+  <rect x="10.2632" width="12.7368" height="6" rx="2" fill="white"/>
+  <path d="M2 3L22 16" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+      `,
+  soundIcon = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+  <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+</svg>`,
+  muteIcon = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+  <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+</svg>`;
+
+function toggleAudio() {
+  if (audio.paused) {
+    audio.play();
+    playerButton.innerHTML = pauseIcon;
+  } else {
+    audio.pause();
+    playerButton.innerHTML = playIcon;
+  }
+}
+
+playerButton.addEventListener('click', toggleAudio);
+
+// function changeTimelinePosition() {
+//   const percentagePosition = (100 * audio.currentTime) / audio.duration;
+//   timeline.style.backgroundSize = `${percentagePosition}% 100%`;
+//   timeline.value = percentagePosition;
+// }
+
+// audio.ontimeupdate = changeTimelinePosition;
+
+// function audioEnded() {
+//   playerButton.innerHTML = playIcon;
+// }
+
+// audio.onended = audioEnded;
+
+// function changeSeek() {
+//   const time = (timeline.value * audio.duration) / 100;
+//   audio.currentTime = time;
+// }
+
+// timeline.addEventListener('change', changeSeek);
+
+function toggleSound() {
+  audio.muted = !audio.muted;
+  soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
+}
+
+soundButton.addEventListener('click', toggleSound);

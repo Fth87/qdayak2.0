@@ -11,9 +11,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="icon" href="images/qdayak2.png" />
     <title>Dayak</title>
+    <!-- Required Core Stylesheet -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css" />
@@ -62,6 +63,21 @@
             <li class="nav-item nav-hover-7">
               <a style="padding: 0px" class="nav-link text-black" href="#profil"><p class="nav-color-2">Profil</p></a>
             </li>
+            <!-- <li class="nav-item nav-hover-7">
+              <div class="audio-player d-inline-block">
+                <audio src="lagu/lagu-dayak.mp3" loop autoplay type="audio/mpeg"></audio>
+                <div class="controls">
+                  <button class="player-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="white">
+                      <path d="M6.36842 22C9.8856 22 12.7368 19.5376 12.7368 16.5C12.7368 13.4624 9.8856 11 6.36842 11C2.85124 11 0 13.4624 0 16.5C0 19.5376 2.85124 22 6.36842 22Z" fill="white" />
+                      <rect x="9.26318" y="3" width="3.47368" height="13" fill="white" />
+                      <rect x="9.26318" width="12.7368" height="6" rx="2" fill="white" />
+                    </svg>
+                  </button>
+ 
+                </div>
+              </div>
+            </li> -->
             <li class="nav-item dropdown nav-hover-6">
               <a style="padding: 0px; color: #fff" class="nav-link dropdown-toggle nav-color-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Adat Istiadat</a>
               <ul class="dropdown-menu">
@@ -79,6 +95,9 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#pakaian">Pakaian</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#legenda">Legenda</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#legenda">Legenda</a>
@@ -107,7 +126,29 @@
                 </label>
               </div>
             </li> -->
-            <li class="nav-item d-lg-none d-block pb-lg-0 pb-3">
+            <li class="nav-item d-lg-none d-block pb-lg-0 pb-3 d-flex align-items-center">
+              <div class="audio-player d-inline-block">
+                <audio src="lagu/lagu-dayak.mp3" loop autoplay type="audio/mpeg"></audio>
+                <div class="controls">
+                  <button class="player-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="white">
+                      <path d="M6.36842 22C9.8856 22 12.7368 19.5376 12.7368 16.5C12.7368 13.4624 9.8856 11 6.36842 11C2.85124 11 0 13.4624 0 16.5C0 19.5376 2.85124 22 6.36842 22Z" fill="white" />
+                      <rect x="9.26318" y="3" width="3.47368" height="13" fill="white" />
+                      <rect x="9.26318" width="12.7368" height="6" rx="2" fill="white" />
+                    </svg>
+                  </button>
+                  <!-- <input type="range" class="timeline" max="100" value="0" />
+                <button class="sound-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button> -->
+                </div>
+              </div>
               <a href="#chat">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewbox="0 0 35 35" fill="none">
                   <path
@@ -120,6 +161,28 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="audio-player d-inline-block d-lg-block d-none">
+          <audio src="lagu/lagu-dayak.mp3" loop autoplay type="audio/mpeg"></audio>
+          <div class="controls">
+            <button class="player-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="white">
+                <path d="M6.36842 22C9.8856 22 12.7368 19.5376 12.7368 16.5C12.7368 13.4624 9.8856 11 6.36842 11C2.85124 11 0 13.4624 0 16.5C0 19.5376 2.85124 22 6.36842 22Z" fill="white" />
+                <rect x="9.26318" y="3" width="3.47368" height="13" fill="white" />
+                <rect x="9.26318" width="12.7368" height="6" rx="2" fill="white" />
+              </svg>
+            </button>
+            <!-- <input type="range" class="timeline" max="100" value="0" />
+            <button class="sound-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                <path
+                  fill-rule="evenodd"
+                  d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button> -->
+          </div>
         </div>
         <div class="d-lg-block d-none">
           <a href="#chat">
@@ -182,16 +245,18 @@
                     </svg>
                   </a>
                 </div>
-                <div class="arrow d-flex align-items-center mt-5 mx-2">
-                  <div class="d-flex">SCROLL</div>
-                  <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="142" viewbox="0 0 14 142" fill="none">
-                    <path
-                      d="M7.5 1C7.5 0.723858 7.27614 0.5 7 0.5C6.72386 0.5 6.5 0.723858 6.5 1L7.5 1ZM6.64645 141.354C6.84171 141.549 7.1583 141.549 7.35356 141.354L10.5355 138.172C10.7308 137.976 10.7308 137.66 10.5355 137.464C10.3403 137.269 10.0237 137.269 9.82843 137.464L7.00001 140.293L4.17158 137.464C3.97632 137.269 3.65973 137.269 3.46447 137.464C3.26921 137.66 3.26921 137.976 3.46447 138.172L6.64645 141.354ZM6.5 1L6.50001 141L7.50001 141L7.5 1L6.5 1Z"
-                      fill="white"
-                    />
-                    <path d="M0.5 134.5L7 141L13.5 134.5" stroke="white" stroke-linecap="round" />
-                  </svg>
-                </div>
+                <a href="#adat">
+                  <div class="arrow d-flex align-items-center mt-5 mx-2">
+                    <div class="d-flex">SCROLL</div>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="142" viewbox="0 0 14 142" fill="none">
+                      <path
+                        d="M7.5 1C7.5 0.723858 7.27614 0.5 7 0.5C6.72386 0.5 6.5 0.723858 6.5 1L7.5 1ZM6.64645 141.354C6.84171 141.549 7.1583 141.549 7.35356 141.354L10.5355 138.172C10.7308 137.976 10.7308 137.66 10.5355 137.464C10.3403 137.269 10.0237 137.269 9.82843 137.464L7.00001 140.293L4.17158 137.464C3.97632 137.269 3.65973 137.269 3.46447 137.464C3.26921 137.66 3.26921 137.976 3.46447 138.172L6.64645 141.354ZM6.5 1L6.50001 141L7.50001 141L7.5 1L6.5 1Z"
+                        fill="white"
+                      />
+                      <path d="M0.5 134.5L7 141L13.5 134.5" stroke="white" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-6 mt-5">
@@ -271,11 +336,11 @@
           </div>
 
           <div class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <ul class="carousel">
+            <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+            <ul class="row">
               <!-- <li class="card"> -->
               <!-- colom -->
-              <div class="card mx-1" style="border: none; background-color: transparent; height: auto">
+              <div class="card col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
                 <div class="card-upacara mx-1 my-3 position-relative">
                   <img src="images/modal-manajah.jpg" alt="" />
                   <div class="text">
@@ -286,7 +351,7 @@
                 </div>
               </div>
               <!-- colom -->
-              <div class="card mx-1" style="border: none; background-color: transparent; height: auto">
+              <div class="card col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
                 <div class="card-upacara mx-1 my-3 position-relative">
                   <img src="images/modal-tiwah.jpg" alt="" />
                   <div class="text">
@@ -301,7 +366,7 @@
               </div>
               <!-- end colom -->
               <!-- colom -->
-              <div class="card mx-1" style="border: none; background-color: transparent; height: auto">
+              <div class="card col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
                 <div class="card-upacara mx-1 my-3 position-relative">
                   <img src="images/modal-tariu.jpg" alt="" />
                   <div class="text">
@@ -319,7 +384,7 @@
 
               <!-- end colom -->
             </ul>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+            <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
           </div>
         </div>
       </div>
@@ -327,9 +392,9 @@
 
     <div class="makanan overflow-hidden my-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="mx-lg-5 makanan-tulisan">
+        <div class="row py-4">
+          <div class="col-lg-6 order-lg-1 order-2">
+            <div class="mx-lg-5 makanan-tulisan pt-5 pt-lg-0">
               <div class="d-flex justify-content-start" id="makanan">
                 <p class="makanan-judul">MAKANAN</p>
               </div>
@@ -338,7 +403,7 @@
               <a id="myBtn3" class="tombolbawah2 px-3 py-2">LIHAT</a>
             </div>
           </div>
-          <div class="col-lg-6 position-relative">
+          <div class="col-lg-6 position-relative order-lg-2 order-1">
             <div class="d-flex justify-content-center align-items-center h-100">
               <img class="makanan-img m-lg-3 mt-5" src="images/makanannyar.png" alt="" />
             </div>
@@ -420,59 +485,59 @@
         </p>
 
         <div class="legenda-isi my-5">
-          <div class="wrapper1 container">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <ul class="carousel1">
-              <!-- <li class="card"> -->
-              <!-- colom -->
-              <div class="card1 mx-2" style="border: none; background-color: transparent; height: auto">
-                <div class="legenda-card m-3">
-                  <div class="text-center my-3">
-                    <img src="images/bujangbeji.jpg" alt="" class="m-50" />
-                  </div>
-                  <h1>Kisah Bujang Beji</h1>
-                  <p>
-                    Kisah Bujang Beji mengisahkan seorang pemuda pemberani yang berjuang untuk melindungi desa dan orang-orang tercinta dari bahaya yang mengancam. Dipersenjatai dengan keberanian dan kekuatan, Bujang Beji dikisahkan
-                    mempertaruhkan segalanya untuk melawan ancaman yang datang.
-                  </p>
-                  <a id="myBtn7" class="tombolbawah2 px-3 py-2">LIHAT</a>
-                </div>
-              </div>
-              <!-- colom -->
-              <div class="card1 mx-2" style="border: none; background-color: transparent; height: auto">
-                <div class="legenda-card m-3">
-                  <div class="text-center my-3">
-                    <img src="images/modal-landak.jpg" alt="" class="m-50" />
-                  </div>
-                  <h1>Asal muasal Sungai Landak</h1>
-                  <p>
-                    Kisah asal muasal Sungai Landak mengisahkan tentang penciptaan atau asal-usul sungai yang dipenuhi dengan misteri dan keajaiban. Legenda ini menggambarkan bagaimana sungai yang indah dan subur ini diciptakan, sering kali
-                    melibatkan unsur-unsur magis dan mitologis dalam ceritanya.
-                  </p>
-                  <a id="myBtn8" class="tombolbawah2 px-3 py-2">LIHAT</a>
-                </div>
-              </div>
-              <!-- end colom -->
-              <!-- colom -->
-              <div class="card1 mx-2" style="border: none; background-color: transparent; height: auto">
-                <div class="legenda-card m-3">
-                  <div class="text-center my-3">
-                    <img src="images/hantu.jpg" alt="" class="m-50" />
-                  </div>
-                  <h1>Pasukan Hantu</h1>
-                  <p>
-                    Kisah Pasukan Hantu adalah cerita yang mengisahkan tentang entitas gaib atau roh yang mendiami wilayah tertentu. Pasukan Hantu seringkali dianggap sebagai pasukan makhluk gaib atau arwah penjaga yang berkeliaran di
-                    tempat-tempat tertentu, membawa pesan atau peringatan bagi manusia.
-                  </p>
-                  <a id="myBtn9" class="tombolbawah2 px-3 py-2">LIHAT</a>
-                </div>
-              </div>
-              <!-- end colom -->
-              <!-- colom -->
+          <div class="container row justify-content-center">
+            <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
 
-              <!-- end colom -->
-            </ul>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+            <!-- <li class="card"> -->
+            <!-- colom -->
+            <div class="card1 col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
+              <div class="legenda-card m-3">
+                <div class="text-center my-3">
+                  <img src="images/bujangbeji.jpg" alt="" class="m-50" />
+                </div>
+                <h1>Kisah Bujang Beji</h1>
+                <p>
+                  Kisah Bujang Beji mengisahkan seorang pemuda pemberani yang berjuang untuk melindungi desa dan orang-orang tercinta dari bahaya yang mengancam. Dipersenjatai dengan keberanian dan kekuatan, Bujang Beji dikisahkan
+                  mempertaruhkan segalanya untuk melawan ancaman yang datang.
+                </p>
+                <a id="myBtn7" class="tombolbawah2 px-3 py-2">LIHAT</a>
+              </div>
+            </div>
+            <!-- colom -->
+            <div class="card1 col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
+              <div class="legenda-card m-3">
+                <div class="text-center my-3">
+                  <img src="images/modal-landak.jpg" alt="" class="m-50" />
+                </div>
+                <h1>Asal muasal Sungai Landak</h1>
+                <p>
+                  Kisah asal muasal Sungai Landak mengisahkan tentang penciptaan atau asal-usul sungai yang dipenuhi dengan misteri dan keajaiban. Legenda ini menggambarkan bagaimana sungai yang indah dan subur ini diciptakan, sering kali
+                  melibatkan unsur-unsur magis dan mitologis dalam ceritanya.
+                </p>
+                <a id="myBtn8" class="tombolbawah2 px-3 py-2">LIHAT</a>
+              </div>
+            </div>
+            <!-- end colom -->
+            <!-- colom -->
+            <div class="card1 col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
+              <div class="legenda-card m-3">
+                <div class="text-center my-3">
+                  <img src="images/hantu.jpg" alt="" class="m-50" />
+                </div>
+                <h1>Pasukan Hantu</h1>
+                <p>
+                  Kisah Pasukan Hantu adalah cerita yang mengisahkan tentang entitas gaib atau roh yang mendiami wilayah tertentu. Pasukan Hantu seringkali dianggap sebagai pasukan makhluk gaib atau arwah penjaga yang berkeliaran di
+                  tempat-tempat tertentu, membawa pesan atau peringatan bagi manusia.
+                </p>
+                <a id="myBtn9" class="tombolbawah2 px-3 py-2">LIHAT</a>
+              </div>
+            </div>
+            <!-- end colom -->
+            <!-- colom -->
+
+            <!-- end colom -->
+
+            <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
           </div>
         </div>
       </div>
@@ -691,16 +756,12 @@
 
     <div class="modalContent"></div>
 
-    <audio loop autoplay>
-      <source src="lagu/lagu-dayak.mp3" type="audio/mpeg" />
-    </audio>
-
     <!-- Trigger/Open The Modal -->
     <!-- <button id="myBtn">Open Modal</button> -->
 
     <footer class="">
       <div class="container mx-auto row py-5 mt-5 border-top">
-        <div class="col-lg-6 order-lg-1 order-2 mb-3">
+        <div class="col-lg-6 order-1 mb-3">
           <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none"></a>
           <div class="footer-qdayak d-block text-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="67" height="65" viewBox="0 0 67 65" fill="none">
@@ -721,6 +782,39 @@
             <h5>QDayak</h5>
             <p class="text-start mt-3">Misi kami adalah melestarikan dan mempromosikan kekayaan budaya Suku Dayak Kalimantan serta menginspirasi pengunjung untuk <span> menghargai</span> dan <span>menghormati</span> warisan ini.</p>
 
+            <ul class="nav footer-kiri text-start justify-content-start">
+              <ul style="list-style-type: none" class="p-0">
+                <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-start text-white">Home</a></li>
+                <li class="nav-item mb-2"><a href="#profil" class="nav-link p-0 text-start text-white">Profil</a></li>
+                <li class="nav-item mb-2"><a href="#chat" class="nav-link p-0 text-start text-white">Chat Bot</a></li>
+                <li class="nav-item mb-2"><a href="#adat" class="nav-link p-0 text-start text-white">Adat</a></li>
+                <li class="nav-item mb-2"><a href="#makanan" class="nav-link p-0 text-start text-white">Makanan</a></li>
+              </ul>
+              <ul style="list-style-type: none" class="p-0">
+                <li class="nav-item mb-2"><a href="#adat" class="nav-link p-0 text-start text-white">Adat Istiadat</a></li>
+
+                <li class="nav-item mb-2"><a href="#rumah" class="nav-link p-0 text-start text-white">Rumah</a></li>
+                <li class="nav-item mb-2"><a href="#senjata" class="nav-link p-0 text-start text-white">Senjata</a></li>
+                <li class="nav-item mb-2"><a href="#pakaian" class="nav-link p-0 text-start text-white">Pakaian</a></li>
+                <li class="nav-item mb-2"><a href="#legenda" class="nav-link p-0 text-start text-white">Legenda</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-3 order-2 text-white">
+          <div class="ps-lg-5">
+            <div class="footer-komen mt-5">
+              <h1>Berikan Komentar</h1>
+              <p>Komentar Anda sungguh berarti bagi kami. Setiap pendapat dan ide yang Anda bagikan menjadi penambah nilai yang luar biasa.</p>
+            </div>
+
+            <div class="searchArea position-relative my-4">
+              <div class="inputDiv">
+                <input type="text" id="inputField" tabindex="1" class="form-control ps-3" placeholder="berikan komentar anda" aria-label="berikan komentar anda" aria-describedby="button-addon2" />
+              </div>
+              <button type="submit" class="btn-footer" type="button" tabindex="2">Submit</button>
+            </div>
             <div class="medsos">
               <a href="https://instagram.com" class="icon-ig text-decoration-none">
                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23" fill="none">
@@ -754,24 +848,6 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6 mb-3 order-1 order-lg-2 text-white">
-          <!-- <h5 class="text-start nav-item mb-2">Qdayak</h5> -->
-          <ul class="nav footer-kiri text-start justify-content-end">
-            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-start text-white">Home</a></li>
-            <li class="nav-item mb-2"><a href="#profil" class="nav-link p-0 text-start text-white">Profil</a></li>
-            <ul style="list-style-type: none" class="p-0">
-              <li class="nav-item mb-2"><a href="#adat" class="nav-link p-0 text-start text-white">Adat Istiadat</a></li>
-              <li class="nav-item mb-2"><a href="#adat" class="nav-link p-0 text-start text-white">Adat</a></li>
-              <li class="nav-item mb-2"><a href="#makanan" class="nav-link p-0 text-start text-white">Makanan</a></li>
-              <li class="nav-item mb-2"><a href="#rumah" class="nav-link p-0 text-start text-white">Rumah</a></li>
-              <li class="nav-item mb-2"><a href="#senjata" class="nav-link p-0 text-start text-white">Senjata</a></li>
-              <li class="nav-item mb-2"><a href="#pakaian" class="nav-link p-0 text-start text-white">Pakaian</a></li>
-              <li class="nav-item mb-2"><a href="#legenda" class="nav-link p-0 text-start text-white">Legenda</a></li>
-            </ul>
-          </ul>
-        </div>
-
         <div class="col-12 order-3">
           <p class="cp mt-3">
             Copyright ©
@@ -790,8 +866,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script defer src="	https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- <script defer src="content.js"></script> -->
   </body>
 </html>
