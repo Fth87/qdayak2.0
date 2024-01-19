@@ -15,46 +15,22 @@
     <title>Dayak</title>
     <!-- Required Core Stylesheet -->
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css" />
   </head>
   <body class="body" id="bodyku">
-    <nav
-      class="navbar navbar-expand-lg fixed-top"
-      style="padding: 0px; height: 67px"
-    >
+    <nav class="navbar navbar-expand-lg fixed-top" style="padding: 0px; height: 67px">
       <div class="container inner-navbar d-flex justify-content-between">
         <div class="Qdayak d-block">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="23"
-            viewbox="0 0 24 23"
-            fill="none"
-            style="margin-bottom: 5px"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewbox="0 0 24 23" fill="none" style="margin-bottom: 5px">
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M11.6697 15.6797C13.9839 15.6797 15.8599 13.8037 15.8599 11.4895C15.8599 9.17526 13.9839 7.29922 11.6697 7.29922C9.35544 7.29922 7.47939 9.17526 7.47939 11.4895C7.47939 13.8037 9.35544 15.6797 11.6697 15.6797ZM11.6697 17.9326C15.2281 17.9326 18.1128 15.0479 18.1128 11.4895C18.1128 7.93106 15.2281 5.04639 11.6697 5.04639C8.11124 5.04639 5.22656 7.93106 5.22656 11.4895C5.22656 15.0479 8.11124 17.9326 11.6697 17.9326Z"
               fill="white"
             />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M17.9323 20.9965L11.6244 12.7061L13.4172 11.3419L19.7252 19.6323L17.9323 20.9965Z"
-              fill="white"
-            />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9323 20.9965L11.6244 12.7061L13.4172 11.3419L19.7252 19.6323L17.9323 20.9965Z" fill="white" />
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
@@ -62,16 +38,9 @@
               fill="white"
             />
           </svg>
-          <span
-            style="
-              color: #fff;
-              font-family: poppins;
-              font-size: 24px;
-              font-weight: 600;
-            "
-            >Qdayak</span
-          >
+          <span style="color: #fff; font-family: poppins; font-size: 24px; font-weight: 600">Qdayak</span>
         </div>
+
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
             <path
@@ -82,25 +51,57 @@
             />
           </svg>
         </button> -->
+        <div class="Qdayak d-block">
+          <div class="audio-player d-inline-block">
+            <audio src="lagu/lagu-dayak.mp3" loop type="audio/mpeg"></audio>
+            <div class="controls">
+              <button class="player-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="white">
+                  <path d="M6.36842 22C9.8856 22 12.7368 19.5376 12.7368 16.5C12.7368 13.4624 9.8856 11 6.36842 11C2.85124 11 0 13.4624 0 16.5C0 19.5376 2.85124 22 6.36842 22Z" fill="white" />
+                  <rect x="9.26318" y="3" width="3.47368" height="13" fill="white" />
+                  <rect x="9.26318" width="12.7368" height="6" rx="2" fill="white" />
+                </svg>
+              </button>
+              <!-- <input type="range" class="timeline" max="100" value="0" />
+              <button class="sound-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button> -->
+            </div>
+          </div>
+        </div>
+        <div class="Qdayak d-block">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="white" class="bi bi-list" viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
+        <div class="d-lg-block d-none">
+          <a href="#chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewbox="0 0 35 35" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.5 17.5C31.5 24.2655 25.2315 29.75 17.5 29.75C15.0151 29.7604 12.5642 29.1722 10.3547 28.035L3.5 29.75L5.8415 24.2847C4.36275 22.3422 3.5 20.0095 3.5 17.5C3.5 10.7345 9.7685 5.25 17.5 5.25C25.2315 5.25 31.5 10.7345 31.5 17.5ZM12.25 15.75H8.75V19.25H12.25V15.75ZM26.25 15.75H22.75V19.25H26.25V15.75ZM15.75 15.75H19.25V19.25H15.75V15.75Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
 
-        <div
-          class="collapse navbar-collapse menu rounded-2 justify-content-center"
-          id="navbarNavDropdown"
-        >
+        <div class="collapse navbar-collapse menu rounded-2 justify-content-center" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item nav-hover-1">
-              <a
-                style="padding: 0px"
-                class="nav-link"
-                aria-current="page"
-                href="#home"
-                ><p class="nav-color-1">Home</p></a
-              >
+              <a style="padding: 0px" class="nav-link" aria-current="page" href="#home"><p class="nav-color-1">Home</p></a>
             </li>
             <li class="nav-item nav-hover-7">
-              <a style="padding: 0px" class="nav-link text-black" href="#profil"
-                ><p class="nav-color-2">Profile</p></a
-              >
+              <a style="padding: 0px" class="nav-link text-black" href="#profil"><p class="nav-color-2">Profile</p></a>
             </li>
             <!-- <li class="nav-item nav-hover-7">
               <div class="audio-player d-inline-block">
@@ -118,18 +119,10 @@
               </div>
             </li> -->
             <li class="nav-item dropdown nav-hover-6">
-              <a
-                style="padding: 0px; color: #fff"
-                class="nav-link dropdown-toggle nav-color-3"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Adat Istiadat</a
-              >
+              <a style="padding: 0px; color: #fff" class="nav-link dropdown-toggle nav-color-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Adat Istiadat</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#adat">Adat</a>
+                  <a class="dropdown-item" href="#adat">Culture</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#makanan">Food</a>
@@ -145,6 +138,16 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#legenda">Legend</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown nav-hover-6" style="list-style: none">
+              <a style="padding: 0px" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="/images/Bendera-inggris.png" alt="" class="bendera" /> EN </a>
+              <ul class="dropdown-menu">
+                <!-- <li><a class="dropdown-item" href="index.html">Indonesia</a></li> -->
+                <li>
+                  <a class="dropdown-item" href="index-2.html"><img src="/images/Bendera-indo.png" alt="" class="bendera mx-2" />ID</a>
                 </li>
               </ul>
             </li>
@@ -170,9 +173,7 @@
                 </label>
               </div>
             </li> -->
-            <li
-              class="nav-item d-lg-none d-block pb-lg-0 pb-3 d-flex align-items-center"
-            >
+            <li class="nav-item d-lg-none d-block pb-lg-0 pb-3 d-flex align-items-center">
               <!-- <div class="audio-player d-inline-block d-lg-none d-block">
                 <audio src="lagu/lagu-dayak.mp3" loop autoplay type="audio/mpeg"></audio>
                 <div class="controls">
@@ -186,13 +187,7 @@
                 </div>
               </div> -->
               <a href="#chat">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewbox="0 0 35 35"
-                  fill="none"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewbox="0 0 35 35" fill="none">
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -203,90 +198,6 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="audio-player d-inline-block">
-          <audio src="lagu/lagu-dayak.mp3" loop type="audio/mpeg"></audio>
-          <div class="controls">
-            <button class="player-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="white"
-              >
-                <path
-                  d="M6.36842 22C9.8856 22 12.7368 19.5376 12.7368 16.5C12.7368 13.4624 9.8856 11 6.36842 11C2.85124 11 0 13.4624 0 16.5C0 19.5376 2.85124 22 6.36842 22Z"
-                  fill="white"
-                />
-                <rect
-                  x="9.26318"
-                  y="3"
-                  width="3.47368"
-                  height="13"
-                  fill="white"
-                />
-                <rect
-                  x="9.26318"
-                  width="12.7368"
-                  height="6"
-                  rx="2"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <!-- <input type="range" class="timeline" max="100" value="0" />
-            <button class="sound-button">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-                <path
-                  fill-rule="evenodd"
-                  d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button> -->
-          </div>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="34"
-            height="34"
-            fill="white"
-            class="bi bi-list"
-            viewbox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </button>
-        <div class="d-lg-block d-none">
-          <a href="#chat">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              viewbox="0 0 35 35"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M31.5 17.5C31.5 24.2655 25.2315 29.75 17.5 29.75C15.0151 29.7604 12.5642 29.1722 10.3547 28.035L3.5 29.75L5.8415 24.2847C4.36275 22.3422 3.5 20.0095 3.5 17.5C3.5 10.7345 9.7685 5.25 17.5 5.25C25.2315 5.25 31.5 10.7345 31.5 17.5ZM12.25 15.75H8.75V19.25H12.25V15.75ZM26.25 15.75H22.75V19.25H26.25V15.75ZM15.75 15.75H19.25V19.25H15.75V15.75Z"
-                fill="white"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </nav>
@@ -306,27 +217,12 @@
                 <p class="Welcome1">LOOK</p>
               </div>
             </div>
-            <div
-              class="col-6 d-flex justify-content-end align-items-center mt-5"
-            >
+            <div class="col-6 d-flex justify-content-end align-items-center mt-5">
               <div class="d-block">
                 <div class="d-flex flex-column align-items-end">
                   <a href="https://instagram.com" class="icon-ig">
-                    <svg
-                      class="m-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewbox="0 0 23 23"
-                      fill="none"
-                    >
-                      <circle
-                        cx="11.5"
-                        cy="11.5"
-                        r="11.5"
-                        fill="#F0EEEE"
-                        fill-opacity="0.32"
-                      />
+                    <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 23 23" fill="none">
+                      <circle cx="11.5" cy="11.5" r="11.5" fill="#F0EEEE" fill-opacity="0.32" />
                       <path
                         d="M8.48 5H13.52C15.44 5 17 6.56 17 8.48V13.52C17 14.443 16.6334 15.3281 15.9807 15.9807C15.3281 16.6334 14.443 17 13.52 17H8.48C6.56 17 5 15.44 5 13.52V8.48C5 7.55705 5.36664 6.6719 6.01927 6.01927C6.6719 5.36664 7.55705 5 8.48 5ZM8.36 6.2C7.78713 6.2 7.23773 6.42757 6.83265 6.83265C6.42757 7.23773 6.2 7.78713 6.2 8.36V13.64C6.2 14.834 7.166 15.8 8.36 15.8H13.64C14.2129 15.8 14.7623 15.5724 15.1674 15.1674C15.5724 14.7623 15.8 14.2129 15.8 13.64V8.36C15.8 7.166 14.834 6.2 13.64 6.2H8.36ZM14.15 7.1C14.3489 7.1 14.5397 7.17902 14.6803 7.31967C14.821 7.46032 14.9 7.65109 14.9 7.85C14.9 8.04891 14.821 8.23968 14.6803 8.38033C14.5397 8.52098 14.3489 8.6 14.15 8.6C13.9511 8.6 13.7603 8.52098 13.6197 8.38033C13.479 8.23968 13.4 8.04891 13.4 7.85C13.4 7.65109 13.479 7.46032 13.6197 7.31967C13.7603 7.17902 13.9511 7.1 14.15 7.1ZM11 8C11.7956 8 12.5587 8.31607 13.1213 8.87868C13.6839 9.44129 14 10.2044 14 11C14 11.7956 13.6839 12.5587 13.1213 13.1213C12.5587 13.6839 11.7956 14 11 14C10.2044 14 9.44129 13.6839 8.87868 13.1213C8.31607 12.5587 8 11.7956 8 11C8 10.2044 8.31607 9.44129 8.87868 8.87868C9.44129 8.31607 10.2044 8 11 8ZM11 9.2C10.5226 9.2 10.0648 9.38964 9.72721 9.72721C9.38964 10.0648 9.2 10.5226 9.2 11C9.2 11.4774 9.38964 11.9352 9.72721 12.2728C10.0648 12.6104 10.5226 12.8 11 12.8C11.4774 12.8 11.9352 12.6104 12.2728 12.2728C12.6104 11.9352 12.8 11.4774 12.8 11C12.8 10.5226 12.6104 10.0648 12.2728 9.72721C11.9352 9.38964 11.4774 9.2 11 9.2Z"
                         fill="white"
@@ -334,21 +230,8 @@
                     </svg>
                   </a>
                   <a href="https://facebook.com" class="icon-fb">
-                    <svg
-                      class="m-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewbox="0 0 23 23"
-                      fill="none"
-                    >
-                      <circle
-                        cx="11.5"
-                        cy="11.5"
-                        r="11.5"
-                        fill="#F0EEEE"
-                        fill-opacity="0.32"
-                      />
+                    <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 23 23" fill="none">
+                      <circle cx="11.5" cy="11.5" r="11.5" fill="#F0EEEE" fill-opacity="0.32" />
                       <path
                         d="M17 11.015C17 7.69474 14.312 5 11 5C7.688 5 5 7.69474 5 11.015C5 13.9263 7.064 16.3504 9.8 16.9098V12.8195H8.6V11.015H9.8V9.51128C9.8 8.35038 10.742 7.40601 11.9 7.40601H13.4V9.21053H12.2C11.87 9.21053 11.6 9.4812 11.6 9.81203V11.015H13.4V12.8195H11.6V17C14.63 16.6992 17 14.1368 17 11.015Z"
                         fill="white"
@@ -356,21 +239,8 @@
                     </svg>
                   </a>
                   <a href="https://x.com" class="icon-x">
-                    <svg
-                      class="m-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewbox="0 0 23 23"
-                      fill="none"
-                    >
-                      <circle
-                        cx="11.5"
-                        cy="11.5"
-                        r="11.5"
-                        fill="#F0EEEE"
-                        fill-opacity="0.32"
-                      />
+                    <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 23 23" fill="none">
+                      <circle cx="11.5" cy="11.5" r="11.5" fill="#F0EEEE" fill-opacity="0.32" />
                       <path
                         d="M17 7.17647C16.5583 7.38235 16.0822 7.51765 15.5889 7.58235C16.0937 7.27059 16.4837 6.77647 16.6673 6.18235C16.1912 6.47647 15.6635 6.68235 15.1071 6.8C14.6539 6.29412 14.0172 6 13.2945 6C11.9465 6 10.8451 7.12941 10.8451 8.52353C10.8451 8.72353 10.8681 8.91765 10.9082 9.1C8.86616 8.99412 7.0478 7.98824 5.83748 6.46471C5.62524 6.83529 5.50478 7.27059 5.50478 7.72941C5.50478 8.60588 5.93499 9.38235 6.60038 9.82353C6.19312 9.82353 5.81453 9.70588 5.48184 9.52941V9.54706C5.48184 10.7706 6.33078 11.7941 7.45507 12.0235C7.09411 12.1248 6.71516 12.1389 6.34799 12.0647C6.50379 12.5662 6.80891 13.0049 7.22047 13.3194C7.63202 13.6338 8.12932 13.8081 8.64245 13.8176C7.77264 14.5238 6.69445 14.9055 5.58509 14.9C5.39006 14.9 5.19503 14.8882 5 14.8647C6.08987 15.5824 7.38623 16 8.77438 16C13.2945 16 15.7782 12.1529 15.7782 8.81765C15.7782 8.70588 15.7782 8.6 15.7725 8.48824C16.2543 8.13529 16.6673 7.68824 17 7.17647Z"
                         fill="white"
@@ -381,23 +251,12 @@
                 <a href="#adat">
                   <div class="arrow d-flex align-items-center mt-5 mx-2">
                     <div class="d-flex">SCROLL</div>
-                    <svg
-                      class=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="142"
-                      viewbox="0 0 14 142"
-                      fill="none"
-                    >
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="142" viewbox="0 0 14 142" fill="none">
                       <path
                         d="M7.5 1C7.5 0.723858 7.27614 0.5 7 0.5C6.72386 0.5 6.5 0.723858 6.5 1L7.5 1ZM6.64645 141.354C6.84171 141.549 7.1583 141.549 7.35356 141.354L10.5355 138.172C10.7308 137.976 10.7308 137.66 10.5355 137.464C10.3403 137.269 10.0237 137.269 9.82843 137.464L7.00001 140.293L4.17158 137.464C3.97632 137.269 3.65973 137.269 3.46447 137.464C3.26921 137.66 3.26921 137.976 3.46447 138.172L6.64645 141.354ZM6.5 1L6.50001 141L7.50001 141L7.5 1L6.5 1Z"
                         fill="white"
                       />
-                      <path
-                        d="M0.5 134.5L7 141L13.5 134.5"
-                        stroke="white"
-                        stroke-linecap="round"
-                      />
+                      <path d="M0.5 134.5L7 141L13.5 134.5" stroke="white" stroke-linecap="round" />
                     </svg>
                   </div>
                 </a>
@@ -405,48 +264,18 @@
             </div>
             <div class="col-lg-6 mt-5">
               <div class="ket-landing d-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13"
-                  height="13"
-                  viewbox="0 0 13 13"
-                  fill="none"
-                >
-                  <circle
-                    cx="6.5"
-                    cy="6.5"
-                    r="6"
-                    fill="#870000"
-                    stroke="white"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewbox="0 0 13 13" fill="none">
+                  <circle cx="6.5" cy="6.5" r="6" fill="#870000" stroke="white" />
                 </svg>
-                <p class="mx-1">
-                  This website is intended to introduce the Dayak tribe widely
-                  by introducing the customs in the Dayak tribe
-                </p>
+                <p class="mx-1">This website is intended to introduce the Dayak tribe widely by introducing the customs in the Dayak tribe</p>
               </div>
             </div>
             <div class="col-lg-6 mt-lg-5">
               <div class="ket-landing d-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13"
-                  height="13"
-                  viewbox="0 0 13 13"
-                  fill="none"
-                >
-                  <circle
-                    cx="6.5"
-                    cy="6.5"
-                    r="6"
-                    fill="#870000"
-                    stroke="white"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewbox="0 0 13 13" fill="none">
+                  <circle cx="6.5" cy="6.5" r="6" fill="#870000" stroke="white" />
                 </svg>
-                <p class="mx-1">
-                  This website is intended to introduce the Dayak tribe widely
-                  by introducing the customs in the Dayak tribe
-                </p>
+                <p class="mx-1">This website is intended to introduce the Dayak tribe widely by introducing the customs in the Dayak tribe</p>
               </div>
             </div>
           </div>
@@ -484,10 +313,7 @@
               </div>
               <h1 class="profil-subjudul">Dayak<br />Culture Profile</h1>
               <p class="profil-isi">
-                The Dayak tribe is an original ethnic group that inhabits the
-                interior of the island of Kalimantan, Indonesia.They are one of
-                the indigenous groups that have a diversity of cultural,
-                language, and customs that are rich.
+                The Dayak tribe is an original ethnic group that inhabits the interior of the island of Kalimantan, Indonesia.They are one of the indigenous groups that have a diversity of cultural, language, and customs that are rich.
               </p>
             </div>
           </div>
@@ -502,20 +328,13 @@
               <div class="rectangle4">
                 <p class="adat-judul">ADAT</p>
               </div>
-              <h1 class="adat-subjudul my-1">
-                Happiness and Respect Ritual: <span> Customary </span> Dayak
-                tribe
-              </h1>
+              <h1 class="adat-subjudul my-1">Happiness and Respect Ritual: <span> Customary </span> Dayak tribe</h1>
             </div>
           </div>
           <div class="col-lg-6">
             <p class="adat-text mt-lg-5 mt-2">
-              The Customs of the Dayak Tribal in Kalimantan describes the values
-              of happiness, the respect of nature, and the alignment of
-              humanity.Their special rituals, such as tairu, tiwah, and manage,
-              are not just traditions, Except for the deep expression of
-              gratitude, honor of the ancestors, and the harmonious relationship
-              with nature.
+              The Customs of the Dayak Tribal in Kalimantan describes the values of happiness, the respect of nature, and the alignment of humanity.Their special rituals, such as tairu, tiwah, and manage, are not just traditions, Except for
+              the deep expression of gratitude, honor of the ancestors, and the harmonious relationship with nature.
             </p>
           </div>
 
@@ -524,71 +343,37 @@
             <ul class="row">
               <!-- <li class="card"> -->
               <!-- colom -->
-              <div
-                class="card col-lg-4 col-md-6"
-                style="
-                  border: none;
-                  background-color: transparent;
-                  height: auto;
-                "
-              >
+              <div class="card col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
                 <div class="card-upacara mx-1 my-3 position-relative">
                   <img src="images/modal-manajah.jpg" alt="" />
                   <div class="text">
                     <h1>Anatang Manager Ceremony</h1>
-                    <p>
-                      Management Manatang is a traditional ceremony performed by
-                      the Dayak tribe to celebrate certain success or
-                      achievements in life, such as birth, marriage, or
-                      achievements in certain fields. anatar
-                    </p>
+                    <p>Management Manatang is a traditional ceremony performed by the Dayak tribe to celebrate certain success or achievements in life, such as birth, marriage, or achievements in certain fields. anatar</p>
                     <a id="myBtn2" class="tombolbawah px-3 py-2">LOOK</a>
                   </div>
                 </div>
               </div>
               <!-- colom -->
-              <div
-                class="card col-lg-4 col-md-6"
-                style="
-                  border: none;
-                  background-color: transparent;
-                  height: auto;
-                "
-              >
+              <div class="card col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
                 <div class="card-upacara mx-1 my-3 position-relative">
                   <img src="images/modal-tiwah.jpg" alt="" />
                   <div class="text">
                     <h1>Tiwah ceremony</h1>
-                    <p>
-                      Tiwah is a Dayak tribal ceremony related to the ritual of
-                      death.This is a burial procession carried out to deliver
-                      the spirit of the person who died to the realm and is an
-                      important moment in Dayak community life.
-                    </p>
+                    <p>Tiwah is a Dayak tribal ceremony related to the ritual of death.This is a burial procession carried out to deliver the spirit of the person who died to the realm and is an important moment in Dayak community life.</p>
                     <a id="myBtn1" class="tombolbawah px-3 py-2">LOOK</a>
                   </div>
                 </div>
               </div>
               <!-- end colom -->
               <!-- colom -->
-              <div
-                class="card col-lg-4 col-md-6"
-                style="
-                  border: none;
-                  background-color: transparent;
-                  height: auto;
-                "
-              >
+              <div class="card col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
                 <div class="card-upacara mx-1 my-3 position-relative">
                   <img src="images/modal-tariu.jpg" alt="" />
                   <div class="text">
                     <h1>Tairu Ceremony</h1>
                     <p>
-                      The Tairu ceremony is an important traditional ritual
-                      performed by the Dayak tribe in Kalimantan.This is a
-                      harvest party ceremony held to celebrate abundant harvests
-                      and respect the spirits of ancestors as well The gods who
-                      are believed to maintain soil fertility.
+                      The Tairu ceremony is an important traditional ritual performed by the Dayak tribe in Kalimantan.This is a harvest party ceremony held to celebrate abundant harvests and respect the spirits of ancestors as well The
+                      gods who are believed to maintain soil fertility.
                     </p>
                     <a id="myBtn0" class="tombolbawah px-3 py-2">LOOK</a>
                   </div>
@@ -613,35 +398,20 @@
               <div class="d-flex justify-content-start" id="makanan">
                 <p class="makanan-judul">Food</p>
               </div>
-              <h1 class="makanan-subjudul">
-                The legacy of the taste <span>food</span> Adat Dayak Culture
-              </h1>
-              <p class="makanan-isi">
-                Dayak custom food is not just a meal, but also a trace of rich
-                heritage to taste, tradition, and deep cultural values.
-              </p>
+              <h1 class="makanan-subjudul">The legacy of the taste <span>food</span> Adat Dayak Culture</h1>
+              <p class="makanan-isi">Dayak custom food is not just a meal, but also a trace of rich heritage to taste, tradition, and deep cultural values.</p>
               <a id="myBtn3" class="tombolbawah2 px-3 py-2">LOOK</a>
             </div>
           </div>
           <div class="col-lg-6 position-relative order-lg-2 order-1">
             <div class="d-flex justify-content-center align-items-center h-100">
-              <img
-                class="makanan-img m-lg-3 mt-5"
-                src="images/makanannyar.png"
-                alt=""
-              />
+              <img class="makanan-img m-lg-3 mt-5" src="images/makanannyar.png" alt="" />
             </div>
           </div>
 
           <div class="col-lg-6 position-relative">
-            <div
-              class="d-flex justify-content-center align-items-center h-100 my-lg-3 my-5"
-            >
-              <img
-                class="makanan-img m-lg-3 mt-5 rounded-4"
-                src="images/rumah-adat1.jpg"
-                alt=""
-              />
+            <div class="d-flex justify-content-center align-items-center h-100 my-lg-3 my-5">
+              <img class="makanan-img m-lg-3 mt-5 rounded-4" src="images/rumah-adat1.jpg" alt="" />
             </div>
           </div>
           <div class="col-lg-6">
@@ -653,11 +423,7 @@
                 The beauty and warmth of a custom house
                 <span> Betang</span> Dayak Culture
               </h1>
-              <p class="makanan-isi">
-                Betang is a typical traditional house of the Dayak tribe in
-                Kalimantan that is charming with the uniqueness of the
-                architecture and the depth of its cultural meaning.
-              </p>
+              <p class="makanan-isi">Betang is a typical traditional house of the Dayak tribe in Kalimantan that is charming with the uniqueness of the architecture and the depth of its cultural meaning.</p>
               <a id="myBtn4" class="tombolbawah2 px-3 py-2">LOOK</a>
             </div>
           </div>
@@ -674,37 +440,21 @@
                     Dayak Culture
                   </h1>
                   <p class="upacara-isi">
-                    Mandau is a traditional weapon that is a symbol of courage,
-                    honor, and rich cultural heritage from the Dayak tribe in
-                    Kalimantan.Known for the beauty of his carving art and its
-                    ability as a weapon of defense, Mandau has a special place
-                    in the history and life of the Dayak people.
+                    Mandau is a traditional weapon that is a symbol of courage, honor, and rich cultural heritage from the Dayak tribe in Kalimantan.Known for the beauty of his carving art and its ability as a weapon of defense, Mandau has
+                    a special place in the history and life of the Dayak people.
                   </p>
                   <a id="myBtn5" class="tombolbawah2 px-3 py-2">LOOK</a>
                 </div>
               </div>
-              <div
-                id="b"
-                class="col-lg-6 d-flex justify-content-center align-content-center"
-              >
-                <img
-                  class="upacara1-img"
-                  src="images/senjata.png"
-                  alt="Senjata Mandau"
-                />
+              <div id="b" class="col-lg-6 d-flex justify-content-center align-content-center">
+                <img class="upacara1-img" src="images/senjata.png" alt="Senjata Mandau" />
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 position-relative">
-            <div
-              class="d-flex justify-content-center align-items-center h-100 my-lg-3 my-5"
-            >
-              <img
-                class="makanan-img m-lg-3 mt-5 rounded-4"
-                src="images/pakaian.png"
-                alt=""
-              />
+            <div class="d-flex justify-content-center align-items-center h-100 my-lg-3 my-5">
+              <img class="makanan-img m-lg-3 mt-5 rounded-4" src="images/pakaian.png" alt="" />
             </div>
           </div>
           <div class="col-lg-6">
@@ -712,15 +462,9 @@
               <div class="d-flex justify-content-start">
                 <p class="makanan-judul">CLOTHES</p>
               </div>
-              <h1 class="makanan-subjudul">
-                Elegant charm of the Rajawali Bird Decoration of the Dayak
-                Kenyah tribe
-              </h1>
+              <h1 class="makanan-subjudul">Elegant charm of the Rajawali Bird Decoration of the Dayak Kenyah tribe</h1>
               <p class="makanan-isi">
-                The Dayak Kenyah traditional clothes have unique characteristics
-                in their design.Usually consists of colorful clothes made from
-                traditional woven fabrics with typical motifs of the Dayak
-                Kenyah tribe.
+                The Dayak Kenyah traditional clothes have unique characteristics in their design.Usually consists of colorful clothes made from traditional woven fabrics with typical motifs of the Dayak Kenyah tribe.
               </p>
               <a id="myBtn6" class="tombolbawah2 px-3 py-2">LOOK</a>
             </div>
@@ -749,40 +493,28 @@
 
             <!-- <li class="card"> -->
             <!-- colom -->
-            <div
-              class="card1 col-lg-4 col-md-6"
-              style="border: none; background-color: transparent; height: auto"
-            >
+            <div class="card1 col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
               <div class="legenda-card m-3">
                 <div class="text-center my-3">
                   <img src="images/bujangbeji.jpg" alt="" class="m-50" />
                 </div>
                 <h1>The story of Bujang Beji</h1>
                 <p>
-                  The story of Bujang Beji tells the story of a brave young man
-                  who struggles to protect the village and loved ones from
-                  threatening dangers.Armed with courage and strength, Bujang
-                  Beji is told risking everything to fight the threats that
-                  come.
+                  The story of Bujang Beji tells the story of a brave young man who struggles to protect the village and loved ones from threatening dangers.Armed with courage and strength, Bujang Beji is told risking everything to fight
+                  the threats that come.
                 </p>
                 <a id="myBtn7" class="tombolbawah2 px-3 py-2">LOOK</a>
               </div>
             </div>
             <!-- colom -->
-            <div
-              class="card1 col-lg-4 col-md-6"
-              style="border: none; background-color: transparent; height: auto"
-            >
+            <div class="card1 col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
               <div class="legenda-card m-3">
                 <div class="text-center my-3">
                   <img src="images/modal-landak.jpg" alt="" class="m-50" />
                 </div>
                 <h1>The origin of the Landak River</h1>
                 <p>
-                  The story of the origin of the Landak River tells about creation
-                  or the origin of the river filled with mystery and
-                  wonder.This legend illustrates how the river is
-                  This beautiful and fertile was created, often involved
+                  The story of the origin of the Landak River tells about creation or the origin of the river filled with mystery and wonder.This legend illustrates how the river is This beautiful and fertile was created, often involved
                   Magical and mythological elements in the story.
                 </p>
                 <a id="myBtn8" class="tombolbawah2 px-3 py-2">LOOK</a>
@@ -790,21 +522,15 @@
             </div>
             <!-- end colom -->
             <!-- colom -->
-            <div
-              class="card1 col-lg-4 col-md-6"
-              style="border: none; background-color: transparent; height: auto"
-            >
+            <div class="card1 col-lg-4 col-md-6" style="border: none; background-color: transparent; height: auto">
               <div class="legenda-card m-3">
                 <div class="text-center my-3">
                   <img src="images/hantu.jpg" alt="" class="m-50" />
                 </div>
                 <h1>A team of ghosts</h1>
                 <p>
-                  The story of a ghost troop is a story that tells about
-                  The magical entity or spirit that inhabits certain areas.Troops
-                  Ghosts are often considered as supernatural creatures or
-                  The guards who roam in certain places,
-                  Bring messages or warnings to humans.
+                  The story of a ghost troop is a story that tells about The magical entity or spirit that inhabits certain areas.Troops Ghosts are often considered as supernatural creatures or The guards who roam in certain places, Bring
+                  messages or warnings to humans.
                 </p>
                 <a id="myBtn9" class="tombolbawah2 px-3 py-2">LOOK</a>
               </div>
@@ -831,39 +557,13 @@
             <div class="Qdayak d-block d-flex align-items-center">
               <h1 class="m-0 mx-2">ChatBot</h1>
 
-              <span
-                style="
-                  color: #870000;
-                  font-size: 38px;
-                  font-family: poppins;
-                  font-weight: 700;
-                "
-                >QD</span
-              ><span
-                style="
-                  color: black;
-                  font-size: 38px;
-                  font-family: poppins;
-                  font-weight: 700;
-                "
-                >ayak</span
-              ><span
-                style="
-                  color: #ffffff;
-                  font-size: 38px;
-                  font-family: poppins;
-                  font-weight: 700;
-                "
-                >.</span
-              >
+              <span style="color: #870000; font-size: 38px; font-family: poppins; font-weight: 700">QD</span><span style="color: black; font-size: 38px; font-family: poppins; font-weight: 700">ayak</span
+              ><span style="color: #ffffff; font-size: 38px; font-family: poppins; font-weight: 700">.</span>
 
               <!-- <p class="text-muted">© 2022</p> -->
             </div>
           </div>
-          <p class="profil-isi col-lg-7">
-            Chat Bot here functions for your questions about tribes
-            Dayaks that you think you haven't understood
-          </p>
+          <p class="profil-isi col-lg-7">Chat Bot here functions for your questions about tribes Dayaks that you think you haven't understood</p>
         </div>
       </div>
       <div class="mx-auto rounded-lg">
@@ -873,17 +573,10 @@
             <!-- Sender Message-->
             <div class="mb">
               <div class="media-body ml-6 d-flex justify-content-end">
-                <div
-                  class="rounded py-2 px-1 mb-2 red-maron d-flex align-content-center isi-sender"
-                >
-                  <p class="text-small mb-0 mx-2 my-3">What is the Dayak tribe?</p>
+                <div class="rounded py-2 px-1 mb-2 red-maron d-flex align-content-center isi-sender">
+                  <p class="text-small mb-0 mx-2 my-3">What is Dayak Tribe?</p>
                   <div class="gambar-bot">
-                    <img
-                      src="images/user.jpg"
-                      alt="user"
-                      width="50"
-                      class="rounded-circle"
-                    />
+                    <img src="images/user.jpg" alt="user" width="50" class="rounded-circle" />
                   </div>
                 </div>
               </div>
@@ -893,25 +586,14 @@
             <div class="media-body ml-3">
               <div class="reciever rounded py-4 px-4 pb-5 red-maron d-flex">
                 <div class="logo">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 67 65"
-                    fill="none"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 67 65" fill="none">
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M33.2707 44.7034C39.8686 44.7034 45.2173 39.3547 45.2173 32.7568C45.2173 26.1588 39.8686 20.8101 33.2707 20.8101C26.6727 20.8101 21.324 26.1588 21.324 32.7568C21.324 39.3547 26.6727 44.7034 33.2707 44.7034ZM33.2707 51.1263C43.4159 51.1263 51.6403 42.902 51.6403 32.7568C51.6403 22.6115 43.4159 14.3872 33.2707 14.3872C23.1255 14.3872 14.9011 22.6115 14.9011 32.7568C14.9011 42.902 23.1255 51.1263 33.2707 51.1263Z"
                       fill="white"
                     />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M51.1263 59.8615L33.1421 36.2252L38.2537 32.3359L56.2379 55.9723L51.1263 59.8615Z"
-                      fill="white"
-                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.1263 59.8615L33.1421 36.2252L38.2537 32.3359L56.2379 55.9723L51.1263 59.8615Z" fill="white" />
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -921,36 +603,26 @@
                   </svg>
                 </div>
                 <div class="text-small mb-0 text-white m-6 text-mini mw-auto">
-                  The Dayak tribe is a native ethnic group that inhabits the region
-                  Inland Kalimantan, Indonesia.They consist of various
-                  Sub-tribes with rich and diverse cultures.In general,
-                  The Dayak tribe is famous for their skills in hunting,
-                  farming, and expertise in carving arts.<br />
+                  The Dayak tribe is a native ethnic group that inhabits the region Inland Kalimantan, Indonesia.They consist of various Sub-tribes with rich and diverse cultures.In general, The Dayak tribe is famous for their skills in
+                  hunting, farming, and expertise in carving arts.<br />
                   Some of the characteristics of the Dayak tribe including: <br />
 
                   <ol class="mb-0 d-inline text-white text-mini">
                     <li>
                       Cultural Diversity: <br />
-                      The Dayak tribe consists of various sub-tribes with culture
-                      distinctive and diverse.Every sub-department has language,
-                      Different customs, traditions, and beliefs.
+                      The Dayak tribe consists of various sub-tribes with culture distinctive and diverse.Every sub-department has language, Different customs, traditions, and beliefs.
                     </li>
                     <li>
                       Traditions and Ceremonies: <br />
-                      The Dayak tribe has an important traditional ceremony in
-                      their lives, like traditional ceremonies in marriage,
-                      agriculture, welcoming guests, and other ceremonies
-                      celebrate their lives and relationships with nature.
+                      The Dayak tribe has an important traditional ceremony in their lives, like traditional ceremonies in marriage, agriculture, welcoming guests, and other ceremonies celebrate their lives and relationships with nature.
                     </li>
                     <li>
                       Arts and Crafts Skills: <br />
-                      Carving arts, woven, traditional music art, and use
-                      decorations with typical motifs into parts
-                      Important from the Dayak tribe culture.
+                      Carving arts, woven, traditional music art, and use decorations with typical motifs into parts Important from the Dayak tribe culture.
                     </li>
-                    <li>Knowledge of the environment: <br />
-                      Skills in life side by side with nature and
-                      in -depth knowledge of forests and ecosystems
+                    <li>
+                      Knowledge of the environment: <br />
+                      Skills in life side by side with nature and in -depth knowledge of forests and ecosystems
                     </li>
                   </ol>
                 </div>
@@ -961,25 +633,10 @@
         <!-- Typing area -->
         <form action="#" class="rounded-lg chat-bot">
           <div class="input-group">
-            <input
-              type="text"
-              placeholder="Tanyakan sesuatu...."
-              aria-describedby="button-addon1"
-              class="form-control py-0 rounded-lg"
-            />
+            <input type="text" placeholder="Tanyakan sesuatu...." aria-describedby="button-addon1" class="form-control py-0 rounded-lg" />
             <div class="input-group-append rounded-lg bg-white">
-              <button
-                id="button-addon2"
-                type="submit"
-                class="btn btn-link my-3"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  viewbox="0 0 29 29"
-                  fill="none"
-                >
+              <button id="button-addon2" type="submit" class="btn btn-link my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 29 29" fill="none">
                   <g clip-path="url(#clip0_248_22)">
                     <path
                       d="M19.2329 8.63C19.4136 8.58768 19.6024 8.59647 19.7784 8.65537C19.9543 8.71427 20.1104 8.82096 20.2292 8.96351C20.348 9.10606 20.4248 9.27885 20.4509 9.46254C20.4771 9.64623 20.4517 9.83359 20.3775 10.0036L14.1027 24.3434C14.025 24.5212 13.8971 24.6726 13.7348 24.779C13.5725 24.8855 13.3827 24.9424 13.1886 24.9428C12.9945 24.9432 12.8045 24.8871 12.6417 24.7813C12.4789 24.6756 12.3505 24.5248 12.2719 24.3472L10.1691 19.5912C10.0813 19.3924 10.0606 19.1703 10.1102 18.9587C10.1598 18.7471 10.277 18.5574 10.4441 18.4184L13.9558 15.4923C14.1596 15.3225 14.2875 15.0788 14.3116 14.8146C14.3356 14.5505 14.2537 14.2877 14.0839 14.0839C13.9142 13.8802 13.6704 13.7522 13.4063 13.7282C13.1421 13.7041 12.8793 13.786 12.6755 13.9558L9.16381 16.8819C8.9969 17.0211 8.78917 17.1021 8.57207 17.1128C8.35498 17.1234 8.14033 17.063 7.96064 16.9407L3.66288 14.0135C3.5024 13.9043 3.37715 13.7509 3.3024 13.5718C3.22764 13.3927 3.20662 13.1957 3.2419 13.0048C3.27718 12.814 3.36722 12.6375 3.50106 12.497C3.6349 12.3564 3.80674 12.2579 3.99564 12.2133L19.2323 8.62923L19.2329 8.63Z"
@@ -988,12 +645,7 @@
                   </g>
                   <defs>
                     <clippath id="clip0_248_22">
-                      <rect
-                        width="28"
-                        height="28"
-                        fill="white"
-                        transform="matrix(-0.640136 -0.768262 -0.768262 0.640136 28.168 15.3652)"
-                      />
+                      <rect width="28" height="28" fill="white" transform="matrix(-0.640136 -0.768262 -0.768262 0.640136 28.168 15.3652)" />
                     </clippath>
                   </defs>
                 </svg>
@@ -1010,31 +662,8 @@
           <p class="makanan-judul">COMMENT</p>
           <h1 class="makanan-subjudul">Comments on</h1>
           <div class="Qdayak d-block">
-            <span
-              style="
-                color: #870000;
-                font-size: 32px;
-                font-family: poppins;
-                font-weight: 700;
-              "
-              >QD</span
-            ><span
-              style="
-                color: black;
-                font-size: 32px;
-                font-family: poppins;
-                font-weight: 700;
-              "
-              >ayak</span
-            ><span
-              style="
-                color: #ffffff;
-                font-size: 32px;
-                font-family: poppins;
-                font-weight: 700;
-              "
-              >.</span
-            >
+            <span style="color: #870000; font-size: 32px; font-family: poppins; font-weight: 700">QD</span><span style="color: black; font-size: 32px; font-family: poppins; font-weight: 700">ayak</span
+            ><span style="color: #ffffff; font-size: 32px; font-family: poppins; font-weight: 700">.</span>
           </div>
           <p class="text-grey">Here is your comment</p>
         </div>
@@ -1044,140 +673,79 @@
         <ul class="carousel2">
           <!-- <li class="card"> -->
           <!-- colom -->
-          <div
-            class="card2"
-            style="border: none; background-color: transparent"
-          >
-            <div
-              class="col mx-1 chat-bot rounded-lg-2 mb-3"
-              style="height: 25rem"
-            >
+          <div class="card2" style="border: none; background-color: transparent">
+            <div class="col mx-1 chat-bot rounded-lg-2 mb-3" style="height: 25rem">
               <div class="card-body p-3 m-2">
                 <div class="bawah"></div>
                 <div class="media-body ml-3 row">
                   <div class="col-md-3">
-                    <img
-                      src="images/user.jpg"
-                      alt="user"
-                      width="50"
-                      class="rounded-circle"
-                    />
+                    <img src="images/user.jpg" alt="user" width="50" class="rounded-circle" />
                   </div>
                   <div class="col">
-                    <p class="text-small-1 mb-0 d-block text-black">
-                      ruditabi@gmail.com
-                    </p>
+                    <p class="text-small-1 mb-0 d-block text-black">ruditabi@gmail.com</p>
                     <p class="text-muted-2 mb-0 d-inline text-black">student</p>
                   </div>
                   <hr class="hr my-2" />
-                  <p class="card-text">really good for the next generation, hopefully smakan
-                    develop yes sir
-                  </p>
+                  <p class="card-text">really good for the next generation, hopefully smakan develop yes sir</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- colom -->
-          <div
-            class="card2"
-            style="border: none; background-color: transparent"
-          >
-            <div
-              class="col mx-1 chat-bot rounded-lg-2 mb-3"
-              style="height: 25rem"
-            >
+          <div class="card2" style="border: none; background-color: transparent">
+            <div class="col mx-1 chat-bot rounded-lg-2 mb-3" style="height: 25rem">
               <div class="card-body p-3 m-2">
                 <div class="bawah"></div>
                 <div class="media-body ml-3 row">
                   <div class="col-md-3">
-                    <img
-                      src="images/user2.jpg"
-                      alt="user"
-                      width="50"
-                      class="rounded-circle"
-                    />
+                    <img src="images/user2.jpg" alt="user" width="50" class="rounded-circle" />
                   </div>
                   <div class="col">
-                    <p class="text-small-1 mb-0 d-block text-black">
-                      andiiku@gmail.com
-                    </p>
+                    <p class="text-small-1 mb-0 d-block text-black">andiiku@gmail.com</p>
                     <p class="text-muted-2 mb-0 d-inline text-black">student</p>
                   </div>
                   <hr class="hr my-2" />
-                  <p class="card-text">This site is an amazing window to understand
-                    Dayak culture.Informative content.
-                  </p>
+                  <p class="card-text">This site is an amazing window to understand Dayak culture.Informative content.</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end colom -->
           <!-- colom -->
-          <div
-            class="card2"
-            style="border: none; background-color: transparent"
-          >
-            <div
-              class="col mx-1 chat-bot rounded-lg-2 mb-3"
-              style="height: 25rem"
-            >
+          <div class="card2" style="border: none; background-color: transparent">
+            <div class="col mx-1 chat-bot rounded-lg-2 mb-3" style="height: 25rem">
               <div class="card-body p-3 m-2">
                 <div class="bawah"></div>
                 <div class="media-body ml-3 row">
                   <div class="col-md-3">
-                    <img
-                      src="images/user3.jpg"
-                      alt="user"
-                      width="50"
-                      class="rounded-circle"
-                    />
+                    <img src="images/user3.jpg" alt="user" width="50" class="rounded-circle" />
                   </div>
                   <div class="col">
-                    <p class="text-small-1 mb-0 d-block text-black">
-                      elykur@gmail.com
-                    </p>
-                    <p class="text-muted-2 mb-0 d-inline text-black">
-                      user
-                    </p>
+                    <p class="text-small-1 mb-0 d-block text-black">elykur@gmail.com</p>
+                    <p class="text-muted-2 mb-0 d-inline text-black">user</p>
                   </div>
                   <hr class="hr my-2" />
-                  <p class="card-text">The most innovative cultural website, cool sis!
-                  </p>
+                  <p class="card-text">The most innovative cultural website, cool sis!</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end colom -->
           <!-- colom -->
-          <div
-            class="card2"
-            style="border: none; background-color: transparent"
-          >
-            <div
-              class="col mx-1 chat-bot rounded-lg-2 mb-3"
-              style="height: 25rem"
-            >
+          <div class="card2" style="border: none; background-color: transparent">
+            <div class="col mx-1 chat-bot rounded-lg-2 mb-3" style="height: 25rem">
               <div class="card-body p-3 m-2">
                 <div class="bawah"></div>
                 <div class="media-body ml-3 row">
                   <div class="col-md-3">
-                    <img
-                      src="images/user4.jpg"
-                      alt="user"
-                      width="50"
-                      class="rounded-circle"
-                    />
+                    <img src="images/user4.jpg" alt="user" width="50" class="rounded-circle" />
                   </div>
                   <div class="col">
-                    <p class="text-small-1 mb-0 d-block text-black">
-                      bilgets@gmail.com
-                    </p>
+                    <p class="text-small-1 mb-0 d-block text-black">bilgets@gmail.com</p>
                     <p class="text-muted-2 mb-0 d-inline text-black">student</p>
                   </div>
                   <hr class="hr my-2" />
-                  <p class="card-text">This site is an invaluable knowledge center
-                    price!keep developing brother!
-                  </p>
+                  <p class="card-text">This site is an invaluable knowledge center price!keep developing brother!</p>
                 </div>
               </div>
             </div>
@@ -1196,30 +764,16 @@
     <footer class="">
       <div class="container mx-auto row py-5 mt-5 border-top">
         <div class="col-lg-6 order-1 mb-3">
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 link-dark text-decoration-none"
-          ></a>
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none"></a>
           <div class="footer-qdayak d-block text-start">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="67"
-              height="65"
-              viewBox="0 0 67 65"
-              fill="none"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="67" height="65" viewBox="0 0 67 65" fill="none">
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M33.2707 44.7034C39.8686 44.7034 45.2173 39.3547 45.2173 32.7568C45.2173 26.1588 39.8686 20.8101 33.2707 20.8101C26.6727 20.8101 21.324 26.1588 21.324 32.7568C21.324 39.3547 26.6727 44.7034 33.2707 44.7034ZM33.2707 51.1263C43.4159 51.1263 51.6403 42.902 51.6403 32.7568C51.6403 22.6115 43.4159 14.3872 33.2707 14.3872C23.1255 14.3872 14.9011 22.6115 14.9011 32.7568C14.9011 42.902 23.1255 51.1263 33.2707 51.1263Z"
                 fill="white"
               />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M51.1263 59.8615L33.1421 36.2252L38.2537 32.3359L56.2379 55.9723L51.1263 59.8615Z"
-                fill="white"
-              />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.1263 59.8615L33.1421 36.2252L38.2537 32.3359L56.2379 55.9723L51.1263 59.8615Z" fill="white" />
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -1228,65 +782,42 @@
               />
             </svg>
             <h5>QDayak</h5>
-            <p class="text-start mt-3">Our mission is to preserve and promote cultural wealth
-              The Kalimantan Dayak tribe and inspired visitors to
-              <span> appreciate</span> and <span>respect</span> This legacy.
-            </p>
+            <p class="text-start mt-3">Our mission is to preserve and promote cultural wealth The Kalimantan Dayak tribe and inspired visitors to <span> appreciate</span> and <span>respect</span> This legacy.</p>
 
             <ul class="nav footer-kiri text-start justify-content-start">
               <ul style="list-style-type: none" class="p-0">
                 <li class="nav-item mb-2">
-                  <a href="#home" class="nav-link p-0 text-start text-white"
-                    >Home</a
-                  >
+                  <a href="#home" class="nav-link p-0 text-start text-white">Home</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#profil" class="nav-link p-0 text-start text-white"
-                    >Profile</a
-                  >
+                  <a href="#profil" class="nav-link p-0 text-start text-white">Profile</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#chat" class="nav-link p-0 text-start text-white"
-                    >Chat Bot</a
-                  >
+                  <a href="#chat" class="nav-link p-0 text-start text-white">Chat Bot</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#adat" class="nav-link p-0 text-start text-white"
-                    >Adat</a
-                  >
+                  <a href="#adat" class="nav-link p-0 text-start text-white">Adat</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#makanan" class="nav-link p-0 text-start text-white"
-                    >Food</a
-                  >
+                  <a href="#makanan" class="nav-link p-0 text-start text-white">Food</a>
                 </li>
               </ul>
               <ul style="list-style-type: none" class="p-0">
                 <li class="nav-item mb-2">
-                  <a href="#adat" class="nav-link p-0 text-start text-white"
-                    >Adat Istiadat</a
-                  >
+                  <a href="#adat" class="nav-link p-0 text-start text-white">Adat Istiadat</a>
                 </li>
 
                 <li class="nav-item mb-2">
-                  <a href="#rumah" class="nav-link p-0 text-start text-white"
-                    >House</a
-                  >
+                  <a href="#rumah" class="nav-link p-0 text-start text-white">House</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#senjata" class="nav-link p-0 text-start text-white"
-                    >Weapon</a
-                  >
+                  <a href="#senjata" class="nav-link p-0 text-start text-white">Weapon</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#pakaian" class="nav-link p-0 text-start text-white"
-                    >Clothes</a
-                  >
+                  <a href="#pakaian" class="nav-link p-0 text-start text-white">Clothes</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#legenda" class="nav-link p-0 text-start text-white"
-                    >Legend</a
-                  >
+                  <a href="#legenda" class="nav-link p-0 text-start text-white">Legend</a>
                 </li>
               </ul>
             </ul>
@@ -1297,46 +828,18 @@
           <div class="ps-lg-5">
             <div class="footer-komen mt-5">
               <h1>Give comments</h1>
-              <p>
-                Your comments really mean to us.Every opinion and idea
-                What you share is an extraordinary added value.
-              </p>
+              <p>Your comments really mean to us.Every opinion and idea What you share is an extraordinary added value.</p>
             </div>
 
             <div class="searchArea position-relative my-4">
               <div class="inputDiv">
-                <input
-                  type="text"
-                  id="inputField"
-                  tabindex="1"
-                  class="form-control ps-3"
-                  placeholder="Give you comments"
-                  aria-label="Give your comments"
-                  aria-describedby="button-addon2"
-                />
+                <input type="text" id="inputField" tabindex="1" class="form-control ps-3" placeholder="Give you comments" aria-label="Give your comments" aria-describedby="button-addon2" />
               </div>
-              <button
-                type="submit"
-                class="btn-footer"
-                type="button"
-                tabindex="2"
-              >
-                Submit
-              </button>
+              <button type="submit" class="btn-footer" type="button" tabindex="2">Submit</button>
             </div>
             <div class="medsos">
-              <a
-                href="https://instagram.com"
-                class="icon-ig text-decoration-none"
-              >
-                <svg
-                  class=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 23 23"
-                  fill="none"
-                >
+              <a href="https://instagram.com" class="icon-ig text-decoration-none">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23" fill="none">
                   <!-- <circle cx="11.5" cy="11.5" r="11.5" fill="#F0EEEE" fill-opacity="0.32" /> -->
                   <path
                     d="M8.48 5H13.52C15.44 5 17 6.56 17 8.48V13.52C17 14.443 16.6334 15.3281 15.9807 15.9807C15.3281 16.6334 14.443 17 13.52 17H8.48C6.56 17 5 15.44 5 13.52V8.48C5 7.55705 5.36664 6.6719 6.01927 6.01927C6.6719 5.36664 7.55705 5 8.48 5ZM8.36 6.2C7.78713 6.2 7.23773 6.42757 6.83265 6.83265C6.42757 7.23773 6.2 7.78713 6.2 8.36V13.64C6.2 14.834 7.166 15.8 8.36 15.8H13.64C14.2129 15.8 14.7623 15.5724 15.1674 15.1674C15.5724 14.7623 15.8 14.2129 15.8 13.64V8.36C15.8 7.166 14.834 6.2 13.64 6.2H8.36ZM14.15 7.1C14.3489 7.1 14.5397 7.17902 14.6803 7.31967C14.821 7.46032 14.9 7.65109 14.9 7.85C14.9 8.04891 14.821 8.23968 14.6803 8.38033C14.5397 8.52098 14.3489 8.6 14.15 8.6C13.9511 8.6 13.7603 8.52098 13.6197 8.38033C13.479 8.23968 13.4 8.04891 13.4 7.85C13.4 7.65109 13.479 7.46032 13.6197 7.31967C13.7603 7.17902 13.9511 7.1 14.15 7.1ZM11 8C11.7956 8 12.5587 8.31607 13.1213 8.87868C13.6839 9.44129 14 10.2044 14 11C14 11.7956 13.6839 12.5587 13.1213 13.1213C12.5587 13.6839 11.7956 14 11 14C10.2044 14 9.44129 13.6839 8.87868 13.1213C8.31607 12.5587 8 11.7956 8 11C8 10.2044 8.31607 9.44129 8.87868 8.87868C9.44129 8.31607 10.2044 8 11 8ZM11 9.2C10.5226 9.2 10.0648 9.38964 9.72721 9.72721C9.38964 10.0648 9.2 10.5226 9.2 11C9.2 11.4774 9.38964 11.9352 9.72721 12.2728C10.0648 12.6104 10.5226 12.8 11 12.8C11.4774 12.8 11.9352 12.6104 12.2728 12.2728C12.6104 11.9352 12.8 11.4774 12.8 11C12.8 10.5226 12.6104 10.0648 12.2728 9.72721C11.9352 9.38964 11.4774 9.2 11 9.2Z"
@@ -1345,18 +848,8 @@
                 </svg>
               </a>
 
-              <a
-                href="https://facebook.com"
-                class="icon-fb text-decoration-none"
-              >
-                <svg
-                  class=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 23 23"
-                  fill="none"
-                >
+              <a href="https://facebook.com" class="icon-fb text-decoration-none">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23" fill="none">
                   <!-- <circle cx="11.5" cy="11.5" r="11.5" fill="#F0EEEE" fill-opacity="0.32" /> -->
                   <path
                     d="M17 11.015C17 7.69474 14.312 5 11 5C7.688 5 5 7.69474 5 11.015C5 13.9263 7.064 16.3504 9.8 16.9098V12.8195H8.6V11.015H9.8V9.51128C9.8 8.35038 10.742 7.40601 11.9 7.40601H13.4V9.21053H12.2C11.87 9.21053 11.6 9.4812 11.6 9.81203V11.015H13.4V12.8195H11.6V17C14.63 16.6992 17 14.1368 17 11.015Z"
@@ -1366,14 +859,7 @@
               </a>
 
               <a href="https://x.com" class="icon-x text-decoration-none">
-                <svg
-                  class=""
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 23 23"
-                  fill="none"
-                >
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23" fill="none">
                   <!-- <circle cx="11.5" cy="11.5" r="11.5" fill="#F0EEEE" fill-opacity="0.32" /> -->
                   <path
                     d="M17 7.17647C16.5583 7.38235 16.0822 7.51765 15.5889 7.58235C16.0937 7.27059 16.4837 6.77647 16.6673 6.18235C16.1912 6.47647 15.6635 6.68235 15.1071 6.8C14.6539 6.29412 14.0172 6 13.2945 6C11.9465 6 10.8451 7.12941 10.8451 8.52353C10.8451 8.72353 10.8681 8.91765 10.9082 9.1C8.86616 8.99412 7.0478 7.98824 5.83748 6.46471C5.62524 6.83529 5.50478 7.27059 5.50478 7.72941C5.50478 8.60588 5.93499 9.38235 6.60038 9.82353C6.19312 9.82353 5.81453 9.70588 5.48184 9.52941V9.54706C5.48184 10.7706 6.33078 11.7941 7.45507 12.0235C7.09411 12.1248 6.71516 12.1389 6.34799 12.0647C6.50379 12.5662 6.80891 13.0049 7.22047 13.3194C7.63202 13.6338 8.12932 13.8081 8.64245 13.8176C7.77264 14.5238 6.69445 14.9055 5.58509 14.9C5.39006 14.9 5.19503 14.8882 5 14.8647C6.08987 15.5824 7.38623 16 8.77438 16C13.2945 16 15.7782 12.1529 15.7782 8.81765C15.7782 8.70588 15.7782 8.6 15.7725 8.48824C16.2543 8.13529 16.6673 7.68824 17 7.17647Z"
@@ -1392,29 +878,17 @@
               document.write(CurrentYear);
             </script>
             . Qdayak All rights reserved. Develop with
-            <span> sincerity</span> by
-            <a href="https://www.instagram.com/fatihfwz/">Fatih</a>,
-            <a href="https://www.instagram.com/tmhhgg80/">Januarsyah</a>,
+            <span> sincerity</span> by <a href="https://www.instagram.com/fatihfwz/">Fatih</a>, <a href="https://www.instagram.com/tmhhgg80/">Januarsyah</a>,
             <a href="https://www.instagram.com/nasauramecca/">Haqqan</a>
           </p>
         </div>
       </div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/73ef320ee9.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/73ef320ee9.js" crossorigin="anonymous"></script>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.4.js"
-      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="	https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script defer src="	https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
     <script type="module" src="script-2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 

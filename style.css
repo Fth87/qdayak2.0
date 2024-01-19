@@ -1760,6 +1760,13 @@ footer {
   top: 6px;
 }
 
+.bendera {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
 @media only screen and (min-width: 998px) {
   .footer-komen h1 {
     color: #fff;
